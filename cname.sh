@@ -3,4 +3,4 @@
 
 set -e
 
-echo 'blog.jiajia-hjj.github.io/'>docs/.vuepress/dist/CMAME
+echo 'blog.jiajia-hjj.github.io/'>blog/CMAME
