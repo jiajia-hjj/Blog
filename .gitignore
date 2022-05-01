@@ -1,0 +1,12 @@
+node_modules
+.next
+.nuxt
+
+.cache/
+
+.serverless/
+# vuepress
+docs/.vuepress/dist
+.vscode
+# 隐私私密信息
+# secret.js
