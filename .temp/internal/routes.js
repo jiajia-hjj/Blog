@@ -9,20 +9,16 @@ import GlobalLayout from "C:\\Users\\HJJ\\Desktop\\Blog\\node_modules\\@vuepress
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-4c24a392",
-    path: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
+    name: "v-50e0f714",
+    path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4c24a392").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-50e0f714").then(next)
     },
   },
   {
-    path: "/note/CSS/DIV水平垂直居中.html",
-    redirect: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html"
-  },
-  {
-    path: "/note/CSS/DIV水平垂直居中.html",
-    redirect: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html"
+    path: "/index.html",
+    redirect: "/"
   },
   {
     name: "v-4173ef9e",
@@ -41,28 +37,20 @@ export const routes = [
     redirect: "/note/CSS/CSS%E9%AB%98%E7%BA%A7%E5%B8%B8%E8%A7%81%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB.html"
   },
   {
-    name: "v-50e0f714",
-    path: "/",
+    name: "v-4c24a392",
+    path: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-50e0f714").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4c24a392").then(next)
     },
   },
   {
-    path: "/index.html",
-    redirect: "/"
+    path: "/note/CSS/DIV水平垂直居中.html",
+    redirect: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html"
   },
   {
-    name: "v-e0e09268",
-    path: "/note/CSS/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e0e09268").then(next)
-    },
-  },
-  {
-    path: "/note/CSS/index.html",
-    redirect: "/note/CSS/"
+    path: "/note/CSS/DIV水平垂直居中.html",
+    redirect: "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html"
   },
   {
     name: "v-18d957c6",
@@ -81,11 +69,31 @@ export const routes = [
     redirect: "/note/CSS/css%20%E5%AE%9E%E7%8E%B0%E4%B8%8A%E5%8F%B3%E4%B8%8B%E5%B7%A6%E4%B8%89%E8%A7%92.html"
   },
   {
+    name: "v-e0e09268",
+    path: "/note/CSS/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e0e09268").then(next)
+    },
+  },
+  {
+    path: "/note/CSS/index.html",
+    redirect: "/note/CSS/"
+  },
+  {
     name: "v-61c357fb",
     path: "/note/CSS/mixin.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-61c357fb").then(next)
+    },
+  },
+  {
+    name: "v-39e44bdf",
+    path: "/note/CSS/sass.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-39e44bdf").then(next)
     },
   },
   {
@@ -103,14 +111,6 @@ export const routes = [
   {
     path: "/note/CSS/retina屏幕1px边框问题.html",
     redirect: "/note/CSS/retina%E5%B1%8F%E5%B9%951px%E8%BE%B9%E6%A1%86%E9%97%AE%E9%A2%98.html"
-  },
-  {
-    name: "v-39e44bdf",
-    path: "/note/CSS/sass.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-39e44bdf").then(next)
-    },
   },
   {
     name: "v-4bd53062",
@@ -241,6 +241,14 @@ export const routes = [
     redirect: "/note/HTML/audio%E6%A0%87%E7%AD%BE%E5%B8%B8%E7%94%A8api.html"
   },
   {
+    name: "v-daeef31a",
+    path: "/note/HTML/canvas.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-daeef31a").then(next)
+    },
+  },
+  {
     name: "v-057a5a9c",
     path: "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
     component: GlobalLayout,
@@ -255,46 +263,6 @@ export const routes = [
   {
     path: "/note/HTML/dpr、设备像素、CSS像素.html",
     redirect: "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html"
-  },
-  {
-    name: "v-daeef31a",
-    path: "/note/HTML/canvas.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-daeef31a").then(next)
-    },
-  },
-  {
-    name: "v-1e565195",
-    path: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e565195").then(next)
-    },
-  },
-  {
-    path: "/note/HTML/h5新特性.html",
-    redirect: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html"
-  },
-  {
-    path: "/note/HTML/h5新特性.html",
-    redirect: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html"
-  },
-  {
-    name: "v-0eb10efa",
-    path: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0eb10efa").then(next)
-    },
-  },
-  {
-    path: "/note/HTML/iframe的优点、缺点.html",
-    redirect: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html"
-  },
-  {
-    path: "/note/HTML/iframe的优点、缺点.html",
-    redirect: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html"
   },
   {
     name: "v-3cdbaef4",
@@ -313,12 +281,44 @@ export const routes = [
     redirect: "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html"
   },
   {
+    name: "v-1e565195",
+    path: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1e565195").then(next)
+    },
+  },
+  {
+    path: "/note/HTML/h5新特性.html",
+    redirect: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html"
+  },
+  {
+    path: "/note/HTML/h5新特性.html",
+    redirect: "/note/HTML/h5%E6%96%B0%E7%89%B9%E6%80%A7.html"
+  },
+  {
     name: "v-32967ca5",
     path: "/note/HTML/input.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-32967ca5").then(next)
     },
+  },
+  {
+    name: "v-0eb10efa",
+    path: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0eb10efa").then(next)
+    },
+  },
+  {
+    path: "/note/HTML/iframe的优点、缺点.html",
+    redirect: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html"
+  },
+  {
+    path: "/note/HTML/iframe的优点、缺点.html",
+    redirect: "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html"
   },
   {
     name: "v-549cc44e",
@@ -335,6 +335,22 @@ export const routes = [
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-075cb6cd").then(next)
     },
+  },
+  {
+    name: "v-22dbdfb6",
+    path: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-22dbdfb6").then(next)
+    },
+  },
+  {
+    path: "/note/HTML/为什么会利用多个域名来存储网站资源更有效？.html",
+    redirect: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html"
+  },
+  {
+    path: "/note/HTML/为什么会利用多个域名来存储网站资源更有效？.html",
+    redirect: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html"
   },
   {
     name: "v-6d32acc1",
@@ -361,38 +377,6 @@ export const routes = [
     },
   },
   {
-    name: "v-22dbdfb6",
-    path: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-22dbdfb6").then(next)
-    },
-  },
-  {
-    path: "/note/HTML/为什么会利用多个域名来存储网站资源更有效？.html",
-    redirect: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html"
-  },
-  {
-    path: "/note/HTML/为什么会利用多个域名来存储网站资源更有效？.html",
-    redirect: "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html"
-  },
-  {
-    name: "v-61c0020b",
-    path: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-61c0020b").then(next)
-    },
-  },
-  {
-    path: "/note/HTML/其他简答题.html",
-    redirect: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html"
-  },
-  {
-    path: "/note/HTML/其他简答题.html",
-    redirect: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html"
-  },
-  {
     name: "v-435a9109",
     path: "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html",
     component: GlobalLayout,
@@ -409,20 +393,20 @@ export const routes = [
     redirect: "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html"
   },
   {
-    name: "v-5c4a2edf",
-    path: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
+    name: "v-61c0020b",
+    path: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5c4a2edf").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-61c0020b").then(next)
     },
   },
   {
-    path: "/note/HTML/如何实现浏览器内多个标签也之间的通信.html",
-    redirect: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html"
+    path: "/note/HTML/其他简答题.html",
+    redirect: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html"
   },
   {
-    path: "/note/HTML/如何实现浏览器内多个标签也之间的通信.html",
-    redirect: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html"
+    path: "/note/HTML/其他简答题.html",
+    redirect: "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html"
   },
   {
     name: "v-4bc1ce98",
@@ -457,6 +441,22 @@ export const routes = [
     redirect: "/note/HTML/%E5%A6%82%E4%BD%95%E7%A6%81%E6%AD%A2a%E6%A0%87%E7%AD%BE%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2%E6%88%96%E8%80%85%E5%AE%9A%E4%BD%8D%E9%93%BE%E6%8E%A5%EF%BC%9F.html"
   },
   {
+    name: "v-5c9c562d",
+    path: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5c9c562d").then(next)
+    },
+  },
+  {
+    path: "/note/HTML/简述一下src与href的区别.html",
+    redirect: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html"
+  },
+  {
+    path: "/note/HTML/简述一下src与href的区别.html",
+    redirect: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html"
+  },
+  {
     name: "v-f9edc4a2",
     path: "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html",
     component: GlobalLayout,
@@ -473,20 +473,20 @@ export const routes = [
     redirect: "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html"
   },
   {
-    name: "v-5c9c562d",
-    path: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html",
+    name: "v-5c4a2edf",
+    path: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5c9c562d").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5c4a2edf").then(next)
     },
   },
   {
-    path: "/note/HTML/简述一下src与href的区别.html",
-    redirect: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html"
+    path: "/note/HTML/如何实现浏览器内多个标签也之间的通信.html",
+    redirect: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html"
   },
   {
-    path: "/note/HTML/简述一下src与href的区别.html",
-    redirect: "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html"
+    path: "/note/HTML/如何实现浏览器内多个标签也之间的通信.html",
+    redirect: "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html"
   },
   {
     name: "v-b1564aac",

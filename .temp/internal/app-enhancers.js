@@ -11,6 +11,7 @@ import m9 from "C:\\Users\\HJJ\\Desktop\\Blog\\.temp\\app-enhancers\\6.js"
 import m10 from "C:\\Users\\HJJ\\Desktop\\Blog\\.temp\\app-enhancers\\7.js"
 import m11 from "C:\\Users\\HJJ\\Desktop\\Blog\\.temp\\app-enhancers\\8.js"
 import m12 from "C:\\Users\\HJJ\\Desktop\\Blog\\.temp\\app-enhancers\\9.js"
+import m13 from "C:\\Users\\HJJ\\Desktop\\Blog\\.temp\\app-enhancers\\10.js"
 
 export default [
   m0,
@@ -25,5 +26,6 @@ export default [
   m9,
   m10,
   m11,
-  m12
+  m12,
+  m13
 ]

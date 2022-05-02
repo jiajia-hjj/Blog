@@ -1,10 +1,10 @@
 const moment = require("moment");
-const secret = require("./secret");
 moment.locale("zh-cn");
 module.exports = {
   "@vuepress/last-updated": {
-    transformer: (timestamp, lang) =>
-      moment(timestamp).format("Y-MM-DD h:mm:ss"),
+    transformer: (timestamp, lang) =>{
+      return moment(timestamp).format("Y-MM-DD h:mm:ss")
+    }
   },
   "@vuepress/pwa": {
     serviceWorker: true,

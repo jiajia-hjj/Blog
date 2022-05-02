@@ -94,51 +94,23 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "div水平垂直居中的方法",
-      "frontmatter": {},
-      "regularPath": "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
-      "relativePath": "note/CSS/DIV水平垂直居中.md",
-      "key": "v-4c24a392",
-      "path": "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "方法一:绝对定位方法1",
-          "slug": "方法一-绝对定位方法1"
+      "title": "Home",
+      "frontmatter": {
+        "heroText": "小小前端",
+        "tagline": "今天又是想变成大佬的一天！",
+        "home": true,
+        "bgImage": "assets/images/bg.jpg",
+        "bgImageStyle": {
+          "height": "400px"
         },
-        {
-          "level": 2,
-          "title": "方法二:绝对定位方法2",
-          "slug": "方法二-绝对定位方法2"
-        },
-        {
-          "level": 2,
-          "title": "方法三:绝对定位方法3",
-          "slug": "方法三-绝对定位方法3"
-        },
-        {
-          "level": 2,
-          "title": "方法四:flex",
-          "slug": "方法四-flex"
-        },
-        {
-          "level": 2,
-          "title": "方法五:table特性",
-          "slug": "方法五-table特性"
-        },
-        {
-          "level": 2,
-          "title": "方法六:绝对定位4",
-          "slug": "方法六-绝对定位4"
-        },
-        {
-          "level": 2,
-          "title": "方法七:line-height",
-          "slug": "方法七-line-height"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
+        "isShowTitleInHome": false
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-50e0f714",
+      "path": "/",
+      "lastUpdated": "2022-05-02 1:32:54",
+      "lastUpdatedTimestamp": 1651469574000
     },
     {
       "title": "CSS常见技巧汇总",
@@ -189,36 +161,54 @@ export const siteData = {
           "slug": "_8、卡券效果制作"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
-      "title": "Home",
-      "frontmatter": {
-        "heroText": "小小前端",
-        "tagline": "今天又是想变成大佬的一天！",
-        "home": true,
-        "bgImage": "assets/images/bg.jpg",
-        "bgImageStyle": {
-          "height": "400px"
-        },
-        "isShowTitleInHome": false
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-50e0f714",
-      "path": "/",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "HHHH",
+      "title": "div水平垂直居中的方法",
       "frontmatter": {},
-      "regularPath": "/note/CSS/",
-      "relativePath": "note/CSS/README.md",
-      "key": "v-e0e09268",
-      "path": "/note/CSS/",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "regularPath": "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
+      "relativePath": "note/CSS/DIV水平垂直居中.md",
+      "key": "v-4c24a392",
+      "path": "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "方法一:绝对定位方法1",
+          "slug": "方法一-绝对定位方法1"
+        },
+        {
+          "level": 2,
+          "title": "方法二:绝对定位方法2",
+          "slug": "方法二-绝对定位方法2"
+        },
+        {
+          "level": 2,
+          "title": "方法三:绝对定位方法3",
+          "slug": "方法三-绝对定位方法3"
+        },
+        {
+          "level": 2,
+          "title": "方法四:flex",
+          "slug": "方法四-flex"
+        },
+        {
+          "level": 2,
+          "title": "方法五:table特性",
+          "slug": "方法五-table特性"
+        },
+        {
+          "level": 2,
+          "title": "方法六:绝对定位4",
+          "slug": "方法六-绝对定位4"
+        },
+        {
+          "level": 2,
+          "title": "方法七:line-height",
+          "slug": "方法七-line-height"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -250,7 +240,17 @@ export const siteData = {
           "slug": "上三角"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "HHHH",
+      "frontmatter": {},
+      "regularPath": "/note/CSS/",
+      "relativePath": "note/CSS/README.md",
+      "key": "v-e0e09268",
+      "path": "/note/CSS/",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -259,7 +259,74 @@ export const siteData = {
       "relativePath": "note/CSS/mixin.md",
       "key": "v-61c357fb",
       "path": "/note/CSS/mixin.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "sass笔记",
+      "frontmatter": {},
+      "regularPath": "/note/CSS/sass.html",
+      "relativePath": "note/CSS/sass.md",
+      "key": "v-39e44bdf",
+      "path": "/note/CSS/sass.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "sass笔记",
+          "slug": "sass笔记"
+        },
+        {
+          "level": 3,
+          "title": "一、配置自动编译",
+          "slug": "一、配置自动编译"
+        },
+        {
+          "level": 3,
+          "title": "二、注释",
+          "slug": "二、注释"
+        },
+        {
+          "level": 3,
+          "title": "三、变量",
+          "slug": "三、变量"
+        },
+        {
+          "level": 3,
+          "title": "四、混合宏 Mixin",
+          "slug": "四、混合宏-mixin"
+        },
+        {
+          "level": 3,
+          "title": "五、嵌套",
+          "slug": "五、嵌套"
+        },
+        {
+          "level": 3,
+          "title": "六、Import （导入）",
+          "slug": "六、import-导入"
+        },
+        {
+          "level": 3,
+          "title": "七、继承extend",
+          "slug": "七、继承extend"
+        },
+        {
+          "level": 3,
+          "title": "占位符 placeholder",
+          "slug": "占位符-placeholder"
+        },
+        {
+          "level": 3,
+          "title": "八、函数-运算",
+          "slug": "八、函数-运算"
+        },
+        {
+          "level": 3,
+          "title": "九、函数-内置函数",
+          "slug": "九、函数-内置函数"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -331,74 +398,7 @@ export const siteData = {
           "slug": "四、总结"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "sass笔记",
-      "frontmatter": {},
-      "regularPath": "/note/CSS/sass.html",
-      "relativePath": "note/CSS/sass.md",
-      "key": "v-39e44bdf",
-      "path": "/note/CSS/sass.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "sass笔记",
-          "slug": "sass笔记"
-        },
-        {
-          "level": 3,
-          "title": "一、配置自动编译",
-          "slug": "一、配置自动编译"
-        },
-        {
-          "level": 3,
-          "title": "二、注释",
-          "slug": "二、注释"
-        },
-        {
-          "level": 3,
-          "title": "三、变量",
-          "slug": "三、变量"
-        },
-        {
-          "level": 3,
-          "title": "四、混合宏 Mixin",
-          "slug": "四、混合宏-mixin"
-        },
-        {
-          "level": 3,
-          "title": "五、嵌套",
-          "slug": "五、嵌套"
-        },
-        {
-          "level": 3,
-          "title": "六、Import （导入）",
-          "slug": "六、import-导入"
-        },
-        {
-          "level": 3,
-          "title": "七、继承extend",
-          "slug": "七、继承extend"
-        },
-        {
-          "level": 3,
-          "title": "占位符 placeholder",
-          "slug": "占位符-placeholder"
-        },
-        {
-          "level": 3,
-          "title": "八、函数-运算",
-          "slug": "八、函数-运算"
-        },
-        {
-          "level": 3,
-          "title": "九、函数-内置函数",
-          "slug": "九、函数-内置函数"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -408,7 +408,7 @@ export const siteData = {
       "relativePath": "note/CSS/大屏适配方案.md",
       "key": "v-4bd53062",
       "path": "/note/CSS/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -450,7 +450,7 @@ export const siteData = {
           "slug": "五、注意"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -486,7 +486,7 @@ export const siteData = {
           "slug": "透明度兼容问题"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -496,7 +496,7 @@ export const siteData = {
       "relativePath": "note/CSS/移动端适配方案.md",
       "key": "v-7257daa5",
       "path": "/note/CSS/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -505,7 +505,7 @@ export const siteData = {
       "relativePath": "note/CSS/设置input.md",
       "key": "v-5e1b87bb",
       "path": "/note/CSS/%E8%AE%BE%E7%BD%AEinput.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -522,7 +522,7 @@ export const siteData = {
           "slug": "隐藏滚动条或更改滚动条样式"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -531,7 +531,7 @@ export const siteData = {
       "relativePath": "note/HTML/Canvas和SVG的区别.md",
       "key": "v-da936c72",
       "path": "/note/HTML/Canvas%E5%92%8CSVG%E7%9A%84%E5%8C%BA%E5%88%AB.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -568,24 +568,7 @@ export const siteData = {
           "slug": "使用"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "一台设备的dpr，是否会可变？",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
-      "relativePath": "note/HTML/dpr、设备像素、CSS像素.md",
-      "key": "v-057a5a9c",
-      "path": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "一台设备的dpr，是否会可变？",
-          "slug": "一台设备的dpr-是否会可变"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -602,7 +585,33 @@ export const siteData = {
           "slug": "canvas在标签中设置高-与再style中设置宽高有什么区别"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "一台设备的dpr，是否会可变？",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
+      "relativePath": "note/HTML/dpr、设备像素、CSS像素.md",
+      "key": "v-057a5a9c",
+      "path": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "一台设备的dpr，是否会可变？",
+          "slug": "一台设备的dpr-是否会可变"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
+      "relativePath": "note/HTML/h5语义化标签.md",
+      "key": "v-3cdbaef4",
+      "path": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -699,37 +708,7 @@ export const siteData = {
           "slug": "_17、绘画canvas"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
-      "relativePath": "note/HTML/iframe的优点、缺点.md",
-      "key": "v-0eb10efa",
-      "path": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "一、iframe的优点：",
-          "slug": "一、iframe的优点"
-        },
-        {
-          "level": 2,
-          "title": "二、iframe的缺点：",
-          "slug": "二、iframe的缺点"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
-      "relativePath": "note/HTML/h5语义化标签.md",
-      "key": "v-3cdbaef4",
-      "path": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -766,7 +745,28 @@ export const siteData = {
           "slug": "label标签的作用"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+      "relativePath": "note/HTML/iframe的优点、缺点.md",
+      "key": "v-0eb10efa",
+      "path": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、iframe的优点：",
+          "slug": "一、iframe的优点"
+        },
+        {
+          "level": 2,
+          "title": "二、iframe的缺点：",
+          "slug": "二、iframe的缺点"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -808,7 +808,7 @@ export const siteData = {
           "slug": "property-content"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -830,33 +830,7 @@ export const siteData = {
           "slug": "_4、script-标签中-defer-和-async-的区别"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "style 标签写在 body 后与 body 前有什么区别？",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/style%20%E6%A0%87%E7%AD%BE%E5%86%99%E5%9C%A8%20body%20%E5%90%8E%E4%B8%8E%20body%20%E5%89%8D%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F.html",
-      "relativePath": "note/HTML/style 标签写在 body 后与 body 前有什么区别？.md",
-      "key": "v-6d32acc1",
-      "path": "/note/HTML/style%20%E6%A0%87%E7%AD%BE%E5%86%99%E5%9C%A8%20body%20%E5%90%8E%E4%B8%8E%20body%20%E5%89%8D%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "style 标签写在 body 后与 body 前有什么区别？",
-          "slug": "style-标签写在-body-后与-body-前有什么区别"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/note/HTML/video.html",
-      "relativePath": "note/HTML/video.md",
-      "key": "v-fbb1ff76",
-      "path": "/note/HTML/video.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -898,7 +872,50 @@ export const siteData = {
           "slug": "_5、防止不必要的安全问题"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "style 标签写在 body 后与 body 前有什么区别？",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/style%20%E6%A0%87%E7%AD%BE%E5%86%99%E5%9C%A8%20body%20%E5%90%8E%E4%B8%8E%20body%20%E5%89%8D%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F.html",
+      "relativePath": "note/HTML/style 标签写在 body 后与 body 前有什么区别？.md",
+      "key": "v-6d32acc1",
+      "path": "/note/HTML/style%20%E6%A0%87%E7%AD%BE%E5%86%99%E5%9C%A8%20body%20%E5%90%8E%E4%B8%8E%20body%20%E5%89%8D%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "style 标签写在 body 后与 body 前有什么区别？",
+          "slug": "style-标签写在-body-后与-body-前有什么区别"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/video.html",
+      "relativePath": "note/HTML/video.md",
+      "key": "v-fbb1ff76",
+      "path": "/note/HTML/video.html",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "前端需要注意哪些SEO",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html",
+      "relativePath": "note/HTML/前端需要注意哪些SEO.md",
+      "key": "v-435a9109",
+      "path": "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "前端需要注意哪些SEO",
+          "slug": "前端需要注意哪些seo"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -935,66 +952,7 @@ export const siteData = {
           "slug": "html-和css中图片加载与渲染规则是什么样的"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "前端需要注意哪些SEO",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html",
-      "relativePath": "note/HTML/前端需要注意哪些SEO.md",
-      "key": "v-435a9109",
-      "path": "/note/HTML/%E5%89%8D%E7%AB%AF%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E5%93%AA%E4%BA%9BSEO.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "前端需要注意哪些SEO",
-          "slug": "前端需要注意哪些seo"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "如何实现浏览器内多个标签也之间的通信",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
-      "relativePath": "note/HTML/如何实现浏览器内多个标签也之间的通信.md",
-      "key": "v-5c4a2edf",
-      "path": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "如何实现浏览器内多个标签也之间的通信",
-          "slug": "如何实现浏览器内多个标签也之间的通信"
-        },
-        {
-          "level": 3,
-          "title": "localStorage",
-          "slug": "localstorage"
-        },
-        {
-          "level": 3,
-          "title": "SharedWorker",
-          "slug": "sharedworker"
-        },
-        {
-          "level": 3,
-          "title": "WebSocket 通讯",
-          "slug": "websocket-通讯"
-        },
-        {
-          "level": 3,
-          "title": "定时器 setlnterval + cookie",
-          "slug": "定时器-setlnterval-cookie"
-        },
-        {
-          "level": 3,
-          "title": "postMessage",
-          "slug": "postmessage"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -1036,7 +994,7 @@ export const siteData = {
           "slug": "常见的图片的格式"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -1053,24 +1011,7 @@ export const siteData = {
           "slug": "如何禁止a标签跳转页面或者定位链接"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "什么是渐进增强和优雅降级？",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html",
-      "relativePath": "note/HTML/渐进增强和优雅降级.md",
-      "key": "v-f9edc4a2",
-      "path": "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "什么是渐进增强和优雅降级？",
-          "slug": "什么是渐进增强和优雅降级"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -1087,7 +1028,66 @@ export const siteData = {
           "slug": "简述一下src与href的区别"
         }
       ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "什么是渐进增强和优雅降级？",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html",
+      "relativePath": "note/HTML/渐进增强和优雅降级.md",
+      "key": "v-f9edc4a2",
+      "path": "/note/HTML/%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "什么是渐进增强和优雅降级？",
+          "slug": "什么是渐进增强和优雅降级"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "如何实现浏览器内多个标签也之间的通信",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
+      "relativePath": "note/HTML/如何实现浏览器内多个标签也之间的通信.md",
+      "key": "v-5c4a2edf",
+      "path": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "如何实现浏览器内多个标签也之间的通信",
+          "slug": "如何实现浏览器内多个标签也之间的通信"
+        },
+        {
+          "level": 3,
+          "title": "localStorage",
+          "slug": "localstorage"
+        },
+        {
+          "level": 3,
+          "title": "SharedWorker",
+          "slug": "sharedworker"
+        },
+        {
+          "level": 3,
+          "title": "WebSocket 通讯",
+          "slug": "websocket-通讯"
+        },
+        {
+          "level": 3,
+          "title": "定时器 setlnterval + cookie",
+          "slug": "定时器-setlnterval-cookie"
+        },
+        {
+          "level": 3,
+          "title": "postMessage",
+          "slug": "postmessage"
+        }
+      ],
+      "lastUpdated": "2022-05-02 2:11:34",
       "lastUpdatedTimestamp": 1651428694000
     },
     {
@@ -1158,12 +1158,12 @@ export const siteData = {
     ],
     "blogConfig": {
       "category": {
-        "location": 2,
+        "location": 3,
         "text": "分类"
       },
       "tag": {
-        "location": 3,
-        "text": "Tag"
+        "location": 2,
+        "text": "标签"
       }
     },
     "logo": "/assets/images/head.jpg",
@@ -1227,7 +1227,7 @@ export const siteData = {
         }
       ]
     },
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "更新时间",
     "author": "HHH",
     "authorAvatar": "/assets/images/head.jpg",
     "startYear": "2022",
@@ -1237,8 +1237,7 @@ export const siteData = {
       "repo": "blog",
       "clientId": "8c4201a1ee1ae0571196",
       "clientSecret": "212c4a815d147a3ac5bf3cfb34347698e81057da",
-      "autoCreateIssue": true,
-      "placeholder": "是时候展现真正的技术了"
+      "autoCreateIssue": true
     }
   }
 }

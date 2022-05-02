@@ -1,6 +1,7 @@
 // .vuepress/config.js
 const headConfig=require('./config/headConfig');
 const pluginsConfig=require('./config/pluginsConfig');
+const navConfig=require('./config/navConfig');
 const sideBar = require('./utils/autoCreateSideBar')
 const secret = require("./secret");
 module.exports = {
@@ -11,24 +12,20 @@ module.exports = {
     description: "一个小小前端的学习笔记!",
     theme: 'reco',
     head: headConfig,
-    pluginsConfig,
+    plugins:pluginsConfig,
     themeConfig:{
       type: 'blog',
       noFoundPageByTencent: false,
-      nav: [
-        { text: 'Home', link: '/', icon: 'reco-home' },
-        { text: '博客园', link: 'https://www.cnblogs.com/jiajia-hjj/', icon: 'reco-blog' },
-        { text: 'GitHub', link: 'https://github.com/smallsunnyfox', icon: 'reco-github' }
-      ],
+      nav:navConfig,
       // 博客设置
       blogConfig: {
         category: {
-          location:2, // 在导航栏菜单中所占的位置，默认2
+          location:3, // 在导航栏菜单中所占的位置，默认2
           text: '分类' // 默认 “分类”
         },
         tag: {
-          location: 3, // 在导航栏菜单中所占的位置，默认3
-          text: 'Tag' // 默认 “标签”
+          location: 2, // 在导航栏菜单中所占的位置，默认3
+          text: '标签' // 默认 “标签”
         }
       },
       logo: '/assets/images/head.jpg',
@@ -41,7 +38,7 @@ module.exports = {
       displayAllHeaders: false,
       sidebar: sideBar.createSideBar('note', ['img','images']), // 配置两个参数，一个是文章的根目录，第二是白名单（选择性配置）
       // 最后更新时间
-      lastUpdated: 'Last Updated',
+      lastUpdated: '更新时间',
       // 作者
       author: 'HHH',
       authorAvatar: '/assets/images/head.jpg',
@@ -53,8 +50,7 @@ module.exports = {
         repo: "blog",
         clientId: secret.clientId,
         clientSecret:  secret.clientSecret,
-        autoCreateIssue: true,
-        placeholder: '是时候展现真正的技术了'
+        autoCreateIssue: true
       }
     },
     markdown: {
