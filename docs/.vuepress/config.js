@@ -1,19 +1,20 @@
 // .vuepress/config.js
-
 const headConfig=require('./config/headConfig');
 const pluginsConfig=require('./config/pluginsConfig');
 const sideBar = require('./utils/autoCreateSideBar')
+const secret = require("./secret");
 module.exports = {
     dest: 'blog',
     base: "/blog/",
     lang:'zh-cn',
     title: "HHH",
-    description: "菜菜又是想变成大佬的一天",
+    description: "一个小小前端的学习笔记!",
     theme: 'reco',
     head: headConfig,
     pluginsConfig,
     themeConfig:{
       type: 'blog',
+      noFoundPageByTencent: false,
       nav: [
         { text: 'Home', link: '/', icon: 'reco-home' },
         { text: '博客园', link: 'https://www.cnblogs.com/jiajia-hjj/', icon: 'reco-blog' },
@@ -43,23 +44,17 @@ module.exports = {
       lastUpdated: 'Last Updated',
       // 作者
       author: 'HHH',
-      authorAvatar: 'assets/images/head.jpg',
-      // 备案号
-      // record: '豫ICP备19035192号',
-      // recordLink: 'https://beian.miit.gov.cn/',
-      // cyberSecurityRecord: '豫公网安备41172602000151号',
-      // cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41172602000151',
+      authorAvatar: '/assets/images/head.jpg',
       // 项目开始时间
       startYear: '2022',
-      /**
-       * valine 设置 (if you need valine comment )
-       */
-      valineConfig: {
-        appId: 'XDwlSXS2pD137bPrPpwQaqqD-gzGzoHsz', // your appId
-        appKey: 'CQ8FKrMUP76LwycPcKlDoRqV', // your appKey
-        placeholder: '是时候展现真正的技术了',
-        avatar: 'wavatar',
-        serverUrl: 'https://leanserver.smallsunnyfox.com'
+      vssueConfig: {
+        platform: "github-v4",
+        owner: "jiajia-hjj",//使用者
+        repo: "blog",
+        clientId: secret.clientId,
+        clientSecret:  secret.clientSecret,
+        autoCreateIssue: true,
+        placeholder: '是时候展现真正的技术了'
       }
     },
     markdown: {

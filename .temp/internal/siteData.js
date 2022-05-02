@@ -3,7 +3,7 @@
  */
 export const siteData = {
   "title": "HHH",
-  "description": "菜菜又是想变成大佬的一天",
+  "description": "一个小小前端的学习笔记!",
   "base": "/blog/",
   "headTags": [
     [
@@ -25,6 +25,13 @@ export const siteData = {
       {
         "name": "keywords",
         "content": "一个小小前端的学习笔记!"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "viewport",
+        "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
     ],
     [
@@ -87,23 +94,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "bgImage": "assets/images/bg.jpg",
-        "bgImageStyle": {
-          "height": "400px"
-        },
-        "isShowTitleInHome": false
-      },
-      "regularPath": "/",
-      "relativePath": "README.md",
-      "key": "v-50e0f714",
-      "path": "/",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
       "title": "div水平垂直居中的方法",
       "frontmatter": {},
       "regularPath": "/note/CSS/DIV%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD.html",
@@ -147,6 +137,87 @@ export const siteData = {
           "slug": "方法七-line-height"
         }
       ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "CSS常见技巧汇总",
+      "frontmatter": {},
+      "regularPath": "/note/CSS/CSS%E9%AB%98%E7%BA%A7%E5%B8%B8%E8%A7%81%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB.html",
+      "relativePath": "note/CSS/CSS高级常见技巧汇总.md",
+      "key": "v-4173ef9e",
+      "path": "/note/CSS/CSS%E9%AB%98%E7%BA%A7%E5%B8%B8%E8%A7%81%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1、设置input",
+          "slug": "_1、设置input"
+        },
+        {
+          "level": 2,
+          "title": "2、单行和多行文本超出省略号",
+          "slug": "_2、单行和多行文本超出省略号"
+        },
+        {
+          "level": 2,
+          "title": "3、负边距使用技巧",
+          "slug": "_3、负边距使用技巧"
+        },
+        {
+          "level": 2,
+          "title": "4、outline属性的妙用技巧",
+          "slug": "_4、outline属性的妙用技巧"
+        },
+        {
+          "level": 2,
+          "title": "5、虚线框绘制技巧",
+          "slug": "_5、虚线框绘制技巧"
+        },
+        {
+          "level": 2,
+          "title": "6、隐藏文本的常用两种方法",
+          "slug": "_6、隐藏文本的常用两种方法"
+        },
+        {
+          "level": 2,
+          "title": "7、表格",
+          "slug": "_7、表格"
+        },
+        {
+          "level": 2,
+          "title": "8、卡券效果制作",
+          "slug": "_8、卡券效果制作"
+        }
+      ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "heroText": "小小前端",
+        "tagline": "今天又是想变成大佬的一天！",
+        "home": true,
+        "bgImage": "assets/images/bg.jpg",
+        "bgImageStyle": {
+          "height": "400px"
+        },
+        "isShowTitleInHome": false
+      },
+      "regularPath": "/",
+      "relativePath": "README.md",
+      "key": "v-50e0f714",
+      "path": "/",
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "HHHH",
+      "frontmatter": {},
+      "regularPath": "/note/CSS/",
+      "relativePath": "note/CSS/README.md",
+      "key": "v-e0e09268",
+      "path": "/note/CSS/",
       "lastUpdated": "5/2/2022, 2:11:34 AM",
       "lastUpdatedTimestamp": 1651428694000
     },
@@ -264,16 +335,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
-      "title": "移动端适配谷朊粉",
-      "frontmatter": {},
-      "regularPath": "/note/CSS/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
-      "relativePath": "note/CSS/大屏适配方案.md",
-      "key": "v-4bd53062",
-      "path": "/note/CSS/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
       "title": "sass笔记",
       "frontmatter": {},
       "regularPath": "/note/CSS/sass.html",
@@ -341,54 +402,12 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
-      "title": "CSS常见技巧汇总",
+      "title": "移动端适配谷朊粉",
       "frontmatter": {},
-      "regularPath": "/note/CSS/CSS%E9%AB%98%E7%BA%A7%E5%B8%B8%E8%A7%81%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB.html",
-      "relativePath": "note/CSS/CSS高级常见技巧汇总.md",
-      "key": "v-4173ef9e",
-      "path": "/note/CSS/CSS%E9%AB%98%E7%BA%A7%E5%B8%B8%E8%A7%81%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1、设置input",
-          "slug": "_1、设置input"
-        },
-        {
-          "level": 2,
-          "title": "2、单行和多行文本超出省略号",
-          "slug": "_2、单行和多行文本超出省略号"
-        },
-        {
-          "level": 2,
-          "title": "3、负边距使用技巧",
-          "slug": "_3、负边距使用技巧"
-        },
-        {
-          "level": 2,
-          "title": "4、outline属性的妙用技巧",
-          "slug": "_4、outline属性的妙用技巧"
-        },
-        {
-          "level": 2,
-          "title": "5、虚线框绘制技巧",
-          "slug": "_5、虚线框绘制技巧"
-        },
-        {
-          "level": 2,
-          "title": "6、隐藏文本的常用两种方法",
-          "slug": "_6、隐藏文本的常用两种方法"
-        },
-        {
-          "level": 2,
-          "title": "7、表格",
-          "slug": "_7、表格"
-        },
-        {
-          "level": 2,
-          "title": "8、卡券效果制作",
-          "slug": "_8、卡券效果制作"
-        }
-      ],
+      "regularPath": "/note/CSS/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
+      "relativePath": "note/CSS/大屏适配方案.md",
+      "key": "v-4bd53062",
+      "path": "/note/CSS/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88.html",
       "lastUpdated": "5/2/2022, 2:11:34 AM",
       "lastUpdatedTimestamp": 1651428694000
     },
@@ -429,33 +448,6 @@ export const siteData = {
           "level": 3,
           "title": "五、注意",
           "slug": "五、注意"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "HHHH",
-      "frontmatter": {},
-      "regularPath": "/note/CSS/",
-      "relativePath": "note/CSS/README.md",
-      "key": "v-e0e09268",
-      "path": "/note/CSS/",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "隐藏滚动条或更改滚动条样式",
-      "frontmatter": {},
-      "regularPath": "/note/CSS/%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%88%96%E6%9B%B4%E6%94%B9%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F.html",
-      "relativePath": "note/CSS/隐藏滚动条或更改滚动条样式.md",
-      "key": "v-5ac3a38d",
-      "path": "/note/CSS/%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%88%96%E6%9B%B4%E6%94%B9%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "隐藏滚动条或更改滚动条样式",
-          "slug": "隐藏滚动条或更改滚动条样式"
         }
       ],
       "lastUpdated": "5/2/2022, 2:11:34 AM",
@@ -509,49 +501,6 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/note/HTML/Canvas%E5%92%8CSVG%E7%9A%84%E5%8C%BA%E5%88%AB.html",
-      "relativePath": "note/HTML/Canvas和SVG的区别.md",
-      "key": "v-da936c72",
-      "path": "/note/HTML/Canvas%E5%92%8CSVG%E7%9A%84%E5%8C%BA%E5%88%AB.html",
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "canvas在标签中设置高，与再style中设置宽高有什么区别",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/canvas.html",
-      "relativePath": "note/HTML/canvas.md",
-      "key": "v-daeef31a",
-      "path": "/note/HTML/canvas.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "canvas在标签中设置高，与再style中设置宽高有什么区别",
-          "slug": "canvas在标签中设置高-与再style中设置宽高有什么区别"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "一台设备的dpr，是否会可变？",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
-      "relativePath": "note/HTML/dpr、设备像素、CSS像素.md",
-      "key": "v-057a5a9c",
-      "path": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "一台设备的dpr，是否会可变？",
-          "slug": "一台设备的dpr-是否会可变"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "frontmatter": {},
       "regularPath": "/note/CSS/%E8%AE%BE%E7%BD%AEinput.html",
       "relativePath": "note/CSS/设置input.md",
       "key": "v-5e1b87bb",
@@ -560,21 +509,17 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
+      "title": "隐藏滚动条或更改滚动条样式",
       "frontmatter": {},
-      "regularPath": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
-      "relativePath": "note/HTML/iframe的优点、缺点.md",
-      "key": "v-0eb10efa",
-      "path": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+      "regularPath": "/note/CSS/%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%88%96%E6%9B%B4%E6%94%B9%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F.html",
+      "relativePath": "note/CSS/隐藏滚动条或更改滚动条样式.md",
+      "key": "v-5ac3a38d",
+      "path": "/note/CSS/%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%88%96%E6%9B%B4%E6%94%B9%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F.html",
       "headers": [
         {
           "level": 2,
-          "title": "一、iframe的优点：",
-          "slug": "一、iframe的优点"
-        },
-        {
-          "level": 2,
-          "title": "二、iframe的缺点：",
-          "slug": "二、iframe的缺点"
+          "title": "隐藏滚动条或更改滚动条样式",
+          "slug": "隐藏滚动条或更改滚动条样式"
         }
       ],
       "lastUpdated": "5/2/2022, 2:11:34 AM",
@@ -582,10 +527,10 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
-      "relativePath": "note/HTML/h5语义化标签.md",
-      "key": "v-3cdbaef4",
-      "path": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
+      "regularPath": "/note/HTML/Canvas%E5%92%8CSVG%E7%9A%84%E5%8C%BA%E5%88%AB.html",
+      "relativePath": "note/HTML/Canvas和SVG的区别.md",
+      "key": "v-da936c72",
+      "path": "/note/HTML/Canvas%E5%92%8CSVG%E7%9A%84%E5%8C%BA%E5%88%AB.html",
       "lastUpdated": "5/2/2022, 2:11:34 AM",
       "lastUpdatedTimestamp": 1651428694000
     },
@@ -627,37 +572,34 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
-      "title": "如何禁止input展示输入历史记录",
+      "title": "一台设备的dpr，是否会可变？",
       "frontmatter": {},
-      "regularPath": "/note/HTML/input.html",
-      "relativePath": "note/HTML/input.md",
-      "key": "v-32967ca5",
-      "path": "/note/HTML/input.html",
+      "regularPath": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
+      "relativePath": "note/HTML/dpr、设备像素、CSS像素.md",
+      "key": "v-057a5a9c",
+      "path": "/note/HTML/dpr%E3%80%81%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E3%80%81CSS%E5%83%8F%E7%B4%A0.html",
       "headers": [
         {
-          "level": 2,
-          "title": "如何禁止input展示输入历史记录",
-          "slug": "如何禁止input展示输入历史记录"
-        },
+          "level": 3,
+          "title": "一台设备的dpr，是否会可变？",
+          "slug": "一台设备的dpr-是否会可变"
+        }
+      ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "canvas在标签中设置高，与再style中设置宽高有什么区别",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/canvas.html",
+      "relativePath": "note/HTML/canvas.md",
+      "key": "v-daeef31a",
+      "path": "/note/HTML/canvas.html",
+      "headers": [
         {
-          "level": 2,
-          "title": "input 指定上传文件类型",
-          "slug": "input-指定上传文件类型"
-        },
-        {
-          "level": 2,
-          "title": "input上传文件可以同时选择多张吗？怎么设置？",
-          "slug": "input上传文件可以同时选择多张吗-怎么设置"
-        },
-        {
-          "level": 2,
-          "title": "使用input标签上传图片时，怎么触发默认拍照功能？",
-          "slug": "使用input标签上传图片时-怎么触发默认拍照功能"
-        },
-        {
-          "level": 2,
-          "title": "label标签的作用",
-          "slug": "label标签的作用"
+          "level": 3,
+          "title": "canvas在标签中设置高，与再style中设置宽高有什么区别",
+          "slug": "canvas在标签中设置高-与再style中设置宽高有什么区别"
         }
       ],
       "lastUpdated": "5/2/2022, 2:11:34 AM",
@@ -761,6 +703,73 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+      "relativePath": "note/HTML/iframe的优点、缺点.md",
+      "key": "v-0eb10efa",
+      "path": "/note/HTML/iframe%E7%9A%84%E4%BC%98%E7%82%B9%E3%80%81%E7%BC%BA%E7%82%B9.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "一、iframe的优点：",
+          "slug": "一、iframe的优点"
+        },
+        {
+          "level": 2,
+          "title": "二、iframe的缺点：",
+          "slug": "二、iframe的缺点"
+        }
+      ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
+      "relativePath": "note/HTML/h5语义化标签.md",
+      "key": "v-3cdbaef4",
+      "path": "/note/HTML/h5%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE.html",
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "如何禁止input展示输入历史记录",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/input.html",
+      "relativePath": "note/HTML/input.md",
+      "key": "v-32967ca5",
+      "path": "/note/HTML/input.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "如何禁止input展示输入历史记录",
+          "slug": "如何禁止input展示输入历史记录"
+        },
+        {
+          "level": 2,
+          "title": "input 指定上传文件类型",
+          "slug": "input-指定上传文件类型"
+        },
+        {
+          "level": 2,
+          "title": "input上传文件可以同时选择多张吗？怎么设置？",
+          "slug": "input上传文件可以同时选择多张吗-怎么设置"
+        },
+        {
+          "level": 2,
+          "title": "使用input标签上传图片时，怎么触发默认拍照功能？",
+          "slug": "使用input标签上传图片时-怎么触发默认拍照功能"
+        },
+        {
+          "level": 2,
+          "title": "label标签的作用",
+          "slug": "label标签的作用"
+        }
+      ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
       "title": "meta viewport 相关",
       "frontmatter": {},
       "regularPath": "/note/HTML/meta.html",
@@ -842,6 +851,15 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
+      "frontmatter": {},
+      "regularPath": "/note/HTML/video.html",
+      "relativePath": "note/HTML/video.md",
+      "key": "v-fbb1ff76",
+      "path": "/note/HTML/video.html",
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
       "title": "为什么会利用多个域名来存储网站资源更有效？",
       "frontmatter": {},
       "regularPath": "/note/HTML/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%88%A9%E7%94%A8%E5%A4%9A%E4%B8%AA%E5%9F%9F%E5%90%8D%E6%9D%A5%E5%AD%98%E5%82%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%9B%B4%E6%9C%89%E6%95%88%EF%BC%9F.html",
@@ -884,11 +902,39 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
+      "title": "Doctype 作用？严格模式与混杂模式如何区分？它们有何意义？",
       "frontmatter": {},
-      "regularPath": "/note/HTML/video.html",
-      "relativePath": "note/HTML/video.md",
-      "key": "v-fbb1ff76",
-      "path": "/note/HTML/video.html",
+      "regularPath": "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
+      "relativePath": "note/HTML/其他简答题.md",
+      "key": "v-61c0020b",
+      "path": "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Doctype 作用？严格模式与混杂模式如何区分？它们有何意义？",
+          "slug": "doctype-作用-严格模式与混杂模式如何区分-它们有何意义"
+        },
+        {
+          "level": 2,
+          "title": "什么是DOM和BOM？",
+          "slug": "什么是dom和bom"
+        },
+        {
+          "level": 2,
+          "title": "1、列出常见的行内元素、块级元素、空(void)元素？",
+          "slug": "_1、列出常见的行内元素、块级元素、空-void-元素"
+        },
+        {
+          "level": 2,
+          "title": "Js 动画与 CSS 动画区别及相应实现",
+          "slug": "js-动画与-css-动画区别及相应实现"
+        },
+        {
+          "level": 2,
+          "title": "html 和css中图片加载与渲染规则是什么样的？",
+          "slug": "html-和css中图片加载与渲染规则是什么样的"
+        }
+      ],
       "lastUpdated": "5/2/2022, 2:11:34 AM",
       "lastUpdatedTimestamp": 1651428694000
     },
@@ -904,6 +950,48 @@ export const siteData = {
           "level": 2,
           "title": "前端需要注意哪些SEO",
           "slug": "前端需要注意哪些seo"
+        }
+      ],
+      "lastUpdated": "5/2/2022, 2:11:34 AM",
+      "lastUpdatedTimestamp": 1651428694000
+    },
+    {
+      "title": "如何实现浏览器内多个标签也之间的通信",
+      "frontmatter": {},
+      "regularPath": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
+      "relativePath": "note/HTML/如何实现浏览器内多个标签也之间的通信.md",
+      "key": "v-5c4a2edf",
+      "path": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "如何实现浏览器内多个标签也之间的通信",
+          "slug": "如何实现浏览器内多个标签也之间的通信"
+        },
+        {
+          "level": 3,
+          "title": "localStorage",
+          "slug": "localstorage"
+        },
+        {
+          "level": 3,
+          "title": "SharedWorker",
+          "slug": "sharedworker"
+        },
+        {
+          "level": 3,
+          "title": "WebSocket 通讯",
+          "slug": "websocket-通讯"
+        },
+        {
+          "level": 3,
+          "title": "定时器 setlnterval + cookie",
+          "slug": "定时器-setlnterval-cookie"
+        },
+        {
+          "level": 3,
+          "title": "postMessage",
+          "slug": "postmessage"
         }
       ],
       "lastUpdated": "5/2/2022, 2:11:34 AM",
@@ -986,85 +1074,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1651428694000
     },
     {
-      "title": "如何实现浏览器内多个标签也之间的通信",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
-      "relativePath": "note/HTML/如何实现浏览器内多个标签也之间的通信.md",
-      "key": "v-5c4a2edf",
-      "path": "/note/HTML/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E4%B9%9F%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "如何实现浏览器内多个标签也之间的通信",
-          "slug": "如何实现浏览器内多个标签也之间的通信"
-        },
-        {
-          "level": 3,
-          "title": "localStorage",
-          "slug": "localstorage"
-        },
-        {
-          "level": 3,
-          "title": "SharedWorker",
-          "slug": "sharedworker"
-        },
-        {
-          "level": 3,
-          "title": "WebSocket 通讯",
-          "slug": "websocket-通讯"
-        },
-        {
-          "level": 3,
-          "title": "定时器 setlnterval + cookie",
-          "slug": "定时器-setlnterval-cookie"
-        },
-        {
-          "level": 3,
-          "title": "postMessage",
-          "slug": "postmessage"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
-      "title": "Doctype 作用？严格模式与混杂模式如何区分？它们有何意义？",
-      "frontmatter": {},
-      "regularPath": "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
-      "relativePath": "note/HTML/其他简答题.md",
-      "key": "v-61c0020b",
-      "path": "/note/HTML/%E5%85%B6%E4%BB%96%E7%AE%80%E7%AD%94%E9%A2%98.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Doctype 作用？严格模式与混杂模式如何区分？它们有何意义？",
-          "slug": "doctype-作用-严格模式与混杂模式如何区分-它们有何意义"
-        },
-        {
-          "level": 2,
-          "title": "什么是DOM和BOM？",
-          "slug": "什么是dom和bom"
-        },
-        {
-          "level": 2,
-          "title": "1、列出常见的行内元素、块级元素、空(void)元素？",
-          "slug": "_1、列出常见的行内元素、块级元素、空-void-元素"
-        },
-        {
-          "level": 2,
-          "title": "Js 动画与 CSS 动画区别及相应实现",
-          "slug": "js-动画与-css-动画区别及相应实现"
-        },
-        {
-          "level": 2,
-          "title": "html 和css中图片加载与渲染规则是什么样的？",
-          "slug": "html-和css中图片加载与渲染规则是什么样的"
-        }
-      ],
-      "lastUpdated": "5/2/2022, 2:11:34 AM",
-      "lastUpdatedTimestamp": 1651428694000
-    },
-    {
       "title": "简述一下src与href的区别",
       "frontmatter": {},
       "regularPath": "/note/HTML/%E7%AE%80%E8%BF%B0%E4%B8%80%E4%B8%8Bsrc%E4%B8%8Ehref%E7%9A%84%E5%8C%BA%E5%88%AB.html",
@@ -1129,6 +1138,7 @@ export const siteData = {
   ],
   "themeConfig": {
     "type": "blog",
+    "noFoundPageByTencent": false,
     "nav": [
       {
         "text": "Home",
@@ -1219,14 +1229,16 @@ export const siteData = {
     },
     "lastUpdated": "Last Updated",
     "author": "HHH",
-    "authorAvatar": "assets/images/head.jpg",
+    "authorAvatar": "/assets/images/head.jpg",
     "startYear": "2022",
-    "valineConfig": {
-      "appId": "XDwlSXS2pD137bPrPpwQaqqD-gzGzoHsz",
-      "appKey": "CQ8FKrMUP76LwycPcKlDoRqV",
-      "placeholder": "是时候展现真正的技术了",
-      "avatar": "wavatar",
-      "serverUrl": "https://leanserver.smallsunnyfox.com"
+    "vssueConfig": {
+      "platform": "github-v4",
+      "owner": "jiajia-hjj",
+      "repo": "blog",
+      "clientId": "8c4201a1ee1ae0571196",
+      "clientSecret": "212c4a815d147a3ac5bf3cfb34347698e81057da",
+      "autoCreateIssue": true,
+      "placeholder": "是时候展现真正的技术了"
     }
   }
 }
