@@ -147,7 +147,7 @@ export default {
 
 **效果**
 
-![](./img\脚本函数式组件.png)
+
 
 
 
