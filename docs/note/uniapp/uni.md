@@ -632,8 +632,8 @@ import uniGrid from '@/components/uni-grid/uni-grid.vue'
 
 ##### 15.1在H5中的效果
 
-+ <img src="images\在H5中的效果.gif" style="zoom:67%;" />
++ <img src="./images\在H5中的效果.gif" style="zoom:67%;" />
 
 ##### 15.2 在小程序中的效果
 
-+ <img src="images\在小程序中的效果.gif" style="zoom:67%;" />
++ <img src="./images\在小程序中的效果.gif" style="zoom:67%;" />

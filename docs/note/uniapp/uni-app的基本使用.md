@@ -273,7 +273,7 @@ pages数组数组中第一项表示应用启动页
 
 **组件的属性**
 
-![](C:\Users\HJJ\Desktop\uni-app资料\讲义\images\2view.png)
+![](.\images\2view.png)
 
 **代码案例**
 

@@ -1,4 +1,14 @@
-### 封装uni.request请求，并挂在到全局
+---
+title: 封装uni.request请求，并挂在到全局
+tags:
+  - uniapp
+categories:
+  - uniapp
+---
+
+
+
+
 
 **创建util>api.js**
 

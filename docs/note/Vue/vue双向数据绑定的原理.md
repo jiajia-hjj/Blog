@@ -87,7 +87,7 @@ Object.keys(info).forEach(function(key){
 
 ### 2.1.**原理图**
 
-![](E:\04-学习\10-vue\images\vue双向绑定原理\1.png)
+![](.\images\vue双向绑定原理\1.png)
 
 ### 2.2.**observer**
 
