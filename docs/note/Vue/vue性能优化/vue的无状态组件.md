@@ -147,7 +147,7 @@ export default {
 
 **效果**
 
-![](E:\04-学习\10-vue\images\性能优化\脚本函数式组件.png)
+![](..\images\性能优化\脚本函数式组件.png)
 
 
 
