@@ -1,4 +1,10 @@
-# npm
+---
+title: npm的基本使用
+tags:
+  - 前端工具
+categories:
+  - 前端工具
+---
 
 ## 一、窗口的常用指令
 

@@ -1,4 +1,12 @@
-### VScode
+---
+title: VScode
+tags:
+  - 前端工具
+categories:
+  - 前端工具
+---
+
+
 
 + 官网安装，傻瓜式安装
 + 用户设置
@@ -45,91 +53,4 @@
     + 保存新生成的token，在vscode命令框中输入此Token，回车，再输入之前的Gist ID，即可同步插件和设置
     + ALT+SHIFT+D
 + [使用教程](https://zhuanlan.zhihu.com/p/113222681)
-
-### WebStorm
-
-+ file->setting->editor->code style  可以设置代码缩进几格
-
-+ file->setting->editor->live templates  可以设置模板    default选择html代码->apply->ok 
-
-+ 安装插件：file->setting->Plugin
-  + `markdown`： 支持 markdown 语法 
-  + `Material Theme UI`： 可以改界面颜色呀，文件图标啥的 
-  + `CodeGlance`： 代码缩略图 
-  + 
-  
-+ ctrl+shift+r  替换
-
-  ctrl+shift+R，指定目录内代码批量替换。
-  ctrl+shift+F，指定目录内代码批量查找。
-  
-+ 汉化
-
-  + 下载：github搜索**[ jetbrains-in-chinese](https://github.com/pingfangx/jetbrains-in-chinese)**下载汉化包(/**WebStorm**/)->将汉化包复制到(lib)文件夹下->重启编辑器
-
-
-
-
-
-+ 自动编译scss、sass、less
-
-  + 先npm 全局下载
-
-    ```cmd
-    npm install –g less
-    npm install –g scss
-    ```
-
-  + setting---->Tools---->File Watchers
-
-### Sublime
-
-### Notepad++
-
-傻瓜式安装
-
-### HBuilder X
-
-傻瓜式安装
-
-### Typora
-
-+ 做笔记的软件
-
-+ 傻瓜式安装
-
-+ Markdown语法
-
-  + `#`：一至六级标题
-
-  + `-  ` 或`1.`：列表
-
-  + ![图片名称](图片链接地址)
-
-  + `>` ：引用
-
-  + `**粗体**`     `*斜体*`
-
-  + \`这里是一个代码段 `
-
-  + \```
-
-    这里是整段代码
-
-    \```
-
-  + `| 传智  | 表头1 | 表头1 |`：表格
-
-
-
-
-
-### Snipaste
-
-+ 桌面截图软件
-
-### TeamViewer
-
-+ 远程控制
-+ 
 
