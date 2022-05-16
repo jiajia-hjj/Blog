@@ -1,3 +1,11 @@
+---
+title: canvas
+tags:
+  - HTML
+  - HTML5
+categories:
+  - HTML
+---
 ### canvas在标签中设置高，与再style中设置宽高有什么区别
 
 canvas标签的width和height是画布实际宽度和高度，绘制的图形都在上面。（真实的canvas的大小）

@@ -1,6 +1,11 @@
-## meta viewport 相关
-
-
+---
+title: meta
+tags:
+  - HTML
+categories:
+  - HTML
+---
+## 01.meta viewport 相关
 
 ```html
 < !DOCTYPE  html >    <!--H5标准声明，使用 HTML5 doctype，不区分大小写-->
@@ -36,7 +41,7 @@
 
 
 
-## 常用的meta元素有哪些
+## 02.常用的meta元素有哪些
 
 元数据，不会显示在页面上，是用来让机器识别的，通水对SEO起着重要作用。
 
@@ -108,15 +113,11 @@ Cache-Control——请求和响应遵循的缓存机制，可以声明缓存的�
 < meta  http - equiv = "Cache-Control" content = "no-siteapp" > <!--不让百度转码-->
 ```
 
-
-
 refresh——30s刷新一次文档
 
 ```html
 < meta  http-equiv = "refresh" content = "30" >
 ```
-
-
 
 ### property&content
 

@@ -1,11 +1,14 @@
-## 前端需要注意哪些SEO
-
+---
+title: 前端需要注意哪些SEO
+tags:
+  - HTML
+categories:
+  - HTML
+---
 + 合理的`title` 、`description` 、 `keywords` ：搜索对着三项的权重逐个减小。
   +  `title` 值强调重点即可，重要关键词出现不要超过2次，而且要靠前，不同页面`title` 要有所不同；
   +  `description` 把页面内容高度概括，长度合适，不可过分堆砌关键词，不同页面`description` 有所不同；
   + `keywords` 列举出重要关键词即可
-
-
 
 + 语义化的 `HTML` 代码，符合W3C规范：语义化代码让搜索引擎容易理解网页
 
