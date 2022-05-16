@@ -101,7 +101,7 @@ if (testElem.offsetHeight == 1) {
 
 - 准备一张符合你要求的 border-image：
 
-<img src="./img\上下边框1px.png" style="zoom:20%;" />
+<img src="img\上下边框1px.png" style="zoom:20%;" />
 
 - 上下边框样式设置：
 
