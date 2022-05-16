@@ -147,7 +147,7 @@ export default {
 
 **效果**
 
-![](..\images\性能优化\脚本函数式组件.png)
+![](./img\脚本函数式组件.png)
 
 
 
