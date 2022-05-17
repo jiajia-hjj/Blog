@@ -50,10 +50,13 @@ header .links {
 .custom-block.tip {
     border-color:var(--text-color) !important;
 }
+
 .custom-block.tip .title {
     color: var(--text-color) !important;
 }
-
+::v-deep .footer>span:first-child{
+  display: none;
+}
 .dark
   .vssue .vssue-new-comment .vssue-new-comment-input
     background-color: #282c34;
