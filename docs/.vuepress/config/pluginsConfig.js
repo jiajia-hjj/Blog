@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   "@vuepress/medium-zoom": {
-    // selector: "img.custom",
+    selector: "img",
     // medium-zoom options here
     // See: https://github.com/francoischalifour/medium-zoom#options
   },
