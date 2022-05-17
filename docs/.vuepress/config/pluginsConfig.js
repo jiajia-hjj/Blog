@@ -10,9 +10,13 @@ module.exports = {
     serviceWorker: true,
     updatePopup: {
       message: "发现新内容可用",
-      buttonText: "刷新",
-    },
+      buttonText: "刷新"
+    }
   },
-  "@vuepress/medium-zoom"
+  "@vuepress/medium-zoom": {
+    // selector: "img.custom",
+    // medium-zoom options here
+    // See: https://github.com/francoischalifour/medium-zoom#options
+  },
   
 };
