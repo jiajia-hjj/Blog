@@ -89,14 +89,14 @@ toString.call(null);//=> [object, Null]
 - 值类型按值存储
 - 引用类型按引用存储，存储的不是值，而是一个地址
 
-![](./img\值类型和引用类型在内存中的存储方式.png)
+![](./img/值类型和引用类型在内存中的存储方式.png)
 
 ## 四、值类型复制和引用类型复制
 
 - 值类型按值复制
 - 引用类型按引用复制
 
-<img src="./img\值类型和引用类型在内存中的复制.png" style="zoom: 67%;" />
+<img src="./img/值类型和引用类型在内存中的复制.png" style="zoom: 67%;" />
 
 ```js
 var x = 1
@@ -151,7 +151,7 @@ setName(person);   // 按引用传递，obj = person
 console.log(person.name);   // "Nicholas" 
 ```
 
-![](.\img\值类型和引用类型参数传递.png)
+![](./img/值类型和引用类型参数传递.png)
 
 ## 六、值类型与引用类型的差别
 
