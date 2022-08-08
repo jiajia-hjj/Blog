@@ -1,5 +1,5 @@
 ---
-title:web常见攻击方式-XSS
+title: web常见攻击方式-XSS
 tags:
   - 前端安全
 categories:
