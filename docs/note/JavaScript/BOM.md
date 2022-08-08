@@ -136,7 +136,7 @@ console.log(getQuery(location.href));//{lang: "zh_CN", token: "1971504964"}
 - forward() 下一个 URL
 - go() 某个具体页面
 
-路径会变，但是页面不会变，页面不刷新
+路径会变，但是页面不会变，页面不刷新， 本质上网页还停留在原页面 
 
 ```js
 history.pushState({},'','home') 

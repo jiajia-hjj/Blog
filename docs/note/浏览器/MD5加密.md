@@ -1,3 +1,13 @@
+---
+title: md5数据加密
+tags:
+  - 浏览器
+categories:
+  - 浏览器
+---
+
+
+
 ## md5数据加密
 
 app.js文件中引入加密文件md5.js

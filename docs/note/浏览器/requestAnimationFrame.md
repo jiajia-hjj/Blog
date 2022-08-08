@@ -1,3 +1,15 @@
+---
+title: requestAnimationFrame
+tags:
+  - 浏览器
+  - js
+categories:
+  - 浏览器
+  - js
+---
+
+
+
 ### requestAnimationFrame
 
 + 帧动画

@@ -7,6 +7,16 @@ categories:
 ---
 ## 01.meta viewport 相关
 
+```
+<meta name="viewport" content="width=device-width">
+
+<meta name="viewport" content="initial-sacle=0.5">
+```
+
+
+
+
+
 ```html
 < !DOCTYPE  html >    <!--H5标准声明，使用 HTML5 doctype，不区分大小写-->
 <head lang="en"> <!--标准的 lang 属性写法-->

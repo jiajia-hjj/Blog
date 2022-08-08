@@ -1,7 +1,15 @@
-# vue双向绑定原理
+---
+title: vue双向绑定原理
+tags:
+  - vue
+categories:
+  - vue
+---
+
+
 
 + 原理主要通过数据劫持和发布订阅模式实现的 
-+ 通过`Object.defineProperty()`来劫持各个属性的`setter`，`getter`，监听数据的变化
++ 通过`Object.defineProperty()`来劫持各个属性的`setter`，`getter`，监听数据的变化。
 + 在数据变动时发布消息给订阅者(watcher)，订阅者触发响应的回调(update)更新视图。
 
 ## 一、**什么是数据劫持**
@@ -13,7 +21,7 @@
 
 **语法：**
 
-+ Object.defineProperty(obj,prop,descriptor)
++ `Object.defineProperty(obj,prop,descriptor)`
 
 **参数：**
 
@@ -35,7 +43,7 @@
 var info = {
     name:'hhh'
 }
-Object.keys(info).forEach(function(key){
+Object.keys(info).forEach(function(key){//遍历所有的属性，为每个属性通过Object.defineProperty，添加get和set的方法。
     Object.defineProperty(info,key,{
         enumerable:true, // 是否能在for...in循环中遍历出来或在Object.keys中列举出来。
         configurable:true, // false，不可修改、删除目标属性或修改属性性以下特性

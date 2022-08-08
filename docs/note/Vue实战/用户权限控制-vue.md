@@ -98,7 +98,7 @@
 
 先来看整个流程：
 
-<img src="E:\04-学习\11-vue实战\note\权限控制\权限控制流程.png" style="zoom:67%;" />
+<img src="img\权限控制\权限控制流程.png" style="zoom:67%;" />
 
 
 

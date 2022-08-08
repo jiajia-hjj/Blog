@@ -1,17 +1,23 @@
-## vue 指令
+---
+title: vue 指令
+tags:
+  - vue
+categories:
+  - vue
+---
 
-### v-bind
+## 01.v-bind
 
 + 绑定属性
 + 语法糖     `  ：`
 
-#### 绑定基本属性
+**绑定基本属性**
 
 ```html
 <a  :href="aHref">百度一下</a>
 ```
 
-#### 动态绑定class
+**动态绑定class**
 
 + 对象语法：v-bind: class="{类名:boolean}"
 
@@ -30,7 +36,7 @@
  <li :class="['pos-0' + item.prizeNo, {'on': index== nowIndex}]">哈哈哈</li>
 ```
 
-#### 动态绑定style
+**动态绑定style**
 
 + 对象语法：v-bind: style="{css属性名:属性值}"
 
@@ -54,7 +60,7 @@
 </script>
 ```
 
-### v-on
+## 02.v-on
 
 + 事件监听
 + 语法糖  `@`
@@ -68,9 +74,7 @@
 <input type="text" @input="onInput" @focus="onFocus"  @blur="onBlur">
 ```
 
-
-
-#### 参数问题
+**参数问题**
 
 + 事件、方法都无参
 
@@ -148,7 +152,7 @@ const app=new Vue({
 </script>
 ```
 
-#### 修饰符
+**修饰符**
 
 + **.stop**：  阻止冒泡 event.stopPropagation()
 
@@ -164,11 +168,11 @@ const app=new Vue({
 
 + **.native**： 监听组件根元素的原生事件
 
-### v-model
+## 03.v-model
 
 + 表单数据的双向绑定
 
-#### 原理
+**原理**
 
 + v-bind绑定一个value属性
 + v-on指令给当前元素绑定input事件
@@ -191,15 +195,15 @@ const app=new Vue({
 </script>
 ```
 
-#### 使用
+**使用**
 
-**1).基本使用**
+**1).基本使用**，将check作为属性，并将input作为事件
 
 ```html
 <input type="text" v-model="message">
 ```
 
-**2).radio**
+**2).radio**，将check作为属性，并将change作为事件
 
 ```html
 <label for="male">
@@ -212,7 +216,7 @@ const app=new Vue({
 <h2>{{sex}}</h2>
 ```
 
-**3).checkbox**
+**3).checkbox**，将check作为属性，并将change作为事件
 
 ```html
 <!--1、checkbox单选框-->
@@ -243,7 +247,7 @@ const app=new Vue({
 </script>
 ```
 
-**4).select**
+**4).select**，将value作为属性，并将change作为事件
 
 ```html
 <!--1、选择一个-->
@@ -270,10 +274,12 @@ const app=new Vue({
 </script>
 ```
 
-#### 修饰符
+
+
+**修饰符**
 
 + lazy：失去焦点或回车的时候再进行数据更新
-+ number：number类型，默认v-model赋值都是String类型
++ number：number类型，默认v-model赋值都是String类型。如果值无法被parseFloat()解析，会返回原始的值
 + trim：去空格
 
 ```html
@@ -282,17 +288,17 @@ const app=new Vue({
 <input type="text" v-model.trim="name">
 ```
 
-### v-for
+## 04.v-for
 
 + 循环遍历
 
-#### 遍历数组
+**遍历数组**
 
 ```html
 <li v-for="(item,index) in names">{{index+1}}.{{item}}</li>
 ```
 
-#### 遍历对象
+**遍历对象**
 
 ```html
 <!--1.value:在遍历对象的过程中.如果只是获取一个值,那么获取到的是value-->
@@ -301,7 +307,7 @@ const app=new Vue({
 <li v-for="(value,key,index) in info">{{key}}-{{value}}-{{index}}</li>
 ```
 
-#### key的作用
+**key**的作用
 
 + 使用key来给每个节点做一个唯一标识，Diff算法就可以正确的识别此节点。
 + 与虚拟dom有关，更好的复用，高效的更新虚拟DOM。
@@ -311,7 +317,7 @@ const app=new Vue({
 >
 > [Vue: v-for的键值key](https://blog.csdn.net/qq_41609404/article/details/84064064)
 
-#### 响应式
+**响应式**
 
 +  数组响应式方法：push、pop、unshift、shift、reserve、sort、splice、(见[Array对象的常用方法]())
 
@@ -323,19 +329,19 @@ this.letters[0]="bbb";
 console.log(this.letters)//["bbb", "b", "c",]====>值改变了，但是页面视图没有变
 ```
 
-### v-show
+## 05.v-show
 
 - 带有 v-show 的元素始终会被渲染并保留在 DOM 中。
 - 只是简单地切换元素的 CSS 属性 display。
 
-### v-if
+## 06.v-if
 
 + v-if/v-else-if/v-else
 + v-if 是“真正”的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建。
 + 初始渲染时条件为false时，则什么也不做，直到条件第一次变为真时，才会开始渲染条件块。
 + 不推荐同时使用 v-if 和 v-for，v-for 具有比 v-if 更高的优先级。
 
-#### 区别
+**区别**
 
 + **v-if**：条件为false时，包含v-if指令的元素，根本不会存在dom中。
 + **v-show**：当条件为false时，只是给元素添加了`display:none`。
@@ -344,23 +350,27 @@ console.log(this.letters)//["bbb", "b", "c",]====>值改变了，但是页面视
 + 显示隐藏频繁切换，使用 v-show 较好。
 + 在运行时条件很少改变，使用 v-if 较好。
 
-### v-once
+## 07.v-once
 
 + 第一次展示出来，之后message改变，不会变
 
-### v-html
+## 08.v-html
+
++ 相当于原生js中的innerHtml
 
 + 可以解析html标签
 
-### v-text
+## 09.v-text
+
++ 相当于原生js中的innerText
 
 + 不可以解析标签，解决{{}}表达式闪烁的问题
 
-### v-pre 
+## 10.v-pre 
 
 + 告诉vue不要解析这个节点内部的内容，让浪费时间
 
-### v-cloak
+## 11.v-cloak
 
 + 斗篷，解决表达式闪烁的问题
 
@@ -376,5 +386,45 @@ console.log(this.letters)//["bbb", "b", "c",]====>值改变了，但是页面视
       display:none;
     }
 </style>
+```
+
+## 12.v-if和v-for的问题
+
+**v-if和v-for优先级哪个高？**
+
++ v-for优先级高于v-if
++ 同时出现时，每次渲染都会先执行循环，在再循环中执行判断，造成性能浪费。
++ 因此不要把 v-if 和 v-for 同时用在同一个元素上。
+
+**同时出现如何优化才能得到更好的性能？**
+
++ 在外层或嵌套`<block>`，先进行v-if判断，然后再v-for循环
+
+```html
+<ul v-if="isShowGoods">
+  <li v-for="goods in goodsList" :key="goods.id">
+    {{ goods.name }}
+  </li>
+</ul>
+```
+
++ 无法先进行v-if判断的，可以进行数据处理，替换为一个计算属性 ，返回过滤筛选后的列表。
+
+```html
+<ul>
+  <li v-for="goods in activeGoodsList"  :key="goods.id">
+    {{ goods.name }}
+  </li>
+</ul>
+```
+
+```js
+computed: {
+  activeGoodsList: function () {
+    return this goodsList.filter(function (goods) {
+      return goods.isActive
+    })
+  }
+}
 ```
 

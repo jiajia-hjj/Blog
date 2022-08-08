@@ -369,3 +369,62 @@ arr.splice(0, arr.length);
 
 ## 十、新增方法
 
+### copyWithin()
+
++ 复制数组的一部分数据覆盖到数组的另一个位置。并返回数组。
++ 会修改数组，但是不会修改数组的长度。
+
+```js
+//arr.copyWithin(target[, start[, end]])
+ var arr1=['a','b','c','d','e'];
+//覆盖到从索引为0开始的元素,  复制的内容是[‘d’],
+arr1.copyWithin(0,3,4)
+console.log(arr1);//["d", "b", "c", "d", "e"]
+
+
+var arr1=['a','b','c','d','e'];
+//覆盖到从索引为1开始的元素,  复制的内容是[‘d’,‘e’]
+arr1.copyWithin(1,3);
+console.log(arr1);// ['a', 'd', 'e', 'd', 'e']
+
+```
+
+### includes()
+
++ 用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。
+
+
+```js
+//arr.includes(searchElement, fromIndex)。如果为负值，则按升序从 array.length + fromIndex 的索引开始搜索。默认为 0。
+[1, 2, 3].includes(2);	//true
+[1, 2, 3].includes(4);	// false
+[1, 2, 3].includes(3, 3);	// false
+[1, 2, 3].includes(3, -1);	//true  3+-1=2，索引2
+[1, 2, NaN].includes(NaN);	//true
+```
+
+###  fill() 方法
+
++ 使用固定值来填充数组。
++ 会改变原来是数组
+
+```js
+//array.fill(value[, start[, end]])
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Runoob");//['Runoob', 'Runoob', 'Runoob', 'Runoob']
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Runoob", 1, 4);//['Banana', 'Runoob', 'Runoob', 'Runoob']
+```
+
+### flat()
+
++ 扁平化数组
++ 不会改变原来是数组
+
+```js
+let arr = [1,2,3,[4,5,[6,7],8],9] 
+arr.flat()//[1, 2, 3, 4, 5, [6,7], 8, 9]
+```
+

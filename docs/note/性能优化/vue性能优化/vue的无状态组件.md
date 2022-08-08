@@ -147,7 +147,7 @@ export default {
 
 **效果**
 
-
+![](./img/vue的无状态组件/脚本函数式组件.png)
 
 
 

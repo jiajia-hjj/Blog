@@ -1,4 +1,11 @@
-# Vue Router
+---
+title: Vue Router
+tags:
+  - vue 
+  - vue-router
+categories:
+  - vue
+---
 
 ## 一、什么是前端路由
 
@@ -12,7 +19,7 @@
 +  **前后端分离**：后端只负责提供数据，不提供任何界面的内容，（浏览器输入url时，是去请求静态资源服务器里的html+css+js；js代码中的ajax请求的url才是请求服务器的接口） 
 +  **前端渲染** ：浏览器中显示的网页中的大部分内容，都是由前端的js代码在浏览器中执行，最终渲染出来的网页 
 
-### 1.3.SPA\前端路由
+### 1.3.SPA/前端路由
 
 + 前端处理URL和页面之间的映射关系
 
@@ -28,58 +35,51 @@
 
 ### 2.1.hash  
 
-+ http://localhost:8080/#/  
-+ location.hash='bbb'  http://localhost:8080/#/bbb 
+```js
+//http://localhost:8080/#/  
+location.hash='bbb'  http://localhost:8080/#/bbb 
+```
 
 ### 2.2.html5中history 
 
-+ history.**pushState**(对象，title,url) 
+路径变页面也变，页面刷新
 
-  +   http://localhost:8080/#/ 
+- back() 前一个 URL。
+- forward() 下一个 URL
+- go() 某个具体页面
 
-  +   history.pushState({},'','home')   http://localhost:8080/home
+路径会变，但是页面不会变，页面不刷新， 本质上网页还停留在原页面 
 
-  +   history.pushState({},'','about')   http://localhost:8080/about
+```js
+history.pushState({},'','home') 
+history.replaceState({},'','home') 
+```
 
-  +   history.pushState({},'','me')   http://localhost:8080/me  栈顶
-
-  +   history.back()  http://localhost:8080/about#/
-
-  +   history.back()  http://localhost:8080/home#/ 
-
-+ history.**replaceState**(对象，title,url)
-
-  + http://localhost:8080/#/
-
-  + history.replaceState({},'','home')    http://localhost:8080/home
-
-  + history.replaceState({},'','about')    http://localhost:8080/about
-
-  + history.back()  替换，不能返回 
-
-+ **go**
-
-  + http://localhost:8080/#/ 
-
-  + history.pushState({},'','home')   http://localhost:8080/home
-
-  + history.pushState({},'','about')   http://localhost:8080/about
-
-  + history.pushState({},'','me')   http://localhost:8080/me 
-
-  + history.pushState({},'','demo')   http://localhost:8080/demo
-
-  + history.pushState({},'','test')   http://localhost:8080/test 
-
-  + history.go(-1) ==history.back()   http://localhost:8080/demo#/
-
-  + history.go(-2)   http://localhost:8080/about#/
-
-  + history.go(2)   http://localhost:8080/demo#/
-
-  + history.forward(1)==hiatory.go(1)   http://localhost:8080/test#/ 
-
-    
+```js
+//当前：http://localhost:8080/#/
+//pushState   history.pushState(对象，title,url) 
+history.pushState({},'','home')   //http://localhost:8080/home
+history.pushState({},'','about')   //http://localhost:8080/about
+history.pushState({},'','me')   //http://localhost:8080/me  栈顶
+history.bock()  http://localhost:8080/about#/
+history.bock()  http://localhost:8080/home#/
+//replaceState 
+history.replaceState(对象，title,url)
+ http://localhost:8080/#/
+history.replaceState({},'','home')    http://localhost:8080/home
+history.replaceState({},'','about')    http://localhost:8080/about
+history.bock()  替换，不能返回
+//go
+history.pushState({},'','home')  // http://localhost:8080/home
+history.pushState({},'','about') //http://localhost:8080/about
+history.pushState({},'','me')   //http://localhost:8080/me 
+history.pushState({},'','demo') //http://localhost:8080/demo
+history.pushState({},'','test') //http://localhost:8080/test 
+history.go(-1) ==history.back() //http://localhost:8080/demo#/
+history.go(-2)   http://localhost:8080/about#/
+history.go(2)   http://localhost:8080/demo#/
+history.forward(1)==hiatory.go(1)   http://localhost:8080/test#/
+```
 
 ## 三、基本配置
 
@@ -207,12 +207,6 @@ const router=new VueRouter({
 </style>
 ```
 
-meta
-
-​				
-
-
-
 ## 四、编程式跳转
 
 + push跳转方式，相当于hisopry.pushState()，可以执行前进退后
@@ -251,8 +245,8 @@ meta
 
 ### 4.1.**`$router` 和 `$route` **
 
-+ `$router`是VueRouter的实例，跳转导航push方法。返回上一个历史用go(-1)。是路由。
-+ `$route`为处于活跃状态的路由，里面可以获取当前路由的name,path,query,parmas等。是一个路由节点。
++ `$router`：VueRouter的实例，路由操作对象，只写对象。可以操作，路由跳转push|go|replace。-----是路由。
++ `$route`：当前处于活跃状态的路由节点，路由信息对象，只读对象。可以获取当前路由的name|path|query|parmas等信息。---是一个路由节点。
 
 ### 4.2.重复点击报错
 
@@ -550,6 +544,7 @@ const routes=[
 ### 9.1.全局导航守卫
 
 + 在路由跳转中统一处理，全局导航守卫。
++ 通俗的说：你的项目中，只要发生路由变化，守卫就会监听到发生变化
 
 **beforeEach：前置守卫，路由跳转之前回调**
 
@@ -577,6 +572,7 @@ router.afterEach((to, from)=>{
 ### 9.2.路由独享守卫
 
 + 写到指定路由内部，跳到指定路由前调用
++ 只负责这个路由
 
 ```js
 const routes=[

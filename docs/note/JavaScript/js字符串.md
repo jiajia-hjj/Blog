@@ -225,11 +225,18 @@ console.log(str);//HELLO
 + **endsWith**(搜索的字符串，起始位置索引)：判断参数字符串是否在原字符串的尾部。**返回布尔值**。
 
 ```js
-let str = "apple,banana,orange";
-str.includes("banana");     // true
-str.startsWith("apple");    // true
-str.startsWith("banana",6)  // true
-str.endsWith("apple");      // false
+var s = '1234567890'
+console.log(s.startsWith('1234'))    // true
+console.log(s.endsWith(0))           // true
+console.log(s.includes('6'))         // true
+
+// 这三个方法都支持第二个参数,表示开始搜索的位置
+
+var s = 'Hello world!'
+console.log(s.startsWith('world', 6))  // true
+console.log(s.endsWith('Hello', 5))    // true ，前5 个字符中的尾部是Hello
+console.log(s.includes('Hello', 0))    // true
+// 使用第二个参数 n 时, endsWith 的行为与其他两个方法有所不同.它针对前 n 个字符,而其他两个方法针对从第 n个位置到字符串结束位置之间的字符
 ```
 
 ### 字符串重复 
@@ -241,9 +248,13 @@ str.endsWith("apple");      // false
 ```js
 let str = 'abc';
 str.repeat(2);//"abcabc"
+// 参数如果是小数, 会被x向下取整  2.6==>2
 str.repeat(2.6);//"abcabc"
+// 如果repeat的参数是负数或者 Infinity,会报错
+//但如果参数是 0 到 -1 之间的小数,则等同于0, 这是因为会先取整运算.
 str.repeat(-0.6);//""
 str.repeat(-2);//报错
+console.log('na'.repeat(Infinity))//报错
 str.repeat(NaN);//""
 ```
 
@@ -255,10 +266,10 @@ str.repeat(NaN);//""
 - **padEnd**(新字符串长度长度,字符串)：参用数字符串从尾部补全原字符串。返回新的字符串。
 
 ```js
-let str = 'abc';
-str.padStart(7,'123');//"1231abc"
-str.padStart(7);//"    abc"
-str.padEnd(7,"123");//"abc1231"
-str.padEnd(2,"123");//"abc"==
+console.log('hello'.padStart(8, '01')) //  '010hello'  指定8位字符长度，不够，头部用01来补全
+console.log('hello'.padStart(6, '01'))  //  '0hello'
+
+console.log('hello'.padEnd(8, '01')) //  'hello010'  指定8位字符长度，不够，尾部用01来补全
+console.log('hello'.padEnd(6, '01'))  //  'hello0'
 ```
 
