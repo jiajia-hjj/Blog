@@ -110,7 +110,7 @@ cd -
 ```
 
 + 验证gh-pages
-
+ 
 ```cms
 yarn deploy
 ```
