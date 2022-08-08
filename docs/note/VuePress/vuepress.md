@@ -110,7 +110,7 @@ cd -
 ```
 
 + 验证gh-pages
- 
+
 ```cms
 yarn deploy
 ```
@@ -386,7 +386,7 @@ jobs:
 
 git提交后，项目文件下——>Actions
 
-## 17.逼格徽章
+## 17.逼格徽章 
 
 https://shields.io/
 
