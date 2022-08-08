@@ -6,6 +6,7 @@ node_modules
 /blog
 .serverless/
 docs/.vuepress/dist
+docs/note/面试等知识点
 .vscode
 # 隐私私密信息
 # secret.js
