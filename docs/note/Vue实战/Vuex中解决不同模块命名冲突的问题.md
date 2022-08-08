@@ -1,5 +1,5 @@
 ---
-title: Vuex中解决不同模块命名冲突的问题namespaced: true
+title: Vuex中解决不同模块命名冲突的问题
 tags:
   - vue
   - vuex
