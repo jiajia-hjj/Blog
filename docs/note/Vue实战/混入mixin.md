@@ -1,4 +1,14 @@
-### 混入mixin
+---
+title: 混入mixin
+tags:
+  - Vue
+categories:
+  - Vue实战
+---
+
+
+
+
 
 + 如果项目中出现结构类似的功能，想到组件复用
 

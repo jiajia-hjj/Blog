@@ -1,9 +1,9 @@
 ---
 title: vue双向绑定原理
 tags:
-  - vue
+  - Vue
 categories:
-  - vue
+  - Vue
 ---
 
 

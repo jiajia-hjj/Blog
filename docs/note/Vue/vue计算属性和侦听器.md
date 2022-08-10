@@ -1,4 +1,12 @@
-# vue计算属性和侦听器
+---
+title: vue计算属性和侦听器
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
 
 ## 一、computed
 

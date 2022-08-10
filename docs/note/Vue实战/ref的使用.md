@@ -1,9 +1,9 @@
 ---
 title: ref的使用
 tags:
-  - vue
+  - Vue
 categories:
-  - vue实战
+  - Vue实战
 ---
 
 

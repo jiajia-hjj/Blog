@@ -1,3 +1,13 @@
+---
+title: 属性修饰符sync--父子通讯同步
+tags:
+  - Vue
+categories:
+  - Vue实战
+---
+
+
+
 ### 属性修饰符sync--父子通讯同步
 
 需求：父组件1000【money】元，子组件【childA|childB】点击一下花20，还剩多少

@@ -1,9 +1,9 @@
 ---
-jstitle: HashRouter 和 HistoryRouter 的区别和原理
+title: HashRouter 和 HistoryRouter 的区别和原理
 tags:
- - CSS
+ - Vue
 categories:
- - CSS
+ - Vue
 ---
 
 

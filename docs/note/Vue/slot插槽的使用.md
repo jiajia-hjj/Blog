@@ -1,9 +1,9 @@
 ---
 title: slot插槽的使用
 tags:
-  - vue
+  - Vue
 categories:
-  - vue
+  - Vue
 ---
 
 

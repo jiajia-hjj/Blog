@@ -1,10 +1,10 @@
 ---
 title: Vuex中解决不同模块命名冲突的问题
 tags:
-  - vue
+  - Vue
   - vuex
 categories:
-  - vue实战
+  - Vue实战
 ---
 
 > [vuex 不同模块中方法同名？？？？？？](https://blog.csdn.net/cherry_vicent/article/details/122449617?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.pc_relevant_default&spm=1001.2101.3001.4242.1&utm_relevant_index=3)

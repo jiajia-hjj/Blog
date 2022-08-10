@@ -1,3 +1,13 @@
+---
+title: Watcher分类
+tags:
+  - Vue
+categories:
+  - Vue
+---
+
+
+
 ## Watcher分类
 
 ### computed-watcher

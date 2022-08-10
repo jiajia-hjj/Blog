@@ -1,4 +1,14 @@
-## Runtime-compiler和Runtime-only的区别
+---
+title: Runtime-compiler和Runtime-only的区别
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
+
+
 
 ### 一、**runtime-compiler**
 

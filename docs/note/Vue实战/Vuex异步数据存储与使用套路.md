@@ -1,10 +1,10 @@
 ---
 title: Vuex异步数据存储与使用套路
 tags:
-  - vue
+  - Vue
   - vuex
 categories:
-  - vue实战
+  - Vue实战
 ---
 
 

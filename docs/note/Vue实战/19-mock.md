@@ -1,4 +1,14 @@
-### mock插件使用
+---
+title: mock插件使用
+tags:
+  - Vue
+categories:
+  - Vue实战
+---
+
+
+
+
 
 [[官网](http://mockjs.com/)]
 

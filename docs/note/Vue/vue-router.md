@@ -1,10 +1,10 @@
 ---
 title: Vue Router
 tags:
-  - vue 
+  - Vue 
   - vue-router
 categories:
-  - vue
+  - Vue
 ---
 
 ## 一、什么是前端路由

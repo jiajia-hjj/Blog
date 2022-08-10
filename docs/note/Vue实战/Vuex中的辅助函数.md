@@ -1,10 +1,10 @@
 ---
 title: Vuex中的辅助函数
 tags:
-  - vue
+  - Vue
   - vuex
 categories:
-  - vue实战
+  - Vue实战
 ---
 
 

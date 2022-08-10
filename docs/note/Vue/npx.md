@@ -1,4 +1,12 @@
-# npx
+---
+title: npx
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
 
 > npm v5.2.0引入的一条命令（npx），提升了开发者使用包内提供的命令行工具的体验。
 

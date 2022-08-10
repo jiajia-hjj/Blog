@@ -1,3 +1,13 @@
+---
+title: Vuex学习笔记
+tags:
+  - Vue
+categories:
+  - Vue
+---
+
+
+
 ## 一、Vuex概念
 
 **存在的问题：**

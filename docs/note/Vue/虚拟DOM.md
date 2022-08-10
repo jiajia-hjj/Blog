@@ -1,3 +1,13 @@
+---
+title: 虚拟DOM
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
+
 #### 一、真实DOM和其解析流程？ 
 
   浏览器渲染引擎工作流程，大致分为5步：

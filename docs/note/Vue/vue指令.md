@@ -1,9 +1,9 @@
 ---
 title: vue 指令
 tags:
-  - vue
+  - Vue
 categories:
-  - vue
+  - Vue
 ---
 
 ## 01.v-bind

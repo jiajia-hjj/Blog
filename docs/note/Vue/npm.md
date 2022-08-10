@@ -1,4 +1,12 @@
-# npm
+---
+title: npm
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
 
 ## 一、窗口的常用指令
 

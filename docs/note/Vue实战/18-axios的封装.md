@@ -1,4 +1,12 @@
-## axios的封装
+---
+title: axios的封装过程
+tags:
+  - Vue
+categories:
+  - Vue实战
+---
+
+
 
 【[官网](http://www.axios-js.com/)】
 

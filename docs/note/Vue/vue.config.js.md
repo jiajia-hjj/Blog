@@ -1,9 +1,9 @@
 ---
 title: vue.config.js配置
 tags:
-  - vue 
+  - Vue 
 categories:
-  - vue
+  - Vue
 ---
 
 

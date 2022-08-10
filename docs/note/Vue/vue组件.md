@@ -1,4 +1,12 @@
-# vue组件
+---
+title: vue组件
+tags:
+  - Vue
+categories:
+  - Vue
+---
+
+
 
 ## 一、基本使用
 

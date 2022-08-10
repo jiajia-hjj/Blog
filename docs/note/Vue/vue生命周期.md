@@ -1,3 +1,13 @@
+---
+title: vue 生命周期
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
+
 ## vue 生命周期
 
 +  Vue 实例在被创建时，经过一系列初始化的过程。

@@ -1,3 +1,13 @@
+---
+title: 清除vue页面默认的样式
+tags:
+ - Vue
+categories:
+ - Vue
+---
+
+
+
 #### 清除vue页面默认的样式
 
 **1、将默认样式reset.css，放在public文件夹下**

@@ -1,10 +1,10 @@
 ---
 title: Vuex刷新页面state数据消失
 tags:
-  - vue
+  - Vue
   - vuex
 categories:
-  - vue实战
+  - Vue实战
 ---
 
 
