@@ -1,4 +1,4 @@
-### **一、连接****MYSQL****。**
+### **一、连接MYSQL**
 
 格式： mysql -h主机地址 -u用户名 －p用户密码
 
@@ -14,7 +14,7 @@ mysql -h110.110.110.110 -u root -p 123;（注:u与root之间可以不用加空�
 
 3、退出MYSQL命令： exit （回车）
 
-### **二、修改密码。**
+### **二、修改密码**
 
 格式：mysqladmin -u用户名 -p旧密码 password 新密码
 
@@ -23,14 +23,14 @@ mysql -h110.110.110.110 -u root -p 123;（注:u与root之间可以不用加空�
 mysqladmin -u root -password ab12
 
 注：因为开始时root没有密码，所以-p旧密码一项就可以省略了。
- 
+
  2、再将root的密码改为djg345。
 
 mysqladmin -u root -p ab12 password djg345
 
  
 
-### **三、增加新用户。** 
+### **三、增加新用户** 
 
 （注意：和上面不同，下面的因为是MYSQL环境中的命令，所以后面都带一个分号作为命令结束符）
 
@@ -197,7 +197,7 @@ mysqldump -u user_name -p -d –add-drop-table database_name > outfile_name.sql
 4.带语言参数导出
 
 mysqldump -uroot -p –default-character-set=latin1 –set-charset=gbk –skip-opt database_name > outfile_name.sql
- 
+
  \1. 备份数据库 
  mysqldump -uroot -p test_db > test_db.sql 
  \2. 恢复数据库 
