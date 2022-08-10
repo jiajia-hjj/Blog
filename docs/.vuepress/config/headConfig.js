@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = [ 
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "author", content: "HJJ" }],
     ["meta", { name: "keywords", content: "一个小小前端的学习笔记!" }],
