@@ -2,10 +2,10 @@
 title: Token - 服务端身份验证
 tags:
   - 浏览器
-  - js
+  - JavaScript
 categories:
   - 浏览器
-  - js
+  - JavaScript
 ---
 
 

@@ -2,10 +2,10 @@
 title: requestAnimationFrame
 tags:
   - 浏览器
-  - js
+  - JavaScript
 categories:
   - 浏览器
-  - js
+  - JavaScript
 ---
 
 
