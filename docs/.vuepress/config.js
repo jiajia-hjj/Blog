@@ -9,7 +9,7 @@ module.exports = {
     base: "/blog/",
     lang:'zh-cn',
     title: "学习碎碎念",
-    description: "一个小小前端的学习笔记!",
+    description: "一个小小前端的学习笔记!   ",
     theme: 'reco',
     head: headConfig,
     plugins:pluginsConfig,
@@ -58,8 +58,7 @@ module.exports = {
       extendMarkdown: md => {
         md.use(require("markdown-it-disable-url-encode"));
       }
- 
+
     }
-  
+
   }
-  
