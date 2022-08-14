@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript规范 | 学习碎碎念</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#000000">
+    <meta name="description" content="一个小小前端的学习笔记!   ">
+    <meta name="author" content="HJJ">
+    <meta name="keywords" content="一个小小前端的学习笔记!">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png?v1">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.37c3a971.css" as="style"><link rel="preload" href="/blog/assets/js/app.8896e472.js" as="script"><link rel="preload" href="/blog/assets/js/3.340b1cfc.js" as="script"><link rel="preload" href="/blog/assets/js/1.ac301aa1.js" as="script"><link rel="preload" href="/blog/assets/js/211.f120d0f8.js" as="script"><link rel="preload" href="/blog/assets/js/13.3382b018.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.fd6e7077.js"><link rel="prefetch" href="/blog/assets/js/100.115e536c.js"><link rel="prefetch" href="/blog/assets/js/101.e510c2f2.js"><link rel="prefetch" href="/blog/assets/js/102.c8a2d3a9.js"><link rel="prefetch" href="/blog/assets/js/103.f541035a.js"><link rel="prefetch" href="/blog/assets/js/104.634f539b.js"><link rel="prefetch" href="/blog/assets/js/105.746638e8.js"><link rel="prefetch" href="/blog/assets/js/106.ab4beffc.js"><link rel="prefetch" href="/blog/assets/js/107.6993a7bd.js"><link rel="prefetch" href="/blog/assets/js/108.c6d14bde.js"><link rel="prefetch" href="/blog/assets/js/109.82901f9c.js"><link rel="prefetch" href="/blog/assets/js/11.e8610610.js"><link rel="prefetch" href="/blog/assets/js/110.6d9eaae5.js"><link rel="prefetch" href="/blog/assets/js/111.6689fd7d.js"><link rel="prefetch" href="/blog/assets/js/112.74a903bb.js"><link rel="prefetch" href="/blog/assets/js/113.2ad3046b.js"><link rel="prefetch" href="/blog/assets/js/114.529ff8e2.js"><link rel="prefetch" href="/blog/assets/js/115.e51eb860.js"><link rel="prefetch" href="/blog/assets/js/116.d757c760.js"><link rel="prefetch" href="/blog/assets/js/117.e664e11f.js"><link rel="prefetch" href="/blog/assets/js/118.7433dcba.js"><link rel="prefetch" href="/blog/assets/js/119.6356dd11.js"><link rel="prefetch" href="/blog/assets/js/12.df7ae0b0.js"><link rel="prefetch" href="/blog/assets/js/120.c97e77fd.js"><link rel="prefetch" href="/blog/assets/js/121.ddb82f13.js"><link rel="prefetch" href="/blog/assets/js/122.a9e253b5.js"><link rel="prefetch" href="/blog/assets/js/123.2ae3ebf5.js"><link rel="prefetch" href="/blog/assets/js/124.7515565a.js"><link rel="prefetch" href="/blog/assets/js/125.e944312f.js"><link rel="prefetch" href="/blog/assets/js/126.c87c5948.js"><link rel="prefetch" href="/blog/assets/js/127.34dfe486.js"><link rel="prefetch" href="/blog/assets/js/128.e5f5e0cf.js"><link rel="prefetch" href="/blog/assets/js/129.2511c8dd.js"><link rel="prefetch" href="/blog/assets/js/130.48698606.js"><link rel="prefetch" href="/blog/assets/js/131.658af75f.js"><link rel="prefetch" href="/blog/assets/js/132.28d69efc.js"><link rel="prefetch" href="/blog/assets/js/133.becd15b4.js"><link rel="prefetch" href="/blog/assets/js/134.31569752.js"><link rel="prefetch" href="/blog/assets/js/135.d59e4e7f.js"><link rel="prefetch" href="/blog/assets/js/136.6fbd26e3.js"><link rel="prefetch" href="/blog/assets/js/137.20e61ff9.js"><link rel="prefetch" href="/blog/assets/js/138.fb1381bb.js"><link rel="prefetch" href="/blog/assets/js/139.0c786c4d.js"><link rel="prefetch" href="/blog/assets/js/14.dacddc5e.js"><link rel="prefetch" href="/blog/assets/js/140.e17e79ab.js"><link rel="prefetch" href="/blog/assets/js/141.f46f2e5a.js"><link rel="prefetch" href="/blog/assets/js/142.31048f08.js"><link rel="prefetch" href="/blog/assets/js/143.aba7a600.js"><link rel="prefetch" href="/blog/assets/js/144.838632b8.js"><link rel="prefetch" href="/blog/assets/js/145.f0b954e3.js"><link rel="prefetch" href="/blog/assets/js/146.869dcfbb.js"><link rel="prefetch" href="/blog/assets/js/147.06d2f52f.js"><link rel="prefetch" href="/blog/assets/js/148.c0482a4b.js"><link rel="prefetch" href="/blog/assets/js/149.9c645274.js"><link rel="prefetch" href="/blog/assets/js/15.f8a08aea.js"><link rel="prefetch" href="/blog/assets/js/150.355edb34.js"><link rel="prefetch" href="/blog/assets/js/151.674d7dc3.js"><link rel="prefetch" href="/blog/assets/js/152.dea7dc80.js"><link rel="prefetch" href="/blog/assets/js/153.97b2321e.js"><link rel="prefetch" href="/blog/assets/js/154.f2ae2dee.js"><link rel="prefetch" href="/blog/assets/js/155.8feb05ad.js"><link rel="prefetch" href="/blog/assets/js/156.5ef4aa4e.js"><link rel="prefetch" href="/blog/assets/js/157.3b68fe8c.js"><link rel="prefetch" href="/blog/assets/js/158.115bb9a0.js"><link rel="prefetch" href="/blog/assets/js/159.6f1242b7.js"><link rel="prefetch" href="/blog/assets/js/16.45f8fa59.js"><link rel="prefetch" href="/blog/assets/js/160.d4a966ee.js"><link rel="prefetch" href="/blog/assets/js/161.ee10e2d1.js"><link rel="prefetch" href="/blog/assets/js/162.1f9e2c5f.js"><link rel="prefetch" href="/blog/assets/js/163.82175914.js"><link rel="prefetch" href="/blog/assets/js/164.f5a35a06.js"><link rel="prefetch" href="/blog/assets/js/165.bb2a398c.js"><link rel="prefetch" href="/blog/assets/js/166.43fe562e.js"><link rel="prefetch" href="/blog/assets/js/167.9b1ca13c.js"><link rel="prefetch" href="/blog/assets/js/168.bd13f7f0.js"><link rel="prefetch" href="/blog/assets/js/169.45481d55.js"><link rel="prefetch" href="/blog/assets/js/17.8becfea8.js"><link rel="prefetch" href="/blog/assets/js/170.35ab1540.js"><link rel="prefetch" href="/blog/assets/js/171.11f64b9b.js"><link rel="prefetch" href="/blog/assets/js/172.3d9920be.js"><link rel="prefetch" href="/blog/assets/js/173.7a9a2434.js"><link rel="prefetch" href="/blog/assets/js/174.d439b1dc.js"><link rel="prefetch" href="/blog/assets/js/175.61e950a2.js"><link rel="prefetch" href="/blog/assets/js/176.4c973580.js"><link rel="prefetch" href="/blog/assets/js/177.79ff3a2f.js"><link rel="prefetch" href="/blog/assets/js/178.6993fd78.js"><link rel="prefetch" href="/blog/assets/js/179.3fd55fb0.js"><link rel="prefetch" href="/blog/assets/js/18.e4993a35.js"><link rel="prefetch" href="/blog/assets/js/180.3352c9be.js"><link rel="prefetch" href="/blog/assets/js/181.aecb0732.js"><link rel="prefetch" href="/blog/assets/js/182.4037b70c.js"><link rel="prefetch" href="/blog/assets/js/183.bf1523de.js"><link rel="prefetch" href="/blog/assets/js/184.cfb6386e.js"><link rel="prefetch" href="/blog/assets/js/185.31eab98b.js"><link rel="prefetch" href="/blog/assets/js/186.c83cf366.js"><link rel="prefetch" href="/blog/assets/js/187.f2cf6f48.js"><link rel="prefetch" href="/blog/assets/js/188.5138f9ec.js"><link rel="prefetch" href="/blog/assets/js/189.9afeff65.js"><link rel="prefetch" href="/blog/assets/js/19.ba28da13.js"><link rel="prefetch" href="/blog/assets/js/190.d9ad4b32.js"><link rel="prefetch" href="/blog/assets/js/191.47027363.js"><link rel="prefetch" href="/blog/assets/js/192.d7b58be0.js"><link rel="prefetch" href="/blog/assets/js/193.e5001e8a.js"><link rel="prefetch" href="/blog/assets/js/194.a7cacd14.js"><link rel="prefetch" href="/blog/assets/js/195.fdbf7fd9.js"><link rel="prefetch" href="/blog/assets/js/196.57c363ff.js"><link rel="prefetch" href="/blog/assets/js/197.4057fe5a.js"><link rel="prefetch" href="/blog/assets/js/198.83aaf467.js"><link rel="prefetch" href="/blog/assets/js/199.23e1fa8a.js"><link rel="prefetch" href="/blog/assets/js/20.81b4b502.js"><link rel="prefetch" href="/blog/assets/js/200.1ba63b6b.js"><link rel="prefetch" href="/blog/assets/js/201.8944a811.js"><link rel="prefetch" href="/blog/assets/js/202.26c737ac.js"><link rel="prefetch" href="/blog/assets/js/203.3bf0b5c8.js"><link rel="prefetch" href="/blog/assets/js/204.62352811.js"><link rel="prefetch" href="/blog/assets/js/205.7d0c2fbf.js"><link rel="prefetch" href="/blog/assets/js/206.5e8ebc59.js"><link rel="prefetch" href="/blog/assets/js/207.d80d1501.js"><link rel="prefetch" href="/blog/assets/js/208.d681423b.js"><link rel="prefetch" href="/blog/assets/js/209.b480b8de.js"><link rel="prefetch" href="/blog/assets/js/21.eaf8fb9d.js"><link rel="prefetch" href="/blog/assets/js/210.450252ae.js"><link rel="prefetch" href="/blog/assets/js/212.1f07445b.js"><link rel="prefetch" href="/blog/assets/js/213.d774c083.js"><link rel="prefetch" href="/blog/assets/js/214.75edd5c9.js"><link rel="prefetch" href="/blog/assets/js/215.a79bd074.js"><link rel="prefetch" href="/blog/assets/js/216.ba6c0c4c.js"><link rel="prefetch" href="/blog/assets/js/217.d6d33caa.js"><link rel="prefetch" href="/blog/assets/js/218.3ce87883.js"><link rel="prefetch" href="/blog/assets/js/219.e495adf6.js"><link rel="prefetch" href="/blog/assets/js/22.430a81e3.js"><link rel="prefetch" href="/blog/assets/js/220.3292486c.js"><link rel="prefetch" href="/blog/assets/js/221.f18b9d99.js"><link rel="prefetch" href="/blog/assets/js/222.8e57f14f.js"><link rel="prefetch" href="/blog/assets/js/223.b74e6b77.js"><link rel="prefetch" href="/blog/assets/js/224.e981ce39.js"><link rel="prefetch" href="/blog/assets/js/225.5b66d0c1.js"><link rel="prefetch" href="/blog/assets/js/226.69bfedec.js"><link rel="prefetch" href="/blog/assets/js/227.53d81346.js"><link rel="prefetch" href="/blog/assets/js/228.2d7e7488.js"><link rel="prefetch" href="/blog/assets/js/229.75984493.js"><link rel="prefetch" href="/blog/assets/js/23.bc17d310.js"><link rel="prefetch" href="/blog/assets/js/230.b6ddf5e6.js"><link rel="prefetch" href="/blog/assets/js/231.9207e8f0.js"><link rel="prefetch" href="/blog/assets/js/232.cb2dfe2b.js"><link rel="prefetch" href="/blog/assets/js/233.badaa6a2.js"><link rel="prefetch" href="/blog/assets/js/234.10e9f4ff.js"><link rel="prefetch" href="/blog/assets/js/235.105778e5.js"><link rel="prefetch" href="/blog/assets/js/236.e04ea163.js"><link rel="prefetch" href="/blog/assets/js/237.1a576c29.js"><link rel="prefetch" href="/blog/assets/js/238.ab06e452.js"><link rel="prefetch" href="/blog/assets/js/239.3152a92d.js"><link rel="prefetch" href="/blog/assets/js/24.fffca1b2.js"><link rel="prefetch" href="/blog/assets/js/240.81fbe05c.js"><link rel="prefetch" href="/blog/assets/js/241.29d06f7f.js"><link rel="prefetch" href="/blog/assets/js/242.2390d2da.js"><link rel="prefetch" href="/blog/assets/js/243.94c626f4.js"><link rel="prefetch" href="/blog/assets/js/244.093ef12b.js"><link rel="prefetch" href="/blog/assets/js/245.fbec2a07.js"><link rel="prefetch" href="/blog/assets/js/246.f378744e.js"><link rel="prefetch" href="/blog/assets/js/247.016cbfc5.js"><link rel="prefetch" href="/blog/assets/js/248.efa12bc5.js"><link rel="prefetch" href="/blog/assets/js/249.39a216fc.js"><link rel="prefetch" href="/blog/assets/js/25.c9a3e5a6.js"><link rel="prefetch" href="/blog/assets/js/250.957f1f9e.js"><link rel="prefetch" href="/blog/assets/js/251.282ff431.js"><link rel="prefetch" href="/blog/assets/js/252.3625c85d.js"><link rel="prefetch" href="/blog/assets/js/26.7860972d.js"><link rel="prefetch" href="/blog/assets/js/27.f693548d.js"><link rel="prefetch" href="/blog/assets/js/28.b68460a5.js"><link rel="prefetch" href="/blog/assets/js/29.4708ab1e.js"><link rel="prefetch" href="/blog/assets/js/30.b0e2fcb9.js"><link rel="prefetch" href="/blog/assets/js/31.0e8ac20f.js"><link rel="prefetch" href="/blog/assets/js/32.af6bf6e4.js"><link rel="prefetch" href="/blog/assets/js/33.2277af79.js"><link rel="prefetch" href="/blog/assets/js/34.fa9aa01a.js"><link rel="prefetch" href="/blog/assets/js/35.f3018035.js"><link rel="prefetch" href="/blog/assets/js/36.554b990f.js"><link rel="prefetch" href="/blog/assets/js/37.589de0d5.js"><link rel="prefetch" href="/blog/assets/js/38.269615da.js"><link rel="prefetch" href="/blog/assets/js/39.d467f5cc.js"><link rel="prefetch" href="/blog/assets/js/4.5fc07e40.js"><link rel="prefetch" href="/blog/assets/js/40.2a9bd5e7.js"><link rel="prefetch" href="/blog/assets/js/41.1851a936.js"><link rel="prefetch" href="/blog/assets/js/42.f1070e7d.js"><link rel="prefetch" href="/blog/assets/js/43.2329e1c5.js"><link rel="prefetch" href="/blog/assets/js/44.3e8984d4.js"><link rel="prefetch" href="/blog/assets/js/45.7728155d.js"><link rel="prefetch" href="/blog/assets/js/46.0256dbb6.js"><link rel="prefetch" href="/blog/assets/js/47.e53cff30.js"><link rel="prefetch" href="/blog/assets/js/48.71ba2ba2.js"><link rel="prefetch" href="/blog/assets/js/49.25a95ebf.js"><link rel="prefetch" href="/blog/assets/js/5.c80ec00f.js"><link rel="prefetch" href="/blog/assets/js/50.e94b4b0f.js"><link rel="prefetch" href="/blog/assets/js/51.f1bd10c3.js"><link rel="prefetch" href="/blog/assets/js/52.ad777b87.js"><link rel="prefetch" href="/blog/assets/js/53.54c4310b.js"><link rel="prefetch" href="/blog/assets/js/54.bdc3eba2.js"><link rel="prefetch" href="/blog/assets/js/55.d35506bc.js"><link rel="prefetch" href="/blog/assets/js/56.f293cbf2.js"><link rel="prefetch" href="/blog/assets/js/57.7206d45b.js"><link rel="prefetch" href="/blog/assets/js/58.b3fa0923.js"><link rel="prefetch" href="/blog/assets/js/59.932ad336.js"><link rel="prefetch" href="/blog/assets/js/6.cdcfab11.js"><link rel="prefetch" href="/blog/assets/js/60.c7f49c43.js"><link rel="prefetch" href="/blog/assets/js/61.5d0a0188.js"><link rel="prefetch" href="/blog/assets/js/62.b501103f.js"><link rel="prefetch" href="/blog/assets/js/63.0146cecf.js"><link rel="prefetch" href="/blog/assets/js/64.4b1aada0.js"><link rel="prefetch" href="/blog/assets/js/65.1cf5a1e1.js"><link rel="prefetch" href="/blog/assets/js/66.b4a3a22a.js"><link rel="prefetch" href="/blog/assets/js/67.5d1b2e1a.js"><link rel="prefetch" href="/blog/assets/js/68.fae0202c.js"><link rel="prefetch" href="/blog/assets/js/69.7f59b4be.js"><link rel="prefetch" href="/blog/assets/js/7.39bdd1a4.js"><link rel="prefetch" href="/blog/assets/js/70.071777c7.js"><link rel="prefetch" href="/blog/assets/js/71.992a9aac.js"><link rel="prefetch" href="/blog/assets/js/72.670cea8e.js"><link rel="prefetch" href="/blog/assets/js/73.f18f3da1.js"><link rel="prefetch" href="/blog/assets/js/74.fb9860cb.js"><link rel="prefetch" href="/blog/assets/js/75.eb94572a.js"><link rel="prefetch" href="/blog/assets/js/76.63b102b3.js"><link rel="prefetch" href="/blog/assets/js/77.e9b3fdeb.js"><link rel="prefetch" href="/blog/assets/js/78.17e51946.js"><link rel="prefetch" href="/blog/assets/js/79.4f8d75a7.js"><link rel="prefetch" href="/blog/assets/js/8.9d5f0dd7.js"><link rel="prefetch" href="/blog/assets/js/80.1316322c.js"><link rel="prefetch" href="/blog/assets/js/81.f24cf910.js"><link rel="prefetch" href="/blog/assets/js/82.ed8efeb8.js"><link rel="prefetch" href="/blog/assets/js/83.c669cf44.js"><link rel="prefetch" href="/blog/assets/js/84.58d43f6b.js"><link rel="prefetch" href="/blog/assets/js/85.0748eaba.js"><link rel="prefetch" href="/blog/assets/js/86.40e09535.js"><link rel="prefetch" href="/blog/assets/js/87.0d611cf2.js"><link rel="prefetch" href="/blog/assets/js/88.3d23a0c1.js"><link rel="prefetch" href="/blog/assets/js/89.3d830fc5.js"><link rel="prefetch" href="/blog/assets/js/9.8b9ac456.js"><link rel="prefetch" href="/blog/assets/js/90.f6edaa95.js"><link rel="prefetch" href="/blog/assets/js/91.d02e34f6.js"><link rel="prefetch" href="/blog/assets/js/92.ce92cdfb.js"><link rel="prefetch" href="/blog/assets/js/93.13311f40.js"><link rel="prefetch" href="/blog/assets/js/94.e9b6ca10.js"><link rel="prefetch" href="/blog/assets/js/95.2e108a3d.js"><link rel="prefetch" href="/blog/assets/js/96.4ba0a0db.js"><link rel="prefetch" href="/blog/assets/js/97.caaa7a23.js"><link rel="prefetch" href="/blog/assets/js/98.1d4b83df.js"><link rel="prefetch" href="/blog/assets/js/99.499c2302.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.37c3a971.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>学习碎碎念</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一个小小前端的学习笔记!   </p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/images/head.jpg" alt="学习碎碎念" class="logo"> <span class="site-name">学习碎碎念</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue实战/" class="nav-link"><i class="undefined"></i>
+  Vue实战
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端安全/" class="nav-link"><i class="undefined"></i>
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序公众号/" class="nav-link"><i class="undefined"></i>
+  微信小程序公众号
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/浏览器/" class="nav-link"><i class="undefined"></i>
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/移动web/" class="nav-link"><i class="undefined"></i>
+  移动web
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/blog/assets/images/head.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    HHH
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>217</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>23</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue实战/" class="nav-link"><i class="undefined"></i>
+  Vue实战
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端安全/" class="nav-link"><i class="undefined"></i>
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序公众号/" class="nav-link"><i class="undefined"></i>
+  微信小程序公众号
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/浏览器/" class="nav-link"><i class="undefined"></i>
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/移动web/" class="nav-link"><i class="undefined"></i>
+  移动web
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端规范</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/前端规范/CSS和Sass.html" class="sidebar-link">CSS/Sass规范</a></li><li><a href="/blog/note/前端规范/HTML.html" class="sidebar-link">HTML规范</a></li><li><a href="/blog/note/前端规范/JavaScript.html" class="active sidebar-link">JavaScript规范</a></li><li><a href="/blog/note/前端规范/页面规范.html" class="sidebar-link">页面规范</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>JavaScript规范</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">JavaScript规范</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>HHH</span></i> <!----> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>规范</span></i></div></div> <div class="theme-reco-content content__default"><blockquote><p>标准中分成建议使用和校验(下面使用[0]代码建议使用，[1]代表校验)，建议使用并不会报错，校验会报错。</p></blockquote> <h2 id="引用"><a href="#引用" class="header-anchor">#</a> 引用</h2> <ul><li>对变量的声明不要使用var，如果是声明后不再重现分配的变量要使用const，如果是重现分配的变量要使用let [1]</li> <li>注意let和const的块级作用域 [0]</li></ul> <h2 id="对象"><a href="#对象" class="header-anchor">#</a> 对象</h2> <ul><li>使用对象直接量创建对象 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const item = new Object();
+// good
+const item = {};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>如果一个对象的key值包含动态属性，要保证对象的所有属性都是在一个地方进行定义 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function getKey(k) {
+  return `a key named ${k}`;
+}
+// bad
+const obj = {
+  id: 5,
+  name: 'San Francisco',
+};
+obj[getKey('enabled')] = true;
+// good
+const obj = {
+  id: 5,
+  name: 'San Francisco',
+  [getKey('enabled')]: true,
+};
+// 从上面的代码我们可以看出，这个建议的是要我们把与对象相关的属性，都在一个地方定义，便于维护
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ul><li>在定义方法时，使用简写的方式进行定义 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const atom = {
+  value: 1,
+  addValue: function (value) {
+    return atom.value + value;
+  },
+};
+// good
+const atom = {
+  value: 1,
+  addValue(value) {
+    return atom.value + value;
+  },
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>在定义对象属性时，如果key值和value值同名，要使用简写形式 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const lukeSkywalker = 'Luke Skywalker';
+// bad
+const obj = {
+  lukeSkywalker: lukeSkywalker,
+};
+// good
+const obj = {
+  lukeSkywalker,
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>在定义对象时，简写的属性和非简写的属性要按顺序写，不要混着写 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const anakinSkywalker = 'Anakin Skywalker';
+const lukeSkywalker = 'Luke Skywalker';
+// bad
+const obj = {
+  episodeOne: 1,
+  twoJediWalkIntoACantina: 2,
+  lukeSkywalker,
+  episodeThree: 3,
+  mayTheFourth: 4,
+  anakinSkywalker,
+};
+// good
+const obj = {
+  lukeSkywalker,
+  anakinSkywalker,
+  episodeOne: 1,
+  twoJediWalkIntoACantina: 2,
+  episodeThree: 3,
+  mayTheFourth: 4,
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ul><li>在定义对象时，key值只有在无效识别时添加单引号 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const bad = {
+  'foo': 3,
+  'bar': 4,
+  'data-blah': 5,
+};
+// good
+const good = {
+  foo: 3,
+  bar: 4,
+  'data-blah': 5,
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>不允许直接使用Object.prototype的相关方法，比如hasOwnProperty, propertyIsEnumerable, 和 isPrototypeOf.因为在定义对象时，有可能会覆盖了这些方法 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const item = {
+    name: 'rede',
+};
+// bad
+console.log(item.hasOwnProperty('name'));
+// good
+console.log(Object.prototype.hasOwnProperty.call(item, 'name'));
+// best
+const has = Object.prototype.hasOwnProperty;
+console.log(has.call(item, 'name'));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>使用对象展开符浅复制对象，不要使用Object.assign [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// very bad
+// 本意是复制一个对象，在从复制出的对象上删除某个值，但实际上原始对象的值也会被影响
+const original = { a: 1, b: 2 };
+const copy = Object.assign(original, { c: 3 });
+delete copy.a;
+// bad
+// 可以达到预期目的，但在写法上可读性不好
+const original = { a: 1, b: 2 };
+const copy = Object.assign({}, original, { c: 3 }); // copy =&gt; { a: 1, b: 2, c: 3 }
+delete copy.a;
+// good
+const original = { a: 1, b: 2 };
+const copy = { ...original, c: 3 }; // copy =&gt; { a: 1, b: 2, c: 3 }
+const { a, ...noA } = copy; // noA =&gt; { b: 2, c: 3 }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h2> <ul><li>在定义数组时，使用数组直接量，不要使用new Array的形式 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const items = new Array();
+// good
+const items = [];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>在向数组添加元素时，不要直接赋值，通过push添加(注意指的是添加，并不包括修改的情况) [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const items = [];
+// bad
+items[items.length] = 'test';
+// good
+items.push('test');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>复制数组时，使用展开操作符 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const items = [1, 2, 4, 8, 16];
+// bad
+const len = items.length;
+const itemsCopy = [];
+let i;
+for (i = 0; i &lt; len; i += 1) {
+  itemsCopy[i] = items[i];
+}
+// good
+const itemsCopy = [...items];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>在把类数组对象转为数组对象时，使用展开操作符来替代Array.from [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const foo = document.querySelectorAll('.foo');
+ 
+// good
+const nodes = Array.from(foo);
+ 
+// best
+const nodes = [...foo];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>使用Array.from代替展开操作符来处理针对数组的映射操作，可以避免操作创建中间数组 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const foo = [1, 2, 3];
+// bad
+const baz = [...foo].map(x =&gt; x + x);
+// good
+const baz = Array.from(foo, x =&gt; x + x);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>数组的某些方法会存在回调函数，eslint会强制回调函数使用return，不过airbnb的规范中认为，如果某些数组的回调只是单条语句的那种，是可以省略return的 [0]</li></ul> <blockquote><p>主要是一些可以对数组进行迭代的方法，比如every,filter,find,findIndex,map,reduce,some,sort</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// airbnb同样标记这种写法为good
+[1, 2, 3].map((x) =&gt; {
+    const y = x + 1;
+    return x * y;
+});
+// 下面的写法也是good，两种写法都没有问题，不过可能下面这种更易读些
+[1, 2, 3].map(x =&gt; (x + 1)*x)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>如果数组有多行，在数组的中括号前后要进行换行 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const arr = [
+  [0, 1], [2, 3], [4, 5],
+];
+const numberInArray = [
+    1, 2,
+];
+// good
+const arr = [[0, 1], [2, 3], [4, 5]];
+const numberInArray = [
+    1, 
+    2,
+];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="解构"><a href="#解构" class="header-anchor">#</a> 解构</h2> <ul><li>优先使用对象解构来访问对象属性 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function getFullName(user) {
+    const firstName = user.firstName;
+    const lastName = user.lastName;
+    return `${firstName} ${lastName}`;
+}
+// good
+function getFullName(user) {
+    const { firstName, lastName } = user;
+    return `${firstName} ${lastName}`;
+}
+// best
+function getFullName({ firstName, lastName }) {
+  return `${firstName} ${lastName}`;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>优先使用数组解构从数组索引创建变量 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr = [1, 2, 3, 4];
+// bad
+const first = arr[0];
+const second = arr[1];
+// good
+const [first, second] = arr;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>用对象解构去处理多个返回值 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 
+const input = {
+    left: '0px', right: '0px', top: '0px', bottom: '0px',
+};
+// bad
+function processInput(input) {
+    const left = input.left;
+    const right = input.right;
+    const top = input.top;
+    const bottom = input.bottom;
+    return [left, right, top, bottom];
+}
+const [left, __, top] = processInput(input);
+// good
+function processInput({
+    left, right, top, bottom,
+}) {
+    return {
+        left, right, top, bottom,
+    };
+}
+const { left, top } = processInput(input);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h2> <ul><li>字符串使用单引号 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const name = &quot;Capt. Janeway&quot;;
+// bad
+const name = `Capt. Janeway`;
+// good
+const name = 'Capt. Janeway';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>当字符串过长时，不要使用字符串连接符写成多行 [1][0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 此时报的检查错误是no-multi-str，保证字符串不分两行书写
+const errorMessage = 'This is a super long error that was thrown because \
+of Batman. When you stop to think about how Batman had anything to do \
+with this, you would get nowhere \
+fast.';
+// bad
+// 此时运行代码检查并不会报错，针对这种写法应该是建议不要这么写
+const errorMessage = 'This is a super long error that was thrown because ' +
+  'of Batman. When you stop to think about how Batman had anything to do ' +
+  'with this, you would get nowhere fast.';
+    
+// good
+// 要是感觉代码过长不方便看时，可以在编译器上做相关设置，设置自动换行
+const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>当字符串和变量要进行连接时，要使用模版字面量 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function sayHi(name) {
+    return 'How are you, ' + name + '?';
+}
+// bad
+// 检查的错误template-curly-spacing，禁止模版字符串前后使用空格
+function sayHi(name) {
+  return `How are you, ${ name }?`;
+}
+// good
+function sayHi(name) {
+  return `How are you, ${name}?`;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>针对字符串不要使用eval [1]</li> <li>在字符串中只在有意义的地方使用转义字符 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const foo = '\'this\' is \&quot;quoted\&quot;';
+// good
+const foo = '\'this\' is &quot;quoted&quot;';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <ul><li>在定义函数时，使用指定名词的函数表达式，而不是匿名表达式 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad 
+function add (a, b) {
+    return a + b;
+}
+// bad 
+const add = function (a, b) {
+    return a + b;
+}
+// good 
+const add = function myAdd (a, b) {
+    return a + b;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>立即执行函数要用大括号包裹起来 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const x = function () { return { y: 1 };}()
+...
+// not bad
+// 随着现在模块的普及立即执行函数使用的应该不多了
+const x = (function () { return { y: 1 }; }());
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>禁止循环中出现函数，如果需要在循环中定义函数，最好把相关函数使用变量定义好再使用，避免形成闭包 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 下面循环中如果把i的定义换成var，那就会形成一个最经典的闭包问题，数组funcs所有的返回值都是10，使用let会避免这个问题
+const funcs = [];
+for (let i = 0; i &lt; 10; i + 1) {
+    funcs[i] = function () {
+        return i;
+    };
+}
+...
+// 如果使用babel转上面的代码
+// 在这里可以看出babel进行转换时会按这规则，把本来定义的函数提取出来单独定义成一个变量，再进行使用
+&quot;use strict&quot;;
+var funcs = [];
+var _loop = function _loop(i) {
+    funcs[i] = function () {
+        return i;
+    };
+};
+for (var i = 0; i &lt; 10; i + 1) {
+    _loop(i);
+}
+// not bad
+const funcs = [];
+const printI = function printI(i) {
+    return i;
+};
+for (let i = 0; i &lt; 10; i + 1) {
+    funcs[i] = printI(i);
+}
+...
+// babel转码后为
+// 转码前后其实变化不大
+&quot;use strict&quot;;
+var funcs = [];
+var printI = function printI(i) {
+    return i;
+};
+for (var i = 0; i &lt; 10; i + 1) {
+    funcs[i] = printI(i);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><ul><li>禁止在代码块中使用函数声明，不过可以使用函数表达式 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const currentUser = true;
+if (currentUser) {
+    function test() {
+        console.log('Nope.');
+    }
+}
+// good 
+const currentUser = true;
+let test;
+if (currentUser) {
+    test = () =&gt; {
+        console.log('Nope.');
+    };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>函数接收的形参不可以使用argumenst [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad 
+function foo(name, options, arguments) {
+  // ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>函数内部不要使用使用arguments来替代获取形参，可以使用rest参数获取多余参数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//bad
+function concatenateAll() {
+    const args = Array.prototype.slice.call(arguments);
+    return args.join('');
+}
+// good
+function concatenateAll(...args) {
+    return args.join('');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>使用默认参数语法，不要去使用存在变化的函数参数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 这个会报no-param-reassign，禁止对 function 的参数进行重新赋值
+function handleThings(opts) {
+    opts = opts || {};
+    ...
+}
+// bad
+// 报的错误同上
+function handleThings(opts) {
+    if (opts === 0) {
+        opts = {};
+    }
+}
+// good
+function handleThings(opts = {}) {
+    // ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li>避免对函数默认参数进行不可预期的操作 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 检查时会报no-plusplus，禁用++
+// 这个例子应该是要说明，不对默认参数设置不确定的因素，就比如这里的b值，两次调用返回值都不同，会令人费解
+let b = 1;
+function count(a = b++) {
+    console.log(a);
+}
+count(); // 1
+count(); // 2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>始终将默认参数，放到最后 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function handleThings(opts = {}, name) {
+    return { opts, name };
+}
+// good
+function handleThings(name, opts = {}) {
+    return { opts, name };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>禁用Function构造函数创建函数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const x = new Function('a', 'b', 'return a + b');
+// good
+const x = function backAdd(a, b) {
+    return a + b;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>强制在函数圆括号前和代码块之前使用统一的空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const f = function(){};
+const g = function (){};
+const h = function() {};
+// good
+const f = function () {};
+const g = function () {};
+const h = function () {};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>禁止对函数参数再赋值 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 怎么都想不到为什么要对参数进行赋值，报错为no-param-reassign
+function foo(bar) {
+    bar = 13;
+}
+...
+// bad
+function foo(bar) {
+    bar.name = 'foo';
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>在函数括号内使用一致的换行，如果是多行会要求最后一项带逗号 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// normal
+// 不使用换行
+function foo(bar, baz, quux) {
+// ...
+}
+// bad
+// 会报function-paren-newline要求使用一致的换行
+function foo(bar, 
+    baz, 
+    quux) {
+// ...
+}
+// good
+// 最后一行添加了逗号
+function foo(
+    bar,
+    baz,
+    quux,
+) {
+// ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="箭头函数"><a href="#箭头函数" class="header-anchor">#</a> 箭头函数</h2> <ul><li>当必须使用匿名函数时(比如回调函数)，可以使用箭头函数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+[1, 2, 3].map(function (x) {
+    const y = x + 1;
+    return x * y;
+}); 
+// good
+[1, 2, 3].map((x) =&gt; {
+    const y = x + 1;
+    return x * y;
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>如果回调函数只是简单的单行语句，可以省略return [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// good
+[1, 2, 3].map((x) =&gt; {
+    const y = x + 1;
+    return x * y;
+});
+// good，提高可读性
+[1, 2, 3].map(x =&gt; (x + 1) * x)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>如果表达式垮多行，将其包裹在括号中，可以提高代码的可读性 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// not good
+['get', 'post', 'put'].map(httpMethod =&gt; Object.prototype.hasOwnProperty.call(
+    httpMagicObjectWithAVeryLongName,
+    httpMethod,
+));
+// good
+['get', 'post', 'put'].map(httpMethod =&gt; (
+    Object.prototype.hasOwnProperty.call(
+        httpMagicObjectWithAVeryLongName,
+        httpMethod,
+    )
+));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>箭头函数体只有一个参数时且不使用大括号，可以省略圆括号。其它任何情况，参数都应被圆括号括起来 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// arrow-parens
+[1, 2, 3].map((x) =&gt; x * x);
+// good
+[1, 2, 3].map(x =&gt; x * x);
+// bad
+// 因为此时使用了大括号，箭头函数后面跟随了代码块
+[1, 2, 3].map(x =&gt; {
+    const y = x + 1;
+    return x * y;
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>禁止在可能与比较操作符相混淆的地方使用箭头函数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 此时的箭头符号和比较符号看起来很像
+const itemHeight = item =&gt; item.height &gt; 256 ? item.largeSize : item.smallSize;
+// good
+const itemHeight = item =&gt; (item.height &gt; 256 ? item.largeSize : item.smallSize);
+// good
+const itemHeight = (item) =&gt; {
+    const { height, largeSize, smallSize } = item;
+    return height &gt; 256 ? largeSize : smallSize;
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="类和构造函数"><a href="#类和构造函数" class="header-anchor">#</a> 类和构造函数</h2> <ul><li>总是使用class，避免使用prototype [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function Queue(contents = []) {
+    this.queue = [...contents];
+}
+Queue.prototype.pop = function () {
+    const value = this.queue[0];
+    this.queue.splice(0, 1);
+    return value;
+};
+// good
+class Queue {
+    constructor(contents = []) {
+        this.queue = [...contents];
+    }
+    pop() {
+        const value = this.queue[0];
+        this.queue.splice(0, 1);
+        return value;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ul><li>对类的继承使用extends [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// good
+// 这种写法简单明了
+class student {
+    constructor({ id } = {}) {
+        this.name = `stu-${id}`;
+    }
+    backName() {
+        return this.name;
+    }
+}
+class classmates extends student {
+    constructor({ id } = {}) {
+        super({ id });
+        this.id = id;
+    }
+    id() {
+        return this.id;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>方法可以返回this来进行链式调用 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// normal
+class student {
+    constructor({ id } = {}) {
+        this.name = `stu-${id}`;
+    }
+    setAge({ age } = {}) {
+        this.age = age;
+    }
+    setGender({ gender } = {}) {
+        this.gender = gender;
+    }
+    backName() {
+        return this.name;
+    }
+    backInfo() {
+        return `name: ${this.name}, age: ${this.age}, gender: ${this.gender}`;
+    }
+}
+const stu = new student({id: 2333});
+stu.setAge({age: 18});
+stu.setGender({gender: 'man'});
+stu.backInfo();
+// good
+class student {
+    constructor({ id } = {}) {
+        this.name = `stu-${id}`;
+    }
+    setAge({ age } = {}) {
+        this.age = age;
+        return this;
+    }
+    setGender({ gender } = {}) {
+        this.gender = gender;
+        return this;
+    }
+    backName() {
+        return this.name;
+    }
+    backInfo() {
+        return `name: ${this.name}, age: ${this.age}, gender: ${this.gender}`;
+    }
+}
+const stu = new student({id: 2333});
+stu.setAge({age: 18}).setGender({gender: 'man'});
+stu.backInfo();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><ul><li>定义类时可以定义一个toString方法，只要保证该方法不会产生意外的副作用 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>class student {
+    constructor({ id } = {}) {
+        this.name = `stu-${id}`;
+    }
+    setAge({ age } = {}) {
+        this.age = age;
+        return this;
+    }
+    setGender({ gender } = {}) {
+        this.gender = gender;
+        return this;
+    }
+    backName() {
+        return this.name;
+    }
+    backInfo() {
+        return `name: ${this.name}, age: ${this.age}, gender: ${this.gender}`;
+    }
+    toString() {
+        return this.backName();
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><ul><li>如果构造函数只是一个空的构造函数或只是简单的调用父类，此时构造函数可以省略 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 因为此时构造函数constructor没有任何作用，此时没必要设置
+class Jedi {
+    constructor() {}
+    getName() {
+        return this.name;
+    }
+}
+// bad
+// 此时只是透传数据，没必要使用构造函数
+class Rey extends Jedi {
+    constructor(...args) {
+        super(...args);
+    }
+}
+// godd
+class Rey extends Jedi {
+    constructor(...args) {
+        super(...args);
+        this.name = 'Rey';
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><ul><li>类的成员禁止重名 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 很明显下面的bar会覆盖上面的bar方法
+class Foo {
+    bar() { return 1; }
+    bar() { return 2; }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="模块"><a href="#模块" class="header-anchor">#</a> 模块</h2> <ul><li>使用模块import／export输入输出代码块 [1]</li> <li>使用import时，不要使用通配符，最好明确要导入的代码块 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 另外一个模块文件，比如是index.js
+export const firstName = 'rede';
+export const lastName = 'li';
+// 引用该模块
+// bad
+// 按webpack 4+以上的版本会静态分析index.js只导入需要的代码块，所以明确导入的代码块会更有利于减少打包体积
+import * as index from './index';
+console.log(index.firstName);
+// best
+// 原例子上还提到了一个good的写法，不过看了下，感觉这种写法最好，结合编译器，还能减小文件代码
+import { firstName } from './index';
+console.log(firstName);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>不要从import中直接导出(export) [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+export { firstName as default } from './index';
+// good
+// 这样更加明晰
+import { firstName } from './index';
+export default firstName;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>同一个路径的导入只在一个地方导入，禁止重复导入 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+import { firstName } from './index';
+import { lastName } from './index';
+export default { firstName, lastName };
+// good
+import { firstName, lastName } from './index';
+export default { firstName, lastName };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>不要export可变绑定 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+let foo = 3;
+export { foo };
+// good
+const foo = 3;
+export { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>如果一个文件只导出一个模块，默认export优于命名export [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const foo = 3;
+export { foo };
+// good
+const foo = 3;
+export default { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>将所有import导入放在非导入语句上面 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+import { firstName, lastName, backName } from './index';
+backName();
+import { name } from './test';
+export default { firstName, lastName, name };
+// good
+import { firstName, lastName, backName } from './index';
+import { name } from './test';
+backName();
+export default { firstName, lastName, name };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>多行导入应该像多行数组那样进行缩进 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+import { firstName, lastName, year } from './main';
+export { firstName, lastName, year };
+// good
+import {
+    firstName,
+    lastName,
+    year,
+} from './main';
+export { firstName, lastName, year };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>禁止在模块的import中使用Webpack加载语法 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+import fooSass from 'css!sass!foo.scss';
+// good
+import fooSass from 'foo.scss';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="迭代器-iterators-和生成器-generators"><a href="#迭代器-iterators-和生成器-generators" class="header-anchor">#</a> 迭代器(Iterators)和生成器(Generators)</h2> <ul><li>不要使用iterators，请使用高阶函数，例如map、reduce而不是for-in、for-of这样的循环 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// no-restricted-syntax这个检查是禁用了特定语法
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+for (const num of numbers) {
+    sum += num;
+}
+export default { sum };
+// good
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+numbers.forEach((num) =&gt; {
+    sum += num;
+});
+export default { sum };
+// best
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((total, num) =&gt; total + num, 0);
+export default { sum };
+// bad
+// 此时检查并不会报错，只是语法建议，不过和下面的good、best进行比较，best写法更加明晰
+const numbers = [1, 2, 3, 4, 5];
+const increasedByOne = [];
+for (let i = 0; i &lt; numbers.length; i + 1) {
+    increasedByOne.push(numbers[i] + 1);
+}
+export default { increasedByOne };
+// good
+const numbers = [1, 2, 3, 4, 5];
+const increasedByOne = [];
+numbers.forEach((num) =&gt; {
+    increasedByOne.push(num + 1);
+});
+export default { increasedByOne };
+// best
+const numbers = [1, 2, 3, 4, 5];
+const increasedByOne = numbers.map(num =&gt; num + 1);
+export default { increasedByOne };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><ul><li>现在不要使用generators(生成器) [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 下面的代码来源阮一峰老师的《ECMAScript 6 入门》的Generator 函数的语法，在浏览器中运行是可以正常运行的，但按照建议规范的建议是因为现在还没有好的方式转为ES5,所以不建议使用
+function* helloWorldGenerator() {
+    yield 'hello';
+    yield 'world';
+    return 'ending';
+}
+const hw = helloWorldGenerator();
+export default { hw };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>如果使用了generators，function<em>是定义generators的专用语法，不可以把function和</em>分开写 [1]</li></ul> <h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <ul><li>使用点语法来访问对象属性 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const luke = {
+    jedi: true,
+    age: 28,
+};
+const isJedi = luke['jedi'];
+export default { isJedi };
+// good
+const luke = {
+    jedi: true,
+    age: 28,
+};
+const isJedi = luke.jedi;
+export default { isJedi };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>当通过变量访问属性时要使用中括号 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const luke = {
+    jedi: true,
+    age: 28,
+};
+ 
+function getProp(prop) {
+    return luke[prop];
+}
+ 
+const isJedi = getProp('jedi');
+export default { isJedi };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>求幂运算使用求幂运算符 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const binary = Math.pow(2, 10);
+// good
+const binary = 2 ** 10;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h2> <ul><li>总是使用const或let声明变量，避免全局变量污染 [1]</li> <li>每个便利在声明时，都要使用const或let [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const items = 'rede',
+    goSportsTeam = true,
+    dragonball = 'z';
+export { items, goSportsTeam, dragonball };
+// good
+const items = 'rede';
+const goSportsTeam = true;
+const dragonball = 'z';
+export { items, goSportsTeam, dragonball };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>将所有的const和let的定义分组 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+let i;
+const items = getItems();
+let dragonball;
+const goSportsTeam = true;
+let len;
+// good
+const goSportsTeam = true;
+const items = getItems();
+let dragonball;
+let i;
+let length;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>在需要的地方再对变量进行分配 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 这里的checkName中name会调用getName函数，但是name并不是总会返回，如果hasName为test时，并不会返回，所以，应该把对name的定义延后
+const getName = function backName() {
+    return 'rede';
+};
+function checkName(hasName) {
+    const name = getName();
+    if (hasName === 'test') {
+        return false;
+    }
+    return name;
+}
+// good
+const getName = function backName() {
+    return 'rede';
+};
+function checkName(hasName) {
+    if (hasName === 'test') {
+        return false;
+    }
+    const name = getName();
+    return name;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><ul><li>禁止使用连续赋值 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const a = b = c = 1;
+// good
+const a = 1;
+const b = a;
+const c = a;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>避免使用++或--运算符 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+let num = 1;
+num++;
+--num;
+// good
+let num = 1;
+num += 1;
+num -= 1;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>在=号前后要避免进行换行，如果变量名超过最长限制，要统一换行方式 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 此时的换行是没有必要的
+const foo
+  = 'superLongLongLongLongLongLongLongLongString';
+// good
+const foo = 'superLongLongLongLongLongLongLongLongString';  
+// bad
+const foo =
+  superLongLongLongLongLongLongLongLongFunctionName();
+// good
+const foo = (
+  superLongLongLongLongLongLongLongLongFunctionName()
+);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="变量提升"><a href="#变量提升" class="header-anchor">#</a> 变量提升</h2> <ul><li>var声明会被提升至他们作用域的顶部，但相应的赋值不会提升，let和const的声明并不会提升，因为其形成了一个暂时性死区</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>(function example() {
+  console.log(declaredButNotAssigned); // =&gt; undefined
+  var declaredButNotAssigned = true;
+})()  
+...
+function example() {
+  console.log(declaredButNotAssigned); // =&gt; throws a ReferenceError
+  console.log(typeof declaredButNotAssigned); // =&gt; throws a ReferenceError
+  const declaredButNotAssigned = true;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>匿名函数表达式的变量也会被提升，但函数体不会被提升</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function example() {
+    console.log(anonymous); // =&gt; undefined
+ 
+    anonymous(); // =&gt; TypeError anonymous is not a function 输入错误，anonymous 不是一个函数
+ 
+    var anonymous = function () {
+    console.log('anonymous function expression');
+    };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>命名的函数表达式变量也会被提升，但函数体不会被提升</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function example() {
+    console.log(named); // =&gt; undefined
+ 
+    named(); // =&gt; TypeError named is not a function，输入错误，named 不是一个函数
+ 
+    superPower(); // =&gt; ReferenceError superPower is not defined， ReferenceError（引用错误）superPower 未定义
+    
+    var named = function superPower() {
+        console.log('Flying');
+    };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>函数声明的名词和函数体都会被提升</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function example() {
+    superPower(); // =&gt; Flying
+ 
+    function superPower() {
+    console.log('Flying');
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="比较运算符和等号"><a href="#比较运算符和等号" class="header-anchor">#</a> 比较运算符和等号</h2> <ul><li><p>使用===和!==，避免使用==和!= [1]</p></li> <li><p>诸如if语句之类的条件语句会把其中的值强制进行布尔值转换，遵循以下简单规则</p></li> <li><ul><li>Objects求值为true</li> <li>Undefined和Null求值为false</li> <li>Numbers如果是+0，-0或NaN求值为false,其他为true</li> <li>Strings如果是''求值为false,其他为true</li></ul></li> <li><p>对于布尔值使用简写，但对于数字和字符串要进行显式比较 [0]</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const isValid = true;
+// bad
+// isValid是布尔值
+if (isValid === true) {
+    // ...
+}
+// good
+if (isValid) {
+    // ...
+}
+...
+const name = 'rede';
+// bad
+// 比如代码块中依赖对name是否为空进行相关逻辑，这时省略对''进行比较是不会影响功能的，但是对代码的可读性会产生影响
+if (name) {
+    // ...
+}
+// good
+if (name !== '') {
+    // ...
+}
+...
+const collection = [];
+// bad
+if (collection.length) {
+  // ...
+}
+// good
+if (collection.length &gt; 0) {
+  // ...
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><ul><li>在case和default中，如果要创建包含词法声明的语句块(let、const、function和class)要使用大括号进行包裹 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 词法声明在整个switch语句都是可见的，在多个case子句试图定义相同变量时会报no-redeclare(禁止重新声明变量)
+const num = 1;
+switch (num) {
+case 1:
+    let name = 'rede';
+    break;
+case 2:
+    let name = 'tom';
+    break;
+}
+// good
+const num = 1;
+switch (num) {
+case 1: {
+    const name = 'rede';
+    break;
+}
+case 2: {
+    const name = 'tom';
+    break;
+}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><ul><li>使用三元操作时，避免进行嵌套 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 会降低代码的易读性
+const bar = 'bar';
+const bing = 'bind';
+const foo = bar === 'bars' ? (bing === 'bing' ? 'bars bing' : 'bars bind') : 'bar';
+export default { foo };
+// good
+const bar = 'bar';
+const bing = 'bind';
+const barVal = bar === 'bars' ? 'bars' : 'bar';
+const foo = bing === 'bing' ? `${barVal} bing` : `${barVal} bind`;
+export default { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>避免使用一些不必要的三元运算 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const answer = 1;
+const isYes = answer === 1 ? true : false;
+export default { isYes };
+// good
+const answer = 1;
+const isYes = answer === 1;
+export default { isYes };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>当多个运算符混合在一个语句中，要添加适当的括号，不要将**和%与+、-，*，/混在一起使用，能提高代码的可读性 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const a = 1;
+const b = 0;
+const c = 4;
+const d = 3;
+const foo = a &amp;&amp; b &lt; 0 || c &gt; 0 || d + 1 === 0;
+const bar = a ** b - 5 % d;
+export default { foo, bar };
+// good
+const a = 1;
+const b = 0;
+const c = 4;
+const d = 3;
+const foo = (a &amp;&amp; b &lt; 0) || c &gt; 0 || (d + 1 === 0);
+const bar = (a ** b) - (5 % d);
+export default { foo, bar };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="代码块"><a href="#代码块" class="header-anchor">#</a> 代码块</h2> <ul><li>使用大括号包裹多行代码，单行代码可以强制直接出现不需要换行 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const test = true;
+let boo = '';
+// bad
+if (test)
+    boo = 'boo';
+// good
+if (test) boo = 'boo';    
+export default { boo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>如果通过if 和 else使用多行代码块，要把else放在if代码块闭合括号的同一行 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const name = 'rede';
+let foo = '';
+if (name === 'rede') {
+    foo = 'foo'
+}
+else {
+    foo = 'bar';
+}
+export default { foo };
+// good
+const name = 'rede';
+let foo = '';
+if (name === 'rede') {
+    foo = 'foo';
+} else {
+    foo = 'bar';
+}
+export default { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>如果一个if代码块使用了return语句，后面的else可以省略，在else if块中return可分成多个if来return [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function foo (val) {
+    if (val) {
+        return 'foo';
+    } else {
+        return 'bar';
+    }
+}
+export default { foo };
+// good
+function foo(val) {
+    if (val) {
+        return 'foo';
+    }
+    return 'bar';
+}
+export default { foo };
+// bad
+function foo(val) {
+    if (val === 'foo') {
+        return 'foo';
+    } else if (val === 'bar') {
+        return 'bar';
+    } else if (val === 'test') {
+        return 'test';
+    }
+    return 'rede';
+}
+export default { foo };
+// good
+function foo(val) {
+    if (val === 'foo') {
+        return 'foo';
+    }
+    if (val === 'bar') {
+        return 'bar';
+    }
+    if (val === 'test') {
+        return 'test';
+    }
+    return 'rede';
+}
+export default { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="控制语句"><a href="#控制语句" class="header-anchor">#</a> 控制语句</h2> <ul><li>如果控制语句太长或超过最大行长度，那么每个分组条件可以放单独一行，但要注意把运算符放在每行的起始处 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// not good
+const nv1 = 2;
+const nv2 = 3;
+const nv3 = 4;
+const nv4 = 5;
+const nv5 = 6;
+const nv6 = 7;
+let foo = '';
+// not good
+if (nv1 === 1 &amp;&amp; nv2 === 2 &amp;&amp; nv3 === 3 &amp;&amp; nv4 === 4 &amp;&amp; nv5 === 5 &amp;&amp; nv6 === 6) foo = 'foo';
+// not good
+if (nv1 === 1 &amp;&amp; nv2 === 2 &amp;&amp; nv3 === 3 &amp;&amp; 
+    nv4 === 4 &amp;&amp; nv5 === 5 &amp;&amp; nv6 === 6) foo = 'foo';
+// good 
+if (nv1 === 1 &amp;&amp; nv2 === 2 &amp;&amp; nv3 === 3 
+    &amp;&amp; nv4 === 4 &amp;&amp; nv5 === 5 &amp;&amp; nv6 === 6) foo = 'foo';
+export default { foo };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <ul><li>多行注释使用/**...*/ [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// good
+/**
+ * make() returns a new element
+ * based on the passed-in tag name
+ */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>单行注释使用 // ，将单行注释放在续注释的语句上方。在注释之前放置一个空行，除非它位于代码块的第一行。 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const active = true;  // is current tab
+ 
+// good
+// is current tab
+const active = true;
+// bad
+function getType() {
+    console.log('fetching type...');
+    // set the default type to 'no type'
+    const type = this.type || 'no type';
+ 
+    return type;
+}
+ 
+// good
+function getType() {
+    console.log('fetching type...');
+ 
+    // set the default type to 'no type'
+    const type = this.type || 'no type';
+ 
+    return type;
+}
+ 
+// also good
+function getType() {
+    // set the default type to 'no type'
+    const type = this.type || 'no type';
+ 
+    return type;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><ul><li>所有注释符和注释内容用一个空格隔开，让它更容易阅读 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+//is current tab
+// good
+// is current tab
+// bad
+/**
+ *make() returns a new element
+ *based on the passed-in tag name
+ */
+ // good
+/**
+ * make() returns a new element
+ * based on the passed-in tag name
+ */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>给注释增加FIXME或TODO的前缀，可以帮助其他开发者快速了解这个是否是一个需要重新复查的问题，或是你正在为需要解决问题提出的解决方案，有别于常规注释 [0]</li> <li>使用 // FIXME来标识需要修正的问题</li> <li>使用 // TODO来标识需要实现的问题</li></ul> <h2 id="空白"><a href="#空白" class="header-anchor">#</a> 空白</h2> <ul><li>使用一致的缩进 [1]</li></ul> <blockquote><p>这里默认是使用4个空格</p></blockquote> <ul><li>在大括号前放置一个空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function test(){
+    console.log('test');
+}
+// good
+function test() {
+    console.log('test');
+}
+// bad
+dog.set('attr',{
+    age: '1 year',
+    breed: 'Bernese Mountain Dog',
+});
+ 
+// good
+dog.set('attr', {
+    age: '1 year',
+    breed: 'Bernese Mountain Dog',
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>在控制语句的小括号前放一个空格，在函数调用及声明中，不在函数的参数列表前加空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const isJedi = true;
+// bad
+if(isJedi) {
+    console.log('dd');
+}
+// good
+if (isJedi) {
+    console.log('dd');
+}
+// bad
+function fight () {
+    console.log ('Swooosh!');
+}
+// good
+function fight() {
+    console.log('Swooosh!');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ul><li>使用空格把运算符隔开 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const x=y+5;
+// good
+const x = y + 5;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>在文件末尾插入一个空行 [1]</li> <li>长方法链式调用时使用缩进，使用一个点开头，强调该行是一个方法调用，不是一个新的声明 [1]</li></ul> <blockquote><p>估计是怕链式调用太长不方便看</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+$('#items').find('.selected').highlight().end().find('.open').updateCount();
+// good
+$('#items').find('.selected').highlight().end()
+    .find('.open')
+    .updateCount();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>在语句块后和下条语句前留一个空行 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const foo = true;
+let bar = '';
+// bad
+if (foo) {
+    bar = 'bar';
+}
+export default { bar };
+// good
+if (foo) {
+    bar = 'bar';
+}
+export default { bar };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>块级代码中禁用多余的空行 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function bar() {
+ 
+    console.log(foo);
+ 
+}
+// good
+function bar() {
+    console.log(foo);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>不要在圆括号前后加空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+if ( foo ) {
+    console.log(foo);
+}
+// good
+if (foo) {
+    console.log(foo);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>不要在中括号前后添加空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const foo = [ 1, 2, 3 ];
+console.log(foo[ 0 ]);
+// good
+const foo = [1, 2, 3];
+console.log(foo[0]);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>在大括号前后添加空格 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const foo = {clark: 'kent'};
+// good
+const foo = { clark: 'kent' };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>避免有超过100个字符(包括空格)的代码行，如果有超过，要适当考虑把代码进行换行 [1]</li></ul> <blockquote><p>保证代码的可读性和可维护性</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const foo = jsonData &amp;&amp; jsonData.foo &amp;&amp; jsonData.foo.bar &amp;&amp; jsonData.foo.bar.baz &amp;&amp; jsonData.foo.bar.baz.quux &amp;&amp; jsonData.foo.bar.baz.quux.xyzzy;
+// good
+const foo = jsonData
+    &amp;&amp; jsonData.foo
+    &amp;&amp; jsonData.foo.bar
+    &amp;&amp; jsonData.foo.bar.baz
+    &amp;&amp; jsonData.foo.bar.baz.quux
+    &amp;&amp; jsonData.foo.bar.baz.quux.xyzzy;
+// bad
+$.ajax({ method: 'POST', url: 'https://airbnb.com/', data: { name: 'John' } }).done(() =&gt; console.log('Congratulations!')).fail(() =&gt; console.log('You have failed this city.'));
+// good
+$.ajax({
+  method: 'POST',
+  url: 'https://airbnb.com/',
+  data: { name: 'John' },
+})
+  .done(() =&gt; console.log('Congratulations!'))
+  .fail(() =&gt; console.log('You have failed this city.'));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="逗号"><a href="#逗号" class="header-anchor">#</a> 逗号</h2> <ul><li>在行开头处不要使用逗号 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const hero = {
+    firstName: 'Ada'
+    , lastName: 'Lovelace'
+    , birthYear: 1815
+    , superPower: 'computers'
+};
+// good
+const hero = {
+    firstName: 'Ada',
+    lastName: 'Lovelace',
+    birthYear: 1815,
+    superPower: 'computers',
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>在结尾添加逗号 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const hero = {
+    firstName: 'Ada',
+    lastName: 'Lovelace',
+    birthYear: 1815,
+    superPower: 'computers'
+};
+// good
+const hero = {
+    firstName: 'Ada',
+    lastName: 'Lovelace',
+    birthYear: 1815,
+    superPower: 'computers',
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>因为通过git diff时，能体现出这些差异</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad - 没有结尾逗号的 git diff 差异比较
+const hero = {
+     firstName: 'Florence',
+-    lastName: 'Nightingale'
++    lastName: 'Nightingale',
++    inventorOf: ['coxcomb chart', 'modern nursing']
+};
+// good - 有结尾逗号的 git diff 差异比较
+const hero = {
+     firstName: 'Florence',
+     lastName: 'Nightingale',
++    inventorOf: ['coxcomb chart', 'modern nursing'],
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="分号"><a href="#分号" class="header-anchor">#</a> 分号</h2> <ul><li>禁止使用自动分号插入，都要加入分号 [1]</li></ul> <h2 id="类型转换"><a href="#类型转换" class="header-anchor">#</a> 类型转换</h2> <ul><li>在声明语句的开始处就执行强制类型转换</li> <li>转为字符串时，禁止原始包装实例</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const reviewScore = 9;
+// bad
+// 此时typeof totalScore为Object并不是string
+const totalScore = new String(reviewScore); 
+// bad
+// 调用的事 reviewScore.valueOf()
+const totalScore = reviewScore + ''; 
+// bad
+// 不能保证返回一个字符串
+const totalScore = reviewScore.toString(); 
+// good
+const totalScore = String(reviewScore);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ul><li>转为数字类型时，禁止使用原始包装实例，如果使用parseInt要必须有基数 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const inputValue = '4';
+// bad
+// 不要使用原始包装实例
+const val = new Number(inputValue);
+// bad
+const val = +inputValue;
+// bad
+const val = inputValue &gt;&gt; 0;
+// good
+const val = Number(inputValue);
+// bad
+// 没基数
+const num = parseInt('071');
+// good
+const num = parseInt('071', 10);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>避免使用按位运算符 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const val = inputValue &gt;&gt; 0;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>进行布尔值转换时，避免使用原始包装实例 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>const age = 0;
+// bad
+const hasAge = new Boolean(age);
+// good
+const hasAge = Boolean(age);
+// best
+const hasAge = !!age;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="命名规则"><a href="#命名规则" class="header-anchor">#</a> 命名规则</h2> <ul><li>避免使用单字母名词 [0]</li> <li>当命名对象，函数和实例时使用驼峰式命名 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+// 一般命名分为驼峰和下划线拼写写法，这里建议使用驼峰式写法
+const this_is_my_object = {};
+// good
+const thisIsMyObject = {};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>当命名构造函数或类时使用PascalCase式命名(帕斯卡拼写法，即首字母大写) [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function user(options) {
+    this.name = options.name;
+}
+ 
+const bad = new user({
+    name: 'nope',
+});
+// good
+class User {
+    constructor(options) {
+    this.name = options.name;
+    }
+}
+ 
+const good = new User({
+    name: 'yup',
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ul><li>变量禁止使用下划线开头或结尾 [1]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+const __firstName__ = 'Panda';
+// good
+const firstName = 'Panda';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>不要存储this引用 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+function foo() {
+    const self = this;
+    return function () {
+        console.log(self);
+    };
+}
+// good
+function foo() {
+    return () =&gt; {
+        console.log(this);
+    };
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>文件名应与其默认导出的名词完全匹配 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 文件1
+class CheckBox {
+    // ...
+}
+export default CheckBox;
+ 
+// 文件2
+export default function fortyTwo() { return 42; }
+ 
+// 文件3
+export default function insideDirectory() {}
+// good
+import CheckBox from './CheckBox'; // export/import/filename 单词首字母大写命名
+import fortyTwo from './fortyTwo'; // export/import/filename 驼峰式命名
+import insideDirectory from './insideDirectory';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ul><li>当导出一个默认函数时使用驼峰式命名，文件名应该和你的函数名字一致 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>function makeStyleGuide() {
+    // ...
+}
+ 
+export default makeStyleGuide;
+...
+文件名为makeStyleGuide
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>当导出一个构造函数／类／单例／函数库／纯对象时使用PascalCase式命名 [0]</li> <li>首字母缩写的词，应该总是全部大写，或全部小写 [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+import SmsContainer from './containers/SmsContainer';
+// bad
+const HttpRequests = [
+    // ...
+];
+// good
+import SMSContainer from './containers/SMSContainer';
+ 
+// good
+const HTTPRequests = [
+    // ...
+];
+// also good
+const httpRequests = [
+    // ...
+];
+// best
+import TextMessageContainer from './containers/TextMessageContainer';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><ul><li>如果变量是被导出的，或者只是常量，或者可以确信变量不会改变，可以使用大写，使用大写的变量可以帮助使用者确定使用的变量不会改变 [0]</li></ul> <h2 id="存取器"><a href="#存取器" class="header-anchor">#</a> 存取器</h2> <ul><li>属性的存取器不是必须</li> <li>避免使用js的getters/setters，因为会导致意想不到的副作用，而且会很难测试维护，可以使用存取器函数，使用getVal及setVal [0]</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+class Dragon {
+    constructor(val) {
+        this.name = val;
+        this.year = 0;
+    }
+    get age() {
+        // ...
+        return this.year;
+    }
+    set age(value) {
+        // ...
+        this.year = value;
+    }
+}
+// good
+class Dragon {
+    constructor(val) {
+        this.name = val;
+        this.year = 0;
+    }
+    getAge() {
+        // ...
+        return this.year;
+    }
+    setAge(value) {
+        // ...
+        this.year = value;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><ul><li>也可以创建 get() 和 set() 函数, 但要保持一致 [0]</li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022-08-14 5:45:18</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/note/前端规范/HTML.html" class="prev">
+            HTML规范
+          </a></span> <span class="next"><a href="/blog/note/前端规范/页面规范.html">
+            页面规范
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#引用" class="sidebar-link reco-side-引用" data-v-cb1513f6>引用</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#对象" class="sidebar-link reco-side-对象" data-v-cb1513f6>对象</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#数组" class="sidebar-link reco-side-数组" data-v-cb1513f6>数组</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#解构" class="sidebar-link reco-side-解构" data-v-cb1513f6>解构</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#字符串" class="sidebar-link reco-side-字符串" data-v-cb1513f6>字符串</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#函数" class="sidebar-link reco-side-函数" data-v-cb1513f6>函数</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#箭头函数" class="sidebar-link reco-side-箭头函数" data-v-cb1513f6>箭头函数</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#类和构造函数" class="sidebar-link reco-side-类和构造函数" data-v-cb1513f6>类和构造函数</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#模块" class="sidebar-link reco-side-模块" data-v-cb1513f6>模块</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#迭代器-iterators-和生成器-generators" class="sidebar-link reco-side-迭代器-iterators-和生成器-generators" data-v-cb1513f6>迭代器(Iterators)和生成器(Generators)</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#属性" class="sidebar-link reco-side-属性" data-v-cb1513f6>属性</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#变量" class="sidebar-link reco-side-变量" data-v-cb1513f6>变量</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#变量提升" class="sidebar-link reco-side-变量提升" data-v-cb1513f6>变量提升</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#比较运算符和等号" class="sidebar-link reco-side-比较运算符和等号" data-v-cb1513f6>比较运算符和等号</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#代码块" class="sidebar-link reco-side-代码块" data-v-cb1513f6>代码块</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#控制语句" class="sidebar-link reco-side-控制语句" data-v-cb1513f6>控制语句</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#注释" class="sidebar-link reco-side-注释" data-v-cb1513f6>注释</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#空白" class="sidebar-link reco-side-空白" data-v-cb1513f6>空白</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#逗号" class="sidebar-link reco-side-逗号" data-v-cb1513f6>逗号</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#分号" class="sidebar-link reco-side-分号" data-v-cb1513f6>分号</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#类型转换" class="sidebar-link reco-side-类型转换" data-v-cb1513f6>类型转换</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#命名规则" class="sidebar-link reco-side-命名规则" data-v-cb1513f6>命名规则</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/JavaScript.html#存取器" class="sidebar-link reco-side-存取器" data-v-cb1513f6>存取器</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/blog/assets/js/app.8896e472.js" defer></script><script src="/blog/assets/js/3.340b1cfc.js" defer></script><script src="/blog/assets/js/1.ac301aa1.js" defer></script><script src="/blog/assets/js/211.f120d0f8.js" defer></script><script src="/blog/assets/js/13.3382b018.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组 | 学习碎碎念</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#000000">
+    <meta name="description" content="一个小小前端的学习笔记!   ">
+    <meta name="author" content="HJJ">
+    <meta name="keywords" content="一个小小前端的学习笔记!">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png?v1">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.37c3a971.css" as="style"><link rel="preload" href="/blog/assets/js/app.8896e472.js" as="script"><link rel="preload" href="/blog/assets/js/3.340b1cfc.js" as="script"><link rel="preload" href="/blog/assets/js/1.ac301aa1.js" as="script"><link rel="preload" href="/blog/assets/js/96.4ba0a0db.js" as="script"><link rel="preload" href="/blog/assets/js/13.3382b018.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.fd6e7077.js"><link rel="prefetch" href="/blog/assets/js/100.115e536c.js"><link rel="prefetch" href="/blog/assets/js/101.e510c2f2.js"><link rel="prefetch" href="/blog/assets/js/102.c8a2d3a9.js"><link rel="prefetch" href="/blog/assets/js/103.f541035a.js"><link rel="prefetch" href="/blog/assets/js/104.634f539b.js"><link rel="prefetch" href="/blog/assets/js/105.746638e8.js"><link rel="prefetch" href="/blog/assets/js/106.ab4beffc.js"><link rel="prefetch" href="/blog/assets/js/107.6993a7bd.js"><link rel="prefetch" href="/blog/assets/js/108.c6d14bde.js"><link rel="prefetch" href="/blog/assets/js/109.82901f9c.js"><link rel="prefetch" href="/blog/assets/js/11.e8610610.js"><link rel="prefetch" href="/blog/assets/js/110.6d9eaae5.js"><link rel="prefetch" href="/blog/assets/js/111.6689fd7d.js"><link rel="prefetch" href="/blog/assets/js/112.74a903bb.js"><link rel="prefetch" href="/blog/assets/js/113.2ad3046b.js"><link rel="prefetch" href="/blog/assets/js/114.529ff8e2.js"><link rel="prefetch" href="/blog/assets/js/115.e51eb860.js"><link rel="prefetch" href="/blog/assets/js/116.d757c760.js"><link rel="prefetch" href="/blog/assets/js/117.e664e11f.js"><link rel="prefetch" href="/blog/assets/js/118.7433dcba.js"><link rel="prefetch" href="/blog/assets/js/119.6356dd11.js"><link rel="prefetch" href="/blog/assets/js/12.df7ae0b0.js"><link rel="prefetch" href="/blog/assets/js/120.c97e77fd.js"><link rel="prefetch" href="/blog/assets/js/121.ddb82f13.js"><link rel="prefetch" href="/blog/assets/js/122.a9e253b5.js"><link rel="prefetch" href="/blog/assets/js/123.2ae3ebf5.js"><link rel="prefetch" href="/blog/assets/js/124.7515565a.js"><link rel="prefetch" href="/blog/assets/js/125.e944312f.js"><link rel="prefetch" href="/blog/assets/js/126.c87c5948.js"><link rel="prefetch" href="/blog/assets/js/127.34dfe486.js"><link rel="prefetch" href="/blog/assets/js/128.e5f5e0cf.js"><link rel="prefetch" href="/blog/assets/js/129.2511c8dd.js"><link rel="prefetch" href="/blog/assets/js/130.48698606.js"><link rel="prefetch" href="/blog/assets/js/131.658af75f.js"><link rel="prefetch" href="/blog/assets/js/132.28d69efc.js"><link rel="prefetch" href="/blog/assets/js/133.becd15b4.js"><link rel="prefetch" href="/blog/assets/js/134.31569752.js"><link rel="prefetch" href="/blog/assets/js/135.d59e4e7f.js"><link rel="prefetch" href="/blog/assets/js/136.6fbd26e3.js"><link rel="prefetch" href="/blog/assets/js/137.20e61ff9.js"><link rel="prefetch" href="/blog/assets/js/138.fb1381bb.js"><link rel="prefetch" href="/blog/assets/js/139.0c786c4d.js"><link rel="prefetch" href="/blog/assets/js/14.dacddc5e.js"><link rel="prefetch" href="/blog/assets/js/140.e17e79ab.js"><link rel="prefetch" href="/blog/assets/js/141.f46f2e5a.js"><link rel="prefetch" href="/blog/assets/js/142.31048f08.js"><link rel="prefetch" href="/blog/assets/js/143.aba7a600.js"><link rel="prefetch" href="/blog/assets/js/144.838632b8.js"><link rel="prefetch" href="/blog/assets/js/145.f0b954e3.js"><link rel="prefetch" href="/blog/assets/js/146.869dcfbb.js"><link rel="prefetch" href="/blog/assets/js/147.06d2f52f.js"><link rel="prefetch" href="/blog/assets/js/148.c0482a4b.js"><link rel="prefetch" href="/blog/assets/js/149.9c645274.js"><link rel="prefetch" href="/blog/assets/js/15.f8a08aea.js"><link rel="prefetch" href="/blog/assets/js/150.355edb34.js"><link rel="prefetch" href="/blog/assets/js/151.674d7dc3.js"><link rel="prefetch" href="/blog/assets/js/152.dea7dc80.js"><link rel="prefetch" href="/blog/assets/js/153.97b2321e.js"><link rel="prefetch" href="/blog/assets/js/154.f2ae2dee.js"><link rel="prefetch" href="/blog/assets/js/155.8feb05ad.js"><link rel="prefetch" href="/blog/assets/js/156.5ef4aa4e.js"><link rel="prefetch" href="/blog/assets/js/157.3b68fe8c.js"><link rel="prefetch" href="/blog/assets/js/158.115bb9a0.js"><link rel="prefetch" href="/blog/assets/js/159.6f1242b7.js"><link rel="prefetch" href="/blog/assets/js/16.45f8fa59.js"><link rel="prefetch" href="/blog/assets/js/160.d4a966ee.js"><link rel="prefetch" href="/blog/assets/js/161.ee10e2d1.js"><link rel="prefetch" href="/blog/assets/js/162.1f9e2c5f.js"><link rel="prefetch" href="/blog/assets/js/163.82175914.js"><link rel="prefetch" href="/blog/assets/js/164.f5a35a06.js"><link rel="prefetch" href="/blog/assets/js/165.bb2a398c.js"><link rel="prefetch" href="/blog/assets/js/166.43fe562e.js"><link rel="prefetch" href="/blog/assets/js/167.9b1ca13c.js"><link rel="prefetch" href="/blog/assets/js/168.bd13f7f0.js"><link rel="prefetch" href="/blog/assets/js/169.45481d55.js"><link rel="prefetch" href="/blog/assets/js/17.8becfea8.js"><link rel="prefetch" href="/blog/assets/js/170.35ab1540.js"><link rel="prefetch" href="/blog/assets/js/171.11f64b9b.js"><link rel="prefetch" href="/blog/assets/js/172.3d9920be.js"><link rel="prefetch" href="/blog/assets/js/173.7a9a2434.js"><link rel="prefetch" href="/blog/assets/js/174.d439b1dc.js"><link rel="prefetch" href="/blog/assets/js/175.61e950a2.js"><link rel="prefetch" href="/blog/assets/js/176.4c973580.js"><link rel="prefetch" href="/blog/assets/js/177.79ff3a2f.js"><link rel="prefetch" href="/blog/assets/js/178.6993fd78.js"><link rel="prefetch" href="/blog/assets/js/179.3fd55fb0.js"><link rel="prefetch" href="/blog/assets/js/18.e4993a35.js"><link rel="prefetch" href="/blog/assets/js/180.3352c9be.js"><link rel="prefetch" href="/blog/assets/js/181.aecb0732.js"><link rel="prefetch" href="/blog/assets/js/182.4037b70c.js"><link rel="prefetch" href="/blog/assets/js/183.bf1523de.js"><link rel="prefetch" href="/blog/assets/js/184.cfb6386e.js"><link rel="prefetch" href="/blog/assets/js/185.31eab98b.js"><link rel="prefetch" href="/blog/assets/js/186.c83cf366.js"><link rel="prefetch" href="/blog/assets/js/187.f2cf6f48.js"><link rel="prefetch" href="/blog/assets/js/188.5138f9ec.js"><link rel="prefetch" href="/blog/assets/js/189.9afeff65.js"><link rel="prefetch" href="/blog/assets/js/19.ba28da13.js"><link rel="prefetch" href="/blog/assets/js/190.d9ad4b32.js"><link rel="prefetch" href="/blog/assets/js/191.47027363.js"><link rel="prefetch" href="/blog/assets/js/192.d7b58be0.js"><link rel="prefetch" href="/blog/assets/js/193.e5001e8a.js"><link rel="prefetch" href="/blog/assets/js/194.a7cacd14.js"><link rel="prefetch" href="/blog/assets/js/195.fdbf7fd9.js"><link rel="prefetch" href="/blog/assets/js/196.57c363ff.js"><link rel="prefetch" href="/blog/assets/js/197.4057fe5a.js"><link rel="prefetch" href="/blog/assets/js/198.83aaf467.js"><link rel="prefetch" href="/blog/assets/js/199.23e1fa8a.js"><link rel="prefetch" href="/blog/assets/js/20.81b4b502.js"><link rel="prefetch" href="/blog/assets/js/200.1ba63b6b.js"><link rel="prefetch" href="/blog/assets/js/201.8944a811.js"><link rel="prefetch" href="/blog/assets/js/202.26c737ac.js"><link rel="prefetch" href="/blog/assets/js/203.3bf0b5c8.js"><link rel="prefetch" href="/blog/assets/js/204.62352811.js"><link rel="prefetch" href="/blog/assets/js/205.7d0c2fbf.js"><link rel="prefetch" href="/blog/assets/js/206.5e8ebc59.js"><link rel="prefetch" href="/blog/assets/js/207.d80d1501.js"><link rel="prefetch" href="/blog/assets/js/208.d681423b.js"><link rel="prefetch" href="/blog/assets/js/209.b480b8de.js"><link rel="prefetch" href="/blog/assets/js/21.eaf8fb9d.js"><link rel="prefetch" href="/blog/assets/js/210.450252ae.js"><link rel="prefetch" href="/blog/assets/js/211.f120d0f8.js"><link rel="prefetch" href="/blog/assets/js/212.1f07445b.js"><link rel="prefetch" href="/blog/assets/js/213.d774c083.js"><link rel="prefetch" href="/blog/assets/js/214.75edd5c9.js"><link rel="prefetch" href="/blog/assets/js/215.a79bd074.js"><link rel="prefetch" href="/blog/assets/js/216.ba6c0c4c.js"><link rel="prefetch" href="/blog/assets/js/217.d6d33caa.js"><link rel="prefetch" href="/blog/assets/js/218.3ce87883.js"><link rel="prefetch" href="/blog/assets/js/219.e495adf6.js"><link rel="prefetch" href="/blog/assets/js/22.430a81e3.js"><link rel="prefetch" href="/blog/assets/js/220.3292486c.js"><link rel="prefetch" href="/blog/assets/js/221.f18b9d99.js"><link rel="prefetch" href="/blog/assets/js/222.8e57f14f.js"><link rel="prefetch" href="/blog/assets/js/223.b74e6b77.js"><link rel="prefetch" href="/blog/assets/js/224.e981ce39.js"><link rel="prefetch" href="/blog/assets/js/225.5b66d0c1.js"><link rel="prefetch" href="/blog/assets/js/226.69bfedec.js"><link rel="prefetch" href="/blog/assets/js/227.53d81346.js"><link rel="prefetch" href="/blog/assets/js/228.2d7e7488.js"><link rel="prefetch" href="/blog/assets/js/229.75984493.js"><link rel="prefetch" href="/blog/assets/js/23.bc17d310.js"><link rel="prefetch" href="/blog/assets/js/230.b6ddf5e6.js"><link rel="prefetch" href="/blog/assets/js/231.9207e8f0.js"><link rel="prefetch" href="/blog/assets/js/232.cb2dfe2b.js"><link rel="prefetch" href="/blog/assets/js/233.badaa6a2.js"><link rel="prefetch" href="/blog/assets/js/234.10e9f4ff.js"><link rel="prefetch" href="/blog/assets/js/235.105778e5.js"><link rel="prefetch" href="/blog/assets/js/236.e04ea163.js"><link rel="prefetch" href="/blog/assets/js/237.1a576c29.js"><link rel="prefetch" href="/blog/assets/js/238.ab06e452.js"><link rel="prefetch" href="/blog/assets/js/239.3152a92d.js"><link rel="prefetch" href="/blog/assets/js/24.fffca1b2.js"><link rel="prefetch" href="/blog/assets/js/240.81fbe05c.js"><link rel="prefetch" href="/blog/assets/js/241.29d06f7f.js"><link rel="prefetch" href="/blog/assets/js/242.2390d2da.js"><link rel="prefetch" href="/blog/assets/js/243.94c626f4.js"><link rel="prefetch" href="/blog/assets/js/244.093ef12b.js"><link rel="prefetch" href="/blog/assets/js/245.fbec2a07.js"><link rel="prefetch" href="/blog/assets/js/246.f378744e.js"><link rel="prefetch" href="/blog/assets/js/247.016cbfc5.js"><link rel="prefetch" href="/blog/assets/js/248.efa12bc5.js"><link rel="prefetch" href="/blog/assets/js/249.39a216fc.js"><link rel="prefetch" href="/blog/assets/js/25.c9a3e5a6.js"><link rel="prefetch" href="/blog/assets/js/250.957f1f9e.js"><link rel="prefetch" href="/blog/assets/js/251.282ff431.js"><link rel="prefetch" href="/blog/assets/js/252.3625c85d.js"><link rel="prefetch" href="/blog/assets/js/26.7860972d.js"><link rel="prefetch" href="/blog/assets/js/27.f693548d.js"><link rel="prefetch" href="/blog/assets/js/28.b68460a5.js"><link rel="prefetch" href="/blog/assets/js/29.4708ab1e.js"><link rel="prefetch" href="/blog/assets/js/30.b0e2fcb9.js"><link rel="prefetch" href="/blog/assets/js/31.0e8ac20f.js"><link rel="prefetch" href="/blog/assets/js/32.af6bf6e4.js"><link rel="prefetch" href="/blog/assets/js/33.2277af79.js"><link rel="prefetch" href="/blog/assets/js/34.fa9aa01a.js"><link rel="prefetch" href="/blog/assets/js/35.f3018035.js"><link rel="prefetch" href="/blog/assets/js/36.554b990f.js"><link rel="prefetch" href="/blog/assets/js/37.589de0d5.js"><link rel="prefetch" href="/blog/assets/js/38.269615da.js"><link rel="prefetch" href="/blog/assets/js/39.d467f5cc.js"><link rel="prefetch" href="/blog/assets/js/4.5fc07e40.js"><link rel="prefetch" href="/blog/assets/js/40.2a9bd5e7.js"><link rel="prefetch" href="/blog/assets/js/41.1851a936.js"><link rel="prefetch" href="/blog/assets/js/42.f1070e7d.js"><link rel="prefetch" href="/blog/assets/js/43.2329e1c5.js"><link rel="prefetch" href="/blog/assets/js/44.3e8984d4.js"><link rel="prefetch" href="/blog/assets/js/45.7728155d.js"><link rel="prefetch" href="/blog/assets/js/46.0256dbb6.js"><link rel="prefetch" href="/blog/assets/js/47.e53cff30.js"><link rel="prefetch" href="/blog/assets/js/48.71ba2ba2.js"><link rel="prefetch" href="/blog/assets/js/49.25a95ebf.js"><link rel="prefetch" href="/blog/assets/js/5.c80ec00f.js"><link rel="prefetch" href="/blog/assets/js/50.e94b4b0f.js"><link rel="prefetch" href="/blog/assets/js/51.f1bd10c3.js"><link rel="prefetch" href="/blog/assets/js/52.ad777b87.js"><link rel="prefetch" href="/blog/assets/js/53.54c4310b.js"><link rel="prefetch" href="/blog/assets/js/54.bdc3eba2.js"><link rel="prefetch" href="/blog/assets/js/55.d35506bc.js"><link rel="prefetch" href="/blog/assets/js/56.f293cbf2.js"><link rel="prefetch" href="/blog/assets/js/57.7206d45b.js"><link rel="prefetch" href="/blog/assets/js/58.b3fa0923.js"><link rel="prefetch" href="/blog/assets/js/59.932ad336.js"><link rel="prefetch" href="/blog/assets/js/6.cdcfab11.js"><link rel="prefetch" href="/blog/assets/js/60.c7f49c43.js"><link rel="prefetch" href="/blog/assets/js/61.5d0a0188.js"><link rel="prefetch" href="/blog/assets/js/62.b501103f.js"><link rel="prefetch" href="/blog/assets/js/63.0146cecf.js"><link rel="prefetch" href="/blog/assets/js/64.4b1aada0.js"><link rel="prefetch" href="/blog/assets/js/65.1cf5a1e1.js"><link rel="prefetch" href="/blog/assets/js/66.b4a3a22a.js"><link rel="prefetch" href="/blog/assets/js/67.5d1b2e1a.js"><link rel="prefetch" href="/blog/assets/js/68.fae0202c.js"><link rel="prefetch" href="/blog/assets/js/69.7f59b4be.js"><link rel="prefetch" href="/blog/assets/js/7.39bdd1a4.js"><link rel="prefetch" href="/blog/assets/js/70.071777c7.js"><link rel="prefetch" href="/blog/assets/js/71.992a9aac.js"><link rel="prefetch" href="/blog/assets/js/72.670cea8e.js"><link rel="prefetch" href="/blog/assets/js/73.f18f3da1.js"><link rel="prefetch" href="/blog/assets/js/74.fb9860cb.js"><link rel="prefetch" href="/blog/assets/js/75.eb94572a.js"><link rel="prefetch" href="/blog/assets/js/76.63b102b3.js"><link rel="prefetch" href="/blog/assets/js/77.e9b3fdeb.js"><link rel="prefetch" href="/blog/assets/js/78.17e51946.js"><link rel="prefetch" href="/blog/assets/js/79.4f8d75a7.js"><link rel="prefetch" href="/blog/assets/js/8.9d5f0dd7.js"><link rel="prefetch" href="/blog/assets/js/80.1316322c.js"><link rel="prefetch" href="/blog/assets/js/81.f24cf910.js"><link rel="prefetch" href="/blog/assets/js/82.ed8efeb8.js"><link rel="prefetch" href="/blog/assets/js/83.c669cf44.js"><link rel="prefetch" href="/blog/assets/js/84.58d43f6b.js"><link rel="prefetch" href="/blog/assets/js/85.0748eaba.js"><link rel="prefetch" href="/blog/assets/js/86.40e09535.js"><link rel="prefetch" href="/blog/assets/js/87.0d611cf2.js"><link rel="prefetch" href="/blog/assets/js/88.3d23a0c1.js"><link rel="prefetch" href="/blog/assets/js/89.3d830fc5.js"><link rel="prefetch" href="/blog/assets/js/9.8b9ac456.js"><link rel="prefetch" href="/blog/assets/js/90.f6edaa95.js"><link rel="prefetch" href="/blog/assets/js/91.d02e34f6.js"><link rel="prefetch" href="/blog/assets/js/92.ce92cdfb.js"><link rel="prefetch" href="/blog/assets/js/93.13311f40.js"><link rel="prefetch" href="/blog/assets/js/94.e9b6ca10.js"><link rel="prefetch" href="/blog/assets/js/95.2e108a3d.js"><link rel="prefetch" href="/blog/assets/js/97.caaa7a23.js"><link rel="prefetch" href="/blog/assets/js/98.1d4b83df.js"><link rel="prefetch" href="/blog/assets/js/99.499c2302.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.37c3a971.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>学习碎碎念</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一个小小前端的学习笔记!   </p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/images/head.jpg" alt="学习碎碎念" class="logo"> <span class="site-name">学习碎碎念</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue实战/" class="nav-link"><i class="undefined"></i>
+  Vue实战
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端安全/" class="nav-link"><i class="undefined"></i>
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序公众号/" class="nav-link"><i class="undefined"></i>
+  微信小程序公众号
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/浏览器/" class="nav-link"><i class="undefined"></i>
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/移动web/" class="nav-link"><i class="undefined"></i>
+  移动web
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/blog/assets/images/head.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    HHH
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>217</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>23</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue/" class="nav-link"><i class="undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/Vue实战/" class="nav-link"><i class="undefined"></i>
+  Vue实战
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端安全/" class="nav-link"><i class="undefined"></i>
+  前端安全
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序公众号/" class="nav-link"><i class="undefined"></i>
+  微信小程序公众号
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/浏览器/" class="nav-link"><i class="undefined"></i>
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/移动web/" class="nav-link"><i class="undefined"></i>
+  移动web
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/JavaScript/BOM.html" class="sidebar-link">一、BOM的概念</a></li><li><a href="/blog/note/JavaScript/JS中的offsetWidth、offsetHeight、clientWidth、clientHeight等等的详细介绍.html" class="sidebar-link">JS中的offsetWidth、offsetHeight、clientWidth、clientHeight等等的详细介绍</a></li><li><a href="/blog/note/JavaScript/Object.html" class="sidebar-link">Object</a></li><li><a href="/blog/note/JavaScript/call()、apply()、bind().html" class="sidebar-link">call()、apply()、bind()</a></li><li><a href="/blog/note/JavaScript/jquery小笔记.html" class="sidebar-link">jQuery</a></li><li><a href="/blog/note/JavaScript/js内置对象.html" class="sidebar-link">内置对象</a></li><li><a href="/blog/note/JavaScript/js函数.html" class="sidebar-link">函数</a></li><li><a href="/blog/note/JavaScript/js原型.html" class="sidebar-link">面向对象</a></li><li><a href="/blog/note/JavaScript/js字符串.html" class="sidebar-link">String对象的常用方法</a></li><li><a href="/blog/note/JavaScript/js执行过程.html" class="sidebar-link">/note/JavaScript/js执行过程.html</a></li><li><a href="/blog/note/JavaScript/js数据类型.html" class="sidebar-link">JS中的数据类型</a></li><li><a href="/blog/note/JavaScript/js数据类型2.html" class="sidebar-link">JS中的数据类型2</a></li><li><a href="/blog/note/JavaScript/js数组.html" class="sidebar-link">Array对象的常用方法</a></li><li><a href="/blog/note/JavaScript/js正则.html" class="sidebar-link">正则</a></li><li><a href="/blog/note/JavaScript/js语句.html" class="sidebar-link">JS语句</a></li><li><a href="/blog/note/JavaScript/js闭包.html" class="sidebar-link">闭包</a></li><li><a href="/blog/note/JavaScript/js面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/blog/note/JavaScript/上传大文件.html" class="sidebar-link">/note/JavaScript/上传大文件.html</a></li><li><a href="/blog/note/JavaScript/倒计时纠正偏差.html" class="sidebar-link">js中的倒计时,怎么实现纠正偏差</a></li><li><a href="/blog/note/JavaScript/函数缓存.html" class="sidebar-link">函数缓存</a></li><li><a href="/blog/note/JavaScript/判断可见区域.html" class="sidebar-link">/note/JavaScript/判断可见区域.html</a></li><li><a href="/blog/note/JavaScript/实现扫二维码登录PC网站流程.html" class="sidebar-link">实现扫二维码登录PC网站流程</a></li><li><a href="/blog/note/JavaScript/快速排序算法.html" class="sidebar-link">快速排序算法</a></li><li><a href="/blog/note/JavaScript/数组.html" class="active sidebar-link">数组</a></li><li><a href="/blog/note/JavaScript/文件上传.html" class="sidebar-link">/note/JavaScript/文件上传.html</a></li><li><a href="/blog/note/JavaScript/深拷贝和浅拷贝.html" class="sidebar-link">深拷贝和浅拷贝</a></li><li><a href="/blog/note/JavaScript/简答题.html" class="sidebar-link">let a='ss'存储在哪里</a></li><li><a href="/blog/note/JavaScript/编程算法.html" class="sidebar-link">编程算法</a></li><li><a href="/blog/note/JavaScript/编程练习.html" class="sidebar-link">1.找出只出现一次的数字</a></li><li><a href="/blog/note/JavaScript/解决JavaScript数字精度丢失问题的方法.html" class="sidebar-link">解决JavaScript数字精度丢失问题的方法</a></li><li><a href="/blog/note/JavaScript/防抖节流.html" class="sidebar-link">防抖节流</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>数组</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">数组</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>HHH</span></i> <!----> <!----> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>JavaScript</span></i></div></div> <div class="theme-reco-content content__default"><blockquote><p>数组是 js 中最常用到的数据集合，其内置的方法有很多，熟练掌握这些方法，可以有效的提高我们的工作效率，同时对我们的代码质量也是有很大影响。</p></blockquote> <h2 id="一、创建数组"><a href="#一、创建数组" class="header-anchor">#</a> 一、创建数组</h2> <h4 id="_1-使用数组字面量表示法"><a href="#_1-使用数组字面量表示法" class="header-anchor">#</a> 1.使用数组字面量表示法</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr4 = [];   //创建一个空数组
+var arr5 = [20];   // 创建一个包含1项数据为20的数组
+var arr6 = [&quot;lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;];   // 创建一个包含3个字符串的数组
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="_2-使用-array-构造函数"><a href="#_2-使用-array-构造函数" class="header-anchor">#</a> 2.使用 Array 构造函数</h4> <h6 id="无参构造"><a href="#无参构造" class="header-anchor">#</a> 无参构造</h6> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr1 = new Array();   //创建一个空数组
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h6 id="带参构造"><a href="#带参构造" class="header-anchor">#</a> 带参构造</h6> <p>如果只传一个数值参数，则表示创建一个初始长度为指定数值的空数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr2 = new Array(20);   // 创建一个包含20项的数组
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果传入一个非数值的参数或者参数个数大于 1，则表示创建一个包含指定元素的数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr3 = new Array(&quot;lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;);   // 创建一个包含3个字符串的数组
+var array4 = new Array('23'); // [&quot;23&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="_3-array-of-方法创建数组-es6-新增"><a href="#_3-array-of-方法创建数组-es6-新增" class="header-anchor">#</a> 3.Array.of 方法创建数组(es6 新增)</h4> <p>ES6 为数组新增创建方法的目的之一，是帮助开发者在使用 Array 构造器时避开 js 语言的一个怪异点。</p> <p><strong>Array.of()方法总会创建一个包含所有传入参数的数组，而不管参数的数量与类型。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = Array.of(1, 2);
+console.log(arr.length);//2
+let arr1 = Array.of(3);
+console.log(arr1.length);//1
+console.log(arr1[0]);//3
+let arr2 = Array.of('2');
+console.log(arr2.length);//1
+console.log(arr2[0]);//'2'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_4-array-from-方法创建数组-es6-新增"><a href="#_4-array-from-方法创建数组-es6-新增" class="header-anchor">#</a> 4.Array.from 方法创建数组(es6 新增)</h4> <p>在 js 中将<strong>非数组对象转换为真正的数组</strong>是非常麻烦的。在 ES6 中，将可迭代对象或者类数组对象作为第一个参数传入，Array.from()就能返回一个数组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function arga(...args) {  //...args剩余参数数组,由传递给函数的实际参数提供
+    let arg = Array.from(args);
+    console.log(arg);
+}
+arga('arr1', 26, 'from'); // ['arr1',26,'from']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="映射转换"><a href="#映射转换" class="header-anchor">#</a> 映射转换</h6> <p>如果你想实行进一步的数组转换，你可以向 Array.from()方法传递一个映射用的函数作为第二个参数。此函数会将数组对象的每一个值转换为目标形式，并将其存储在目标数组的对应位置上。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function arga(...args) {  
+     return Array.from(args, value =&gt; value + 1);
+}
+let arr = arga('arr', 26, 'pop');
+console.log(arr);//['arr1',27,'pop1']
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>如果映射函数需要在对象上工作，你可以手动传递第三个参数给 Array.from()方法，从而指定映射函数内部的 this 值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const helper = {
+  diff: 1,
+  add(value) {
+    return value + this.diff;
+  }
+}
+function translate() {
+ //arguments 是一个对应于传递给函数的参数的类数组对象
+  return Array.from(arguments, helper.add, helper); 
+}
+let arr = translate('liu', 26, 'man');
+console.log(arr); // [&quot;liu1&quot;, 27, &quot;man1&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="二、数组方法"><a href="#二、数组方法" class="header-anchor">#</a> 二、数组方法</h2> <h4 id="数组原型方法主要有以下这些"><a href="#数组原型方法主要有以下这些" class="header-anchor">#</a> 数组原型方法主要有以下这些</h4> <ul><li><code>join()</code>：用指定的分隔符将数组每一项拼接为字符串</li> <li><code>push()</code> ：向数组的末尾添加新元素</li> <li><code>pop()</code>：删除数组的最后一项</li> <li><code>shift()</code>：删除数组的第一项</li> <li><code>unshift()</code>：向数组首位添加新元素</li> <li><code>slice()</code>：按照条件查找出其中的部分元素</li> <li><code>splice()</code>：对数组进行增删改</li> <li><code>fill()</code>: 方法能使用特定值填充数组中的一个或多个元素</li> <li><code>filter()</code>:“过滤”功能</li> <li><code>concat()</code>：用于连接两个或多个数组</li> <li><code>indexOf()</code>：检测当前值在数组中第一次出现的位置索引</li> <li><code>lastIndexOf()</code>：检测当前值在数组中最后一次出现的位置索引</li> <li><code>every()</code>：判断数组中每一项都是否满足条件</li> <li><code>some()</code>：判断数组中是否存在满足条件的项</li> <li><code>includes()</code>：判断一个数组是否包含一个指定的值</li> <li><code>sort()</code>：对数组的元素进行排序</li> <li><code>reverse()</code>：对数组进行倒序</li> <li><code>forEach()</code>：ES5 及以下循环遍历数组每一项</li> <li><code>map()</code>：ES6 循环遍历数组每一项</li> <li><code>copyWithin()</code>:用于从数组的指定位置拷贝元素到数组的另一个指定位置中</li> <li><code>find()</code>:返回匹配的值</li> <li><code>findIndex()</code>:返回匹配位置的索引</li> <li><code>toLocaleString()、toString()</code>:将数组转换为字符串</li> <li><code>flat()、flatMap()</code>：扁平化数组</li> <li><code>entries() 、keys() 、values()</code>:遍历数组</li></ul> <h4 id="各个方法的基本功能详解"><a href="#各个方法的基本功能详解" class="header-anchor">#</a> 各个方法的基本功能详解</h4> <h6 id="_1-join"><a href="#_1-join" class="header-anchor">#</a> 1.join()</h6> <p><code>join()</code>方法用于把数组中的所有元素转换一个字符串。</p> <p>元素是通过指定的分隔符进行分隔的。默认使用逗号作为分隔符</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1,2,3];
+console.log(arr.join());   // 1,2,3
+console.log(arr.join(&quot;-&quot;));   // 1-2-3
+console.log(arr);   // [1, 2, 3]（原数组不变）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>通过<strong>join()方法可以实现重复字符串</strong>，只需传入字符串以及重复的次数，就能返回重复后的字符串，函数如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function repeatString(str, n) {
+//一个长度为n+1的空数组用string去拼接成字符串,就成了n个string的重复
+ return new Array(n + 1).join(str);
+}
+console.log(repeatString(&quot;abc&quot;, 3));   // abcabcabc
+console.log(repeatString(&quot;Hi&quot;, 5));   // HiHiHiHiHi
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h6 id="_2-push-和-pop"><a href="#_2-push-和-pop" class="header-anchor">#</a> 2.push()和 pop()</h6> <p><code>push()</code> 方法<strong>从数组末尾向数组添加元素</strong>，可以添加一个或多个元素。</p> <p><code>pop()</code> 方法用于<strong>删除数组的最后一个元素</strong>并返回删除的元素。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [&quot;Lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;];
+var count = arr.push(&quot;Jack&quot;,&quot;Sean&quot;);
+console.log(count);  // 5
+console.log(arr);   // [&quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;, &quot;Jack&quot;, &quot;Sean&quot;]
+var item = arr.pop();
+console.log(item);   // Sean
+console.log(arr);   // [&quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;, &quot;Jack&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h6 id="_3-shift-和-unshift"><a href="#_3-shift-和-unshift" class="header-anchor">#</a> 3.shift() 和 unshift()</h6> <p><code>shift()</code> 方法用于<strong>把数组的第一个元素从其中删除</strong>，并返回第一个元素的值。</p> <p><code>unshift()</code> 方法可<strong>向数组的开头添加一个或更多元素</strong>，并返回新的长度。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [&quot;Lily&quot;,&quot;lucy&quot;,&quot;Tom&quot;];
+var count = arr.unshift(&quot;Jack&quot;,&quot;Sean&quot;);
+console.log(count);   // 5
+console.log(arr);   //[&quot;Jack&quot;, &quot;Sean&quot;, &quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;]
+var item = arr.shift();
+console.log(item);   // Jack
+console.log(arr);   // [&quot;Sean&quot;, &quot;Lily&quot;, &quot;lucy&quot;, &quot;Tom&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h6 id="_4-sort"><a href="#_4-sort" class="header-anchor">#</a> 4.sort()</h6> <p>sort() 方法用于对数组的元素进行排序。</p> <p>排序顺序可以是字母或数字，并按升序或降序。</p> <p>默认排序顺序为按字母升序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr1 = [&quot;a&quot;, &quot;d&quot;, &quot;c&quot;, &quot;b&quot;];
+console.log(arr1.sort());   // [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
+arr2 = [13, 24, 51, 3];
+console.log(arr2.sort());   // [13, 24, 3, 51]
+console.log(arr2);   // [13, 24, 3, 51](元数组被改变)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>为了解决上述问题，sort()方法可以接收一个比较函数作为参数，以便我们指定哪个值位于哪个值的前面。</p> <p>比较函数接收两个参数，如果第一个参数应该位于第二个之前则返回一个负数，如果两个参数相等则返回 0，如果第一个参数应该位于第二个之后则返回一个正数。以下就是一个简单的比较函数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function compare(value1, value2) {
+    if (value1 &lt; value2) {
+     return -1;
+    } else if (value1 &gt; value2) {
+     return 1;
+    } else {
+     return 0;
+    }
+}
+arr2 = [13, 24, 51, 3];
+console.log(arr2.sort(compare));   // [3, 13, 24, 51]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>如果需要通过比较函数产生降序排序的结果，只要交换比较函数返回的值即可：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function compare(value1, value2) {
+    if (value1 &lt; value2) {
+     return 1;
+    } else if (value1 &gt; value2) {
+     return -1;
+    } else {
+     return 0;
+    }
+}
+arr2 = [13, 24, 51, 3];
+console.log(arr2.sort(compare));   // [51, 24, 13, 3]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h6 id="_5-reverse"><a href="#_5-reverse" class="header-anchor">#</a> 5.reverse()</h6> <p>reverse() 方法用于颠倒数组中元素的顺序。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [13, 24, 51, 3];
+console.log(arr.reverse());   //[3, 51, 24, 13]
+console.log(arr);   //[3, 51, 24, 13](原数组改变)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h6 id="_6-concat"><a href="#_6-concat" class="header-anchor">#</a> 6.concat()</h6> <p>concat() 方法用于连接两个或多个数组。</p> <p>该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1,3,5,7];
+var arrCopy = arr.concat(9,[11,13]);
+console.log(arrCopy);   //[1, 3, 5, 7, 9, 11, 13]
+console.log(arr);   // [1, 3, 5, 7](原数组未被修改)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>从上面测试结果可以发现：传入的不是数组，则直接把参数添加到数组后面，如果传入的是数组，则将数组中的各个项添加到数组中。但是如果传入的是一个二维数组呢？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arrCopy2 = arr.concat([9,[11,13]]);
+console.log(arrCopy2);   //[1, 3, 5, 7, 9, Array[2]]
+console.log(arrCopy2[5]);   //[11, 13]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h6 id="_7-slice"><a href="#_7-slice" class="header-anchor">#</a> 7.slice()</h6> <p>slice()：返回从原数组中指定开始下标到结束下标之间的项组成的新数组。</p> <p>slice()方法可以接受一或两个参数，即要返回项的起始和结束位置。</p> <p>在<strong>只有一个参数</strong>的情况下， slice()方法返回从该参数指定位置开始到当前数组末尾的所有项。</p> <p>如果<strong>有两个参数</strong>，该方法返回起始和结束位置之间的项，但不包括结束位置的项。</p> <p><strong>当出现负数时，将负数加上数组长度的值（6）来替换该位置的数</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1,3,5,7,9,11];
+var arrCopy = arr.slice(1);
+var arrCopy2 = arr.slice(1,4);
+var arrCopy3 = arr.slice(1,-2);//相当于arr.slice(1,4)
+var arrCopy4 = arr.slice(-4,-1);//相当于arr.slice(2,5)
+console.log(arr);   //[1, 3, 5, 7, 9, 11](原数组没变)
+console.log(arrCopy);   //[3, 5, 7, 9, 11]
+console.log(arrCopy2);   //[3, 5, 7]
+console.log(arrCopy3);   //[3, 5, 7]
+console.log(arrCopy4);   //[5, 7, 9]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h6 id="_8-splice"><a href="#_8-splice" class="header-anchor">#</a> 8.splice()</h6> <p><code>splice()</code>：很强大的数组方法，它有很多种用法，可以<strong>实现删除、插入和替换</strong>。</p> <p>######## 1.删除元素,并返回删除的元素</p> <p>可以删除任意数量的项，只需指定 2 个参数：要删除的第一项的位置和要删除的项数。例如， splice(0,2)会删除数组中的前两项。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1,3,5,7,9,11];
+var arrRemoved = arr.splice(0,2);
+console.log(arr);   //[5, 7, 9, 11]
+console.log(arrRemoved);   //[1, 3]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>######## 2.向指定索引处添加元素</p> <p>可以向指定位置插入任意数量的项，只需提供 3 个参数：起始位置、 0（要删除的项数）和要插入的项。例如，splice(2,0,4,6)会从当前数组的位置 2 开始插入 4 和 6。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var array1 = [22, 3, 31, 12];
+array1.splice(1, 0, 12, 35);  //[]
+console.log(array1); // [22, 12, 35, 3, 31, 12]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>######## 3.替换指定索引位置的元素</p> <p>可以向指定位置插入任意数量的项，且同时删除任意数量的项，只需指定 3 个参数：起始位置、要删除的项数和要插入的任意数量的项。插入的项数不必与删除的项数相等。例如，splice (2,1,4,6)会删除当前数组位置 2 的项，然后再从位置 2 开始插入 4 和 6。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const array1 = [22, 3, 31, 12];
+array1.splice(1, 1, 8);   //[3]
+console.log(array1);  // [22, 8, 31, 12]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h6 id="_9-indexof-和-lastindexof"><a href="#_9-indexof-和-lastindexof" class="header-anchor">#</a> 9.indexOf()和 lastIndexOf()</h6> <p><strong>接收两个参数</strong>：要查找的项和（可选的）表示查找起点位置的索引。</p> <p><code>indexOf()</code>：从数组的开头（位置 0）开始向后查找。</p> <p><code>lastIndexOf</code>：从数组的末尾开始向前查找。</p> <p>这两个方法都返回要查找的项在数组中的位置，或者在<strong>没找到的情况下返回-1</strong>。在比较第一个参数与数组中的每一项时，会<strong>使用全等操作符</strong>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1,3,5,7,7,5,3,1];
+console.log(arr.indexOf(5));   //2
+console.log(arr.lastIndexOf(5));   //5
+console.log(arr.indexOf(5,2));   //2
+console.log(arr.lastIndexOf(5,4));   //2
+console.log(arr.indexOf(&quot;5&quot;));   //-1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h6 id="_10-foreach"><a href="#_10-foreach" class="header-anchor">#</a> 10.forEach()</h6> <p>forEach()：对数组进行遍历循环，对数组中的每一项运行给定函数。这个方法没有返回值。参数都是 function 类型，默认有传，。</p> <p><strong>参数分别为</strong>：遍历的数组内容；第对应的数组索引，数组本身</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [11, 22, 33, 44, 55];
+arr.forEach(function(x, index, a){
+ console.log(x + '|' + index + '|' + (a === arr));
+});
+输出为：
+ 11|0|true
+ 22|1|true
+ 33|2|true
+ 44|3|true
+ 55|4|true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h6 id="_11-map"><a href="#_11-map" class="header-anchor">#</a> 11.map()</h6> <p><code>map()</code> 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。</p> <p><code>map()</code> 方法按照原始数组元素顺序依次处理元素。</p> <p>该方法不会改变原数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5];
+var arr2 = arr.map(function(item){
+ return item*item;
+});
+console.log(arr2);  //[1, 4, 9, 16, 25]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="_12-filter"><a href="#_12-filter" class="header-anchor">#</a> 12.filter()</h6> <p>filter()：“过滤”功能，数组中的每一项运行给定函数，返回满足过滤条件组成的数组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var arr2 = arr.filter(function(x, index) {
+ return index % 3 === 0 || x &gt;= 8;
+});
+console.log(arr2);  //[1, 4, 7, 8, 9, 10]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="_13-fill-es6-新增"><a href="#_13-fill-es6-新增" class="header-anchor">#</a> 13.fill() es6 新增</h6> <p>fill()方法能使用特定值填充数组中的一个或多个元素。当只是用一个参数时，该方法会用该参数的值填充整个数组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = [1, 2, 3, 'cc', 5];
+arr.fill(1);
+console.log(arr);//[1,1,1,1,1];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>如果不想改变数组中的所有元素，而只是想改变其中一部分，那么可以使用可选的起始位置参数与结束位置参数（不包括结束位置的那个元素）</p> <p><strong>3 个参数：</strong> 填充数值，起始位置参数，结束位置参数（不包括结束位置的那个元素）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = [1, 2, 3, 'arr', 5];
+arr.fill(1, 2);
+console.log(arr);//[1,2,1,1,1]
+arr.fill(0, 1, 3);
+console.log(arr);//[1,0,0,1,1];
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="_14-every"><a href="#_14-every" class="header-anchor">#</a> 14.every()</h6> <p>every()：判断数组中每一项都是否满足条件，只有所有项都满足条件，才会返回 true。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5];
+var arr2 = arr.every(function(x) {
+ return x &lt; 10;
+});
+console.log(arr2);  //true
+var arr3 = arr.every(function(x) {
+ return x &lt; 3;
+});
+console.log(arr3);  // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h6 id="_15-some"><a href="#_15-some" class="header-anchor">#</a> 15.some()</h6> <p>some()：判断数组中是否存在满足条件的项，只要有一项满足条件，就会返回 true。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var arr = [1, 2, 3, 4, 5];
+var arr2 = arr.some(function(x) {
+ return x &lt; 3;
+});
+console.log(arr2);  //true
+var arr3 = arr.some(function(x) {
+ return x &lt; 1;
+});
+console.log(arr3);  // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h6 id="_16-includes-es7-新增"><a href="#_16-includes-es7-新增" class="header-anchor">#</a> 16.includes() es7 新增</h6> <p>includes() 方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则 false。</p> <p><strong>参数有两个</strong>，其中第一个是（必填）需要查找的元素值，第二个是（可选）开始查找元素的位置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const array1 = [22, 3, 31, 12, 'arr'];
+const includes = array1.includes(31);
+console.log(includes); // true
+const includes1 = array1.includes(31, 3); // 从索引3开始查找31是否存在
+console.log(includes1); // false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>需要注意的是：includes<strong>使用===运算符</strong>来进行值比较，仅有一个例外：<strong>NaN 被认为与自身相等</strong>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let values = [1, NaN, 2];
+console.log(values.indexOf(NaN));//-1
+console.log(values.includes(NaN));//true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h6 id="_17-reduce-和-reduceright"><a href="#_17-reduce-和-reduceright" class="header-anchor">#</a> 17.reduce()和 reduceRight()</h6> <p>这两个方法都会实现迭代数组的所有项(即累加器)，然后构建一个最终返回的值。</p> <p><code>reduce()</code>方法从数组的第一项开始，逐个遍历到最后。</p> <p><code>reduceRight()</code>则从数组的最后一项开始，向前遍历到第一项。</p> <p><strong>4 个参数</strong>：前一个值、当前值、项的索引和数组对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var values = [1,2,3,4,5];
+var sum = values.reduceRight(function(prev, cur, index, array){
+return prev + cur;
+},10);   //数组一开始加了一个初始值10,可以不设默认0
+console.log(sum);  //25
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="_18-tolocalestring-和-tostring"><a href="#_18-tolocalestring-和-tostring" class="header-anchor">#</a> 18.toLocaleString() 和 toString()</h6> <p>将数组转换为字符串</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const array1 = [22, 3, 31, 12];
+const str = array1.toLocaleString();
+const str1 = array1.toString();
+console.log(str); // 22,3,31,12
+console.log(str1); // 22,3,31,12
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h6 id="_19-find-和-findindex"><a href="#_19-find-和-findindex" class="header-anchor">#</a> 19. find()和 findIndex()</h6> <p>find()与 findIndex()方法均接受两个参数：一个回调函数，一个可选值用于指定回调函数内部的 this。</p> <p>该回调函数可接受三个参数：数组的某个元素，该元素对应的索引位置，以及该数组本身。</p> <p>该回调函数应当在给定的元素满足你定义的条件时返回 true，而 find()和 findIndex()方法均会在回调函数<strong>第一次返回 true 时停止查找</strong>。</p> <p><strong>二者的区别是</strong>：find()方法返回匹配的值，而 findIndex()返回匹配位置的索引。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = [1, 2, 3, 'arr', 5, 1, 9];
+console.log(arr.find((value, keys, arr) =&gt; {
+    return value &gt; 2;
+})); // 3 返回匹配的值
+console.log(arr.findIndex((value, keys, arr) =&gt; {
+    return value &gt; 2;
+})); // 2 返回匹配位置的索引
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h6 id="_20-copywithin-es6-新增"><a href="#_20-copywithin-es6-新增" class="header-anchor">#</a> 20.copyWithin() [es6 新增]</h6> <p>copyWithin() 方法用于从数组的指定位置拷贝元素到数组的另一个指定位置中。</p> <p>该方法会改变现有数组</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//将数组的前两个元素复制到数组的最后两个位置
+let arr = [1, 2, 3, 'arr', 5];
+arr.copyWithin(3, 0);
+console.log(arr);//[1,2,3,1,2]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>默认情况下，copyWithin()方法总是会一直复制到数组末尾，不过你还可以提供一个可选参数来限制到底有多少元素会被覆盖。这第三个参数指定了复制停止的位置（不包含该位置本身）。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let arr = [1, 2, 3, 'arr', 5, 9, 17];
+//从索引3的位置开始粘贴
+//从索引0的位置开始复制
+//遇到索引3时停止复制
+arr.copyWithin(3, 0, 3);
+console.log(arr);//[1,2,3,1,2,3,17]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h6 id="_21-flat-和-flatmap-es6-新增"><a href="#_21-flat-和-flatmap-es6-新增" class="header-anchor">#</a> 21.flat() 和 flatMap() es6 新增</h6> <p>flat() 方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。</p> <p><strong>该方法返回一个新数组，对原数据没有影响。</strong></p> <p><strong>参数：</strong> 指定要提取嵌套数组的结构深度，默认值为 1。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const arr1 = [0, 1, 2, [3, 4]];
+console.log(arr1.flat());
+// expected output: [0, 1, 2, 3, 4]
+const arr2 = [0, 1, 2, [[[3, 4]]]];
+console.log(arr2.flat(2));
+// expected output: [0, 1, 2, [3, 4]]
+//使用 Infinity，可展开任意深度的嵌套数组
+var arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity);
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// 扁平化数组空项,如果原数组有空位，flat()方法会跳过空位
+var arr4 = [1, 2, , 4, 5];
+arr4.flat();
+// [1, 2, 4, 5]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p><code>flatMap()</code>方法对原数组的每个成员执行一个函数，相当于执行Array.prototype.map(),然后<strong>对返回值组成的数组执行flat()方法</strong>。</p> <p>该方法返回一个新数组，不改变原数组。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 相当于 [[2, 4], [3, 6], [4, 8]].flat()
+[2, 3, 4].flatMap((x) =&gt; [x, x * 2])
+// [2, 4, 3, 6, 4, 8]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h6 id="_22-entries-keys-和-values-【es6】"><a href="#_22-entries-keys-和-values-【es6】" class="header-anchor">#</a> 22. entries(),keys() 和 values() 【ES6】</h6> <p>entries()，keys()和values() —— 用于遍历数组。它们都返回一个遍历器对象，可以用for...of循环进行遍历</p> <p>区别是<strong>keys()是对键名的遍历</strong>、<strong>values()是对键值的遍历</strong>，<strong>entries()是对键值对的遍历</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>for (let index of ['a', 'b'].keys()) {  
+console.log(index);  
+}  
+// 0 
+// 1 
+for (let elem of ['a', 'b'].values()) {  
+console.log(elem);  
+}  
+// 'a' 
+// 'b' 
+for (let [index, elem] of ['a', 'b'].entries()) {  
+console.log(index, elem);  
+}  
+// 0 &quot;a&quot; 
+// 1 &quot;b&quot; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>如果不使用for...of循环，可以手动调用遍历器对象的<strong>next方法</strong>，进行遍历。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let letter = ['a', 'b', 'c'];  
+let entries = letter.entries();  
+console.log(entries.next().value); // [0, 'a'] 
+console.log(entries.next().value); // [1, 'b'] 
+console.log(entries.next().value); // [2, 'c'] 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>作者：Yushia</p> <p>链接：https://juejin.cn/post/6907109642917117965</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022-08-14 5:45:18</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/note/JavaScript/快速排序算法.html" class="prev">
+            快速排序算法
+          </a></span> <span class="next"><a href="/blog/note/JavaScript/文件上传.html">
+            /note/JavaScript/文件上传.html
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/blog/note/JavaScript/%E6%95%B0%E7%BB%84.html#一、创建数组" class="sidebar-link reco-side-一、创建数组" data-v-cb1513f6>一、创建数组</a></li><li class="level-2" data-v-cb1513f6><a href="/blog/note/JavaScript/%E6%95%B0%E7%BB%84.html#二、数组方法" class="sidebar-link reco-side-二、数组方法" data-v-cb1513f6>二、数组方法</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/blog/assets/js/app.8896e472.js" defer></script><script src="/blog/assets/js/3.340b1cfc.js" defer></script><script src="/blog/assets/js/1.ac301aa1.js" defer></script><script src="/blog/assets/js/96.4ba0a0db.js" defer></script><script src="/blog/assets/js/13.3382b018.js" defer></script>
+  </body>
+</html>
