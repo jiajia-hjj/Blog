@@ -6,8 +6,6 @@ categories:
  - Vue
 ---
 
-
-
 + vue - router 默认 hash 模式，还有一种是history 模式。
 
 ## 原理
