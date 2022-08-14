@@ -6,7 +6,7 @@ categories:
  - Vue
 ---
 
-
+https://npmmirror.com/
 
 ## 一、窗口的常用指令
 
